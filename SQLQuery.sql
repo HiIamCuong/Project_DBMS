@@ -1,4 +1,5 @@
-﻿--*TẠO BẢNG*--
+USE QLTraSua
+--*TẠO BẢNG*--
 --Bảng tài khoản
 CREATE TABLE TaiKhoan(
 	Ma_Tai_Khoan varchar(10) PRIMARY KEY,
@@ -142,7 +143,7 @@ CREATE TABLE CongThuc(
 )
 
 --*TRIGGER*--
-
+GO
 CREATE TRIGGER TRG_Update_Tinh_Trang_SanPham
 ON NguyenLieu
 AFTER INSERT, UPDATE, DELETE
@@ -170,6 +171,64 @@ BEGIN
         HAVING MIN(NL.So_Luong / CT.So_Luong) >= 1 -- Đủ nguyên liệu cho tất cả các thành phần của sản phẩm
     );
 END
+
+GO
+CREATE TRIGGER Xu_Ly_Lap_Nhan_Vien
+ON BangPhanCa
+INSTEAD OF INSERT
+AS
+BEGIN
+    SET NOCOUNT ON;
+	DECLARE @CaLam nchar(10), @NhanVien varchar(10);
+	SELECT @CaLam = Ma_Ca, @NhanVien=Ma_Nhan_Vien
+    FROM inserted;
+    -- Kiểm tra các ca làm việc chồng chéo
+    IF EXISTS (
+        SELECT 1
+        FROM BangPhanCa s
+        JOIN inserted i ON s.Ma_Nhan_Vien = i.Ma_Nhan_Vien
+        WHERE (i.Ma_Ca=s.Ma_Ca)
+    )
+    BEGIN
+        -- Nếu có ca chồng chéo, trả về thông báo lỗi
+        RAISERROR('Nhân viên đã tồn tại trong ca làm việc này', 16, 1);
+        ROLLBACK TRANSACTION;
+    END
+	ELSE
+	BEGIN
+        INSERT INTO BangPhanCa(Ma_Ca,Ma_Nhan_Vien)
+        VALUES (@CaLam,@NhanVien);
+    END
+END;
+
+GO
+CREATE TRIGGER Xu_Ly_Ca_Lam_Chong_Cheo
+ON CaLamViec
+INSTEAD OF INSERT
+AS
+BEGIN
+    DECLARE @start_time TIME, @end_time TIME,@Date DATE,@Schedule_id nchar(10);
+
+    SELECT @start_time = Gio_Bat_Dau, @end_time = Gio_Ket_Thuc, @Date = Ngay, @Schedule_id=Ma_Ca
+    FROM inserted;
+
+    IF EXISTS (
+        SELECT 1
+        FROM CaLamViec
+        WHERE (@Date=Ngay AND @start_time <= Gio_Ket_Thuc AND @end_time > Gio_Bat_Dau)
+    )
+    BEGIN
+        RAISERROR('Ca làm bị chồng chéo!', 16, 1);
+    END
+    ELSE
+    BEGIN
+        INSERT INTO CaLamViec(Gio_Bat_Dau, Gio_Ket_Thuc,Ngay,Ma_Ca)
+        VALUES (@start_time, @end_time, @Date,@Schedule_id);
+    END
+END;
+
+
+GO
 
 --Check trigger
 
@@ -258,7 +317,8 @@ VALUES
 INSERT INTO CaLamViec (Ma_Ca, Ngay, Gio_Bat_Dau, Gio_Ket_Thuc) 
 VALUES 
 ('CA001', '2024-10-01', '08:00:00', '12:00:00'),
-('CA002', '2024-10-01', '12:00:00', '16:00:00');
+('CA002', '2024-10-01', '13:00:00', '16:00:00'),
+('CA003', '2024-10-01', '13:00:00', '16:00:00');
 
 INSERT INTO BangPhanCa (Ma_Ca, Ma_Nhan_Vien) 
 VALUES 
@@ -289,7 +349,6 @@ VALUES
 ('SP006', 'NL008', 200, 'ml'), -- Siro bơ
 ('SP006', 'NL004', 300, 'ml'); -- Sữa tươi
 
-
 -- *Tạo Procedure --
 --- Quản lý nhân sự(procedure(thêm, xóa bảng Nhân viên, cập nhật lương thưởng cho nhân viên (Trigger)))
 --- Theo dõi hóa đơn bán (hóa đơn bán sẽ 1 procedure (hiển thị chi tiết hóa đơn bán đó)) (procedure (để phân theo tháng)) 
@@ -298,6 +357,7 @@ VALUES
 
 -- *Quản lý nhân sự -- 
 -- Thêm nhân viên --
+GO
 CREATE PROCEDURE [dbo].[pro_ThemNhanVien]
 @MaNV nchar(10),
 @TenNV nvarchar(50),
@@ -315,6 +375,7 @@ BEGIN
 END;
 
 -- Xóa nhân viên --
+GO
 CREATE PROCEDURE [dbo].[pro_XoaNhanVien]
 @MaNV nchar(10)
 AS
@@ -336,6 +397,7 @@ BEGIN
 END;
 
 -- *Theo dõi hóa đơn bán --
+GO
 CREATE PROCEDURE sp_TheoDoiHoaDonBan
     @Thang INT,
     @Nam INT
@@ -359,6 +421,7 @@ BEGIN
 END;
 
 -- *Cập nhật thông tin khách hàng --
+GO
 CREATE PROCEDURE [dbo].[pro_CapNhatKhachHang]
 @MaKH nchar(10),
 @TenKH nvarchar(50),
@@ -373,6 +436,7 @@ END;
 
 --- *Một số procedure bổ sung thêm* ---
 -- Cập nhật nhân viên
+GO
 CREATE PROCEDURE [dbo].[pro_CapNhatNhanVien]
 @MaNV nchar(10),
 @TenNV nvarchar(50),
@@ -392,6 +456,7 @@ BEGIN
 END;
 
 -- Thêm khách hàng
+GO
 CREATE PROCEDURE [dbo].[pro_ThemKhachHang]
 @MaKH nchar(10),
 @TenKH nvarchar(50),
@@ -404,49 +469,29 @@ BEGIN
 END;
 
 
-<--Function (Tính tổng tiền các nguyên liệu nhập)-->
-CREATE FUNCTION TinhTongTienNguyenLieuNhap(@Ma_Hoa_Don_Nhap varchar(10))
-RETURNS INT
-AS
-BEGIN
-    DECLARE @TongTien INT;
 
-    -- Sử dụng ISNULL để trả về 0 nếu không có kết quả
-    SELECT @TongTien = ISNULL(SUM(So_Luong * Don_Gia), 0)
-    FROM ChiTietHoaDonNhap
-    WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap;
 
-    RETURN @TongTien;  
-END;
-<--Test-->
+
+
+
+
+
+
+
+
+
+--Test
 SELECT * FROM HoaDonNhap WHERE Ma_Hoa_Don_Nhap = 'HDN001';
 
-<--------------------------------------------------------------------------------------->
+---------------------------------------------------------------------------------------
 INSERT INTO HoaDonNhap (Ma_Hoa_Don_Nhap, Ngay_Nhap, Tong_Tien, Ma_Nha_Cung_Cap, Thoi_Gian)
 VALUES ('HDN001', '2024-09-01', 500000, 'NCC001', '08:00');
-<--Procedure (Cập nhật chi tiết hóa đơn nhập)-->
-CREATE PROCEDURE CapNhatHoaDonNhap
-    @Ma_Hoa_Don_Nhap varchar(10),
-    @Ngay_Nhap date,
-    @Tong_Tien int,
-    @Ma_Nha_Cung_Cap varchar(10),
-    @Thoi_Gian time
-AS
-BEGIN
-    UPDATE HoaDonNhap
-    SET Ngay_Nhap = @Ngay_Nhap,
-        Tong_Tien = @Tong_Tien,
-        Ma_Nha_Cung_Cap = @Ma_Nha_Cung_Cap,
-        Thoi_Gian = @Thoi_Gian
-    WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap;
-END;
-<--Test-->
-SELECT * FROM HoaDonNhap WHERE Ma_Hoa_Don_Nhap = 'HDN001';
-
-<--------------------------------------------------------------------------------------->
+--Procedure (Cập nhật chi tiết hóa đơn nhập)
+---------------------------------------------------------------------------------------
 INSERT INTO NguyenLieu (Ma_Nguyen_Lieu, Ten_Nguyen_Lieu, So_Luong, Don_Vi, Don_Gia, Ma_Nha_Cung_Cap)
 VALUES ('NL001', N'Đường', 5000, 'gram', 20000, 'NCC001');
-<--Procedure (Nhập, Sủa, Cập nhật thông tin nguyên liệu)-->
+--Procedure (Nhập, Sủa, Cập nhật thông tin nguyên liệu)
+GO
 CREATE PROCEDURE QuanLyHoaDonNhap
     @Ma_Hoa_Don_Nhap varchar(10),
     @Ngay_Nhap date,
@@ -497,62 +542,68 @@ BEGIN
     WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap;
 END;
 
-<-- Kiểm tra lại dữ liệu sau khi cập nhật -->
+-- Kiểm tra lại dữ liệu sau khi cập nhật
 INSERT INTO NguyenLieu (Ma_Nguyen_Lieu, Ten_Nguyen_Lieu, So_Luong, Don_Vi, Don_Gia, Ma_Nha_Cung_Cap)
 VALUES ('NL001', N'Đường', 5000, 'gram', 20000, 'NCC001');
-<--Test-->
+--Test
 SELECT * FROM NguyenLieu WHERE Ma_Nguyen_Lieu = 'NL001';
 
-<--------------------------------------------------------------------------------------->
-<--Tạo View hiện lên bằng hàm tính tổng doanh thu -->
-CREATE VIEW View_DoanhThuCaLamViec AS
-SELECT 
-    NV.Ma_Nhan_Vien,
-    NV.Ten_Nhan_Vien,
-    CL.Ma_Ca,
-    CL.Gio_Bat_Dau,
-    CL.Gio_Ket_Thuc,
-    SUM(HDB.ThanhTien) AS Tong_Doanh_Thu
-FROM 
-    HoaDonBan HDB
-JOIN 
-    NhanVien NV ON HDB.Ma_Nhan_Vien = NV.Ma_Nhan_Vien
-JOIN 
-    BangPhanCa BPC ON NV.Ma_Nhan_Vien = BPC.Ma_Nhan_Vien
-JOIN 
-    CaLamViec CL ON BPC.Ma_Ca = CL.Ma_Ca
-WHERE 
-    -- Kết hợp ngày và giờ của hóa đơn với giờ của ca làm việc
-    CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Bat_Dau AS DATETIME) <= CAST(HDB.Ngay AS DATETIME)
-    AND CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Ket_Thuc AS DATETIME) >= CAST(HDB.Ngay AS DATETIME)
-GROUP BY 
-    NV.Ma_Nhan_Vien, NV.Ten_Nhan_Vien, CL.Ma_Ca, CL.Gio_Bat_Dau, CL.Gio_Ket_Thuc;
+---------------------------------------------------------------------------------------
 
-<--Test-->
-SELECT * FROM HoaDonBan WHERE Ma_Nhan_Vien = 'NV001' AND Ngay = '2024-10-01';
-<--------------------------------------------------------------------------------------->
-<--Xem lịch làm việc chung của cửa hàng trong tuần-->
-CREATE VIEW LichLamViecTuan AS
-SELECT 
-    NV.Ma_Nhan_Vien,
-    NV.Ten_Nhan_Vien,
-    CL.Ngay,
-    CL.Gio_Bat_Dau,
-    CL.Gio_Ket_Thuc,
-    CL.Ma_Ca
-FROM 
-    BangPhanCa BPC
-JOIN 
-    CaLamViec CL ON BPC.Ma_Ca = CL.Ma_Ca
-JOIN 
-    NhanVien NV ON BPC.Ma_Nhan_Vien = NV.Ma_Nhan_Vien
-WHERE 
-    DATEDIFF(week, GETDATE(), CL.Ngay) = 0; 
-
-<--Test-->
-SELECT * FROM LichLamViecTuan;
+---------------------------------------------------------------------------------------
 
 
+
+
+
+
+
+
+
+GO
+CREATE PROCEDURE CapNhatHoaDonNhap
+    @Ma_Hoa_Don_Nhap varchar(10),
+    @Ngay_Nhap date,
+    @Tong_Tien int,
+    @Ma_Nha_Cung_Cap varchar(10),
+    @Thoi_Gian time
+AS
+BEGIN
+    -- Kiểm tra nếu mã hóa đơn nhập tồn tại
+    IF EXISTS (SELECT 1 FROM HoaDonNhap WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap)
+		BEGIN
+			-- Cập nhật thông tin hóa đơn nhập
+			UPDATE HoaDonNhap
+			SET Ngay_Nhap = @Ngay_Nhap,
+				Tong_Tien = @Tong_Tien,
+				Ma_Nha_Cung_Cap = @Ma_Nha_Cung_Cap,
+				Thoi_Gian = @Thoi_Gian
+			WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap;
+        
+			PRINT N'Hóa đơn nhập đã được cập nhật thành công.';
+		END
+    ELSE
+		BEGIN
+			PRINT N'Không tìm thấy hóa đơn nhập với mã này.';
+		END
+END;
+
+GO
+CREATE FUNCTION TinhTongTienNguyenLieuNhap(@Ma_Hoa_Don_Nhap VARCHAR(10))
+RETURNS INT
+AS
+BEGIN
+    DECLARE @TongTien INT;
+    SELECT @TongTien = SUM(Don_Gia * So_Luong)
+    FROM ChiTietHoaDonNhap
+    WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap;
+
+    -- Trả về tổng tiền nguyên liệu nhập
+    RETURN ISNULL(@TongTien, 0);
+END;
+
+
+GO
 -- Tạo function tính tổng tiền của tất cả các sản phẩm theo mã hóa đơn
 CREATE FUNCTION TinhTongTienTheoHoaDon (
     @Ma_Hoa_Don_Ban varchar(10)
@@ -570,10 +621,11 @@ BEGIN
     -- Trả về tổng tiền
     RETURN ISNULL(@Tong_Tien, 0);
 END;
--- Gọi function để tính tổng tiền theo mã hóa đơn
-SELECT dbo.TinhTongTienTheoHoaDon('HDB001') AS TongTien;
 
 
+
+
+GO
 -- Tạo procedure thêm sản phẩm vào hóa đơn bán
 CREATE PROCEDURE ThemSanPhamVaoHoaDonBan
     @Ma_Hoa_Don_Ban varchar(10),
@@ -616,11 +668,49 @@ BEGIN
     WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
 END;
 
--- Gọi procedure để thêm sản phẩm vào hóa đơn bán
-EXEC ThemSanPhamVaoHoaDonBan 'HDB001', 'SP001', 1, 35000, '0987654321';
 
 
--- Tạo procedure thêm nguyên liệu vào bảng NguyenLieu
+
+
+
+
+
+
+
+GO
+CREATE PROCEDURE UpdateNhanVien
+    @Ma_Nhan_Vien varchar(10),
+    @Ten_Nhan_Vien nvarchar(50) = NULL,
+    @Ngay_Sinh date = NULL,
+    @Gioi_Tinh varchar(3) = NULL,
+    @Dia_Chi nvarchar(100) = NULL,
+    @SDT varchar(10) = NULL,
+    @Ma_Vi_Tri varchar(10) = NULL,
+    @Ma_Tai_Khoan varchar(10) = NULL,
+    @Ngay_Tuyen_Dung date = NULL
+AS
+BEGIN
+    -- Kiểm tra xem nhân viên có tồn tại hay không
+    IF EXISTS (SELECT 1 FROM NhanVien WHERE Ma_Nhan_Vien = @Ma_Nhan_Vien)
+    BEGIN
+        UPDATE NhanVien
+        SET 
+            Ten_Nhan_Vien = COALESCE(@Ten_Nhan_Vien, Ten_Nhan_Vien),
+            Ngay_Sinh = COALESCE(@Ngay_Sinh, Ngay_Sinh),
+            Gioi_Tinh = COALESCE(@Gioi_Tinh, Gioi_Tinh),
+            Dia_Chi = COALESCE(@Dia_Chi, Dia_Chi),
+            SDT = COALESCE(@SDT, SDT),
+            Ma_Vi_Tri = COALESCE(@Ma_Vi_Tri, Ma_Vi_Tri),
+            Ma_Tai_Khoan = COALESCE(@Ma_Tai_Khoan, Ma_Tai_Khoan),            
+            Ngay_Tuyen_Dung = COALESCE(@Ngay_Tuyen_Dung, Ngay_Tuyen_Dung)
+        WHERE Ma_Nhan_Vien = @Ma_Nhan_Vien;
+    END
+    ELSE
+    BEGIN
+        RAISERROR('Nhân viên không tồn tại', 16, 1);
+    END
+END
+GO
 CREATE PROCEDURE ThemNguyenLieu
     @Ma_Nguyen_Lieu varchar(10),
     @Ten_Nguyen_Lieu nvarchar(50),
@@ -647,59 +737,21 @@ BEGIN
     PRINT 'Đã thêm nguyên liệu thành công.';
 END;
 
--- Gọi procedure để thêm nguyên liệu mới
-EXEC ThemNguyenLieu 'NL004', N'Trân châu trắng', 1000, 'gram', 40000, 'NCC002', NULL;
 
 
-CREATE PROCEDURE UpdateNhanVien
-    @Ma_Nhan_Vien varchar(10),
-    @Ten_Nhan_Vien nvarchar(50) = NULL,
-    @Ngay_Sinh date = NULL,
-    @Gioi_Tinh varchar(3) = NULL,
-    @Dia_Chi nvarchar(100) = NULL,
-    @SDT varchar(10) = NULL,
-    @Ma_Vi_Tri varchar(10) = NULL,
-    @Ma_Tai_Khoan varchar(10) = NULL,
-    @Luong_Thuong int = NULL,
-    @Ngay_Tuyen_Dung date = NULL
-AS
-BEGIN
-    -- Kiểm tra xem nhân viên có tồn tại hay không
-    IF EXISTS (SELECT 1 FROM NhanVien WHERE Ma_Nhan_Vien = @Ma_Nhan_Vien)
-    BEGIN
-        UPDATE NhanVien
-        SET 
-            Ten_Nhan_Vien = COALESCE(@Ten_Nhan_Vien, Ten_Nhan_Vien),
-            Ngay_Sinh = COALESCE(@Ngay_Sinh, Ngay_Sinh),
-            Gioi_Tinh = COALESCE(@Gioi_Tinh, Gioi_Tinh),
-            Dia_Chi = COALESCE(@Dia_Chi, Dia_Chi),
-            SDT = COALESCE(@SDT, SDT),
-            Ma_Vi_Tri = COALESCE(@Ma_Vi_Tri, Ma_Vi_Tri),
-            Ma_Tai_Khoan = COALESCE(@Ma_Tai_Khoan, Ma_Tai_Khoan),
-            Luong_Thuong = COALESCE(@Luong_Thuong, Luong_Thuong),
-            Ngay_Tuyen_Dung = COALESCE(@Ngay_Tuyen_Dung, Ngay_Tuyen_Dung)
-        WHERE Ma_Nhan_Vien = @Ma_Nhan_Vien;
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Nhân viên không tồn tại', 16, 1);
-    END
-END
-
-EXEC UpdateNhanVien
-    @Ma_Nhan_Vien = 'NV001',
-    @Ten_Nhan_Vien = 'Nguyen Van B',
-    @Gioi_Tinh = 'Nam',
-    @Dia_Chi = 'Ha Noi',
-    @SDT = '0123456789';
 
 
+
+
+
+
+GO
 CREATE PROCEDURE Them_Ca_Lam(@Ma_Ca nchar(10),@Ngay Date,@Gio_Bat_Dau Time,@Gio_Ket_Thuc Time)
 AS
 BEGIN
 	INSERT INTO CaLamViec VALUES(@Ma_Ca,@Ngay,@Gio_Bat_Dau,@Gio_Ket_Thuc)
 END
-
+GO
 CREATE PROCEDURE Sua_Ca_Lam(@Ma_Ca nchar(10),@Ngay Date,@Gio_Bat_Dau Time,@Gio_Ket_Thuc Time)
 AS
 BEGIN
@@ -707,63 +759,61 @@ BEGIN
 	SET Ngay = @Ngay,Gio_Bat_Dau=@Gio_Bat_Dau,@Gio_Ket_Thuc=@Gio_Ket_Thuc
 	WHERE Ma_Ca=@Ma_Ca;
 END
-
+GO
 CREATE PROCEDURE Xoa_Ca_Lam(@Ma_Ca nchar(10))
 AS
 BEGIN
 	DELETE FROM CaLamViec WHERE Ma_Ca=@Ma_Ca
 END
-
+GO
 CREATE PROCEDURE Them_Nhan_Vien_Vao_Ca_Lam(@Ma_Ca nchar(10),@Ma_Nhan_Vien nchar(10))
 AS
 BEGIN
 	INSERT INTO BangPhanCa VALUES(@Ma_Ca,@Ma_Nhan_Vien)
 END
-
+GO
 CREATE PROCEDURE Xoa_Nhan_Vien_Vao_Ca_Lam(@Ma_Ca nchar(10),@Ma_Nhan_Vien nchar(10))
 AS
 BEGIN
 	DELETE FROM BangPhanCa WHERE Ma_Ca=@Ma_Ca AND Ma_Nhan_Vien=@Ma_Nhan_Vien
 END
 
-CREATE TRIGGER Xu_Ly_Ca_Lam_Chong_Cheo
-ON CaLamViec
-AFTER INSERT
-AS
-BEGIN
-    SET NOCOUNT ON;
 
-    -- Kiểm tra các ca làm việc chồng chéo
-    IF EXISTS (
-        SELECT 1
-        FROM CaLamViec s
-        JOIN inserted i ON s.Ngay = i.Ngay
-        WHERE (i.Gio_Bat_Dau < s.Gio_Ket_Thuc AND i.Gio_Ket_Thuc > s.Gio_Bat_Dau)
-    )
-    BEGIN
-        -- Nếu có ca chồng chéo, trả về thông báo lỗi
-        RAISERROR('Ca làm việc bị chồng chéo với ca đã tồn tại!', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-END;
+--Xem lịch làm việc chung của cửa hàng trong tuần
+GO
+CREATE VIEW LichLamViecTuan AS
+SELECT 
+	NV.Ma_Nhan_Vien,
+	NV.Ten_Nhan_Vien,
+	CL.Ngay,
+	CL.Gio_Bat_Dau,
+	CL.Gio_Ket_Thuc,
+	CL.Ma_Ca
+FROM 
+	BangPhanCa BPC
+JOIN 
+	CaLamViec CL ON BPC.Ma_Ca = CL.Ma_Ca
+JOIN 
+	NhanVien NV ON BPC.Ma_Nhan_Vien = NV.Ma_Nhan_Vien
+WHERE 
+	DATEDIFF(week, GETDATE(), CL.Ngay) = 0; 
 
-CREATE TRIGGER Xu_Ly_Lap_Nhan_Vien
-ON BangPhanCa
-AFTER INSERT
-AS
-BEGIN
-    SET NOCOUNT ON;
 
-    -- Kiểm tra các ca làm việc chồng chéo
-    IF EXISTS (
-        SELECT 1
-        FROM BangPhanCa s
-        JOIN inserted i ON s.Ma_Nhan_Vien = i.Ma_Nhan_Vien
-        WHERE (i.Ma_Ca=s.Ma_Ca)
-    )
-    BEGIN
-        -- Nếu có ca chồng chéo, trả về thông báo lỗi
-        RAISERROR('Nhân viên đã tồn tại trong ca làm việc này', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-END;
+--Tạo View hiện lên bằng hàm tính tổng doanh thu 
+GO
+CREATE VIEW View_DoanhThuCaLamViec AS
+	SELECT 
+		CL.Ma_Ca,
+		CL.Gio_Bat_Dau,
+		CL.Gio_Ket_Thuc,
+		SUM(HDB.Thanh_Tien) AS Tong_Doanh_Thu
+	FROM 
+		HoaDonBan HDB, BangPhanCa BPC
+	JOIN 
+		CaLamViec CL ON BPC.Ma_Ca = CL.Ma_Ca
+	WHERE 
+		-- Kết hợp ngày và giờ của hóa đơn với giờ của ca làm việc
+		CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Bat_Dau AS DATETIME) <= CAST(HDB.Ngay AS DATETIME)
+		AND CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Ket_Thuc AS DATETIME) >= CAST(HDB.Ngay AS DATETIME)
+	GROUP BY 
+		CL.Ma_Ca, CL.Gio_Bat_Dau, CL.Gio_Ket_Thuc;
