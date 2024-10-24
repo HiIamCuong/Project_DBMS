@@ -38,8 +38,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbHDB = new System.Windows.Forms.GroupBox();
+            this.txtSĐT = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvHDB = new System.Windows.Forms.DataGridView();
+            this.Ma_Hoa_Don_Ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thanh_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.btnThem = new System.Windows.Forms.ToolStripButton();
@@ -57,7 +62,6 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
             this.gbHDB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDB)).BeginInit();
             this.panel3.SuspendLayout();
@@ -127,9 +131,9 @@
             this.label4.Location = new System.Drawing.Point(26, 168);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 25);
+            this.label4.Size = new System.Drawing.Size(54, 25);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Mã khách hàng";
+            this.label4.Text = "SĐT";
             // 
             // label6
             // 
@@ -158,7 +162,7 @@
             // gbHDB
             // 
             this.gbHDB.BackColor = System.Drawing.Color.AliceBlue;
-            this.gbHDB.Controls.Add(this.txtMaKH);
+            this.gbHDB.Controls.Add(this.txtSĐT);
             this.gbHDB.Controls.Add(this.lblTenKH);
             this.gbHDB.Controls.Add(this.dtpNgayBan);
             this.gbHDB.Controls.Add(this.txtThanhTien);
@@ -176,6 +180,15 @@
             this.gbHDB.TabIndex = 46;
             this.gbHDB.TabStop = false;
             this.gbHDB.Text = "Thông tin Hóa Đơn Bán";
+            // 
+            // txtSĐT
+            // 
+            this.txtSĐT.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSĐT.Location = new System.Drawing.Point(187, 168);
+            this.txtSĐT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSĐT.Name = "txtSĐT";
+            this.txtSĐT.Size = new System.Drawing.Size(262, 32);
+            this.txtSĐT.TabIndex = 31;
             // 
             // label3
             // 
@@ -195,12 +208,44 @@
             this.dgvHDB.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.dgvHDB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvHDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHDB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ma_Hoa_Don_Ban,
+            this.Ngay,
+            this.SDT,
+            this.Thanh_Tien});
             this.dgvHDB.Location = new System.Drawing.Point(483, 139);
             this.dgvHDB.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHDB.Name = "dgvHDB";
             this.dgvHDB.RowHeadersWidth = 51;
             this.dgvHDB.Size = new System.Drawing.Size(738, 265);
             this.dgvHDB.TabIndex = 45;
+            // 
+            // Ma_Hoa_Don_Ban
+            // 
+            this.Ma_Hoa_Don_Ban.DataPropertyName = "Ma_Hoa_Don_Ban";
+            this.Ma_Hoa_Don_Ban.HeaderText = "Mã Hóa Đơn Bán";
+            this.Ma_Hoa_Don_Ban.MinimumWidth = 6;
+            this.Ma_Hoa_Don_Ban.Name = "Ma_Hoa_Don_Ban";
+            // 
+            // Ngay
+            // 
+            this.Ngay.DataPropertyName = "Ngay";
+            this.Ngay.HeaderText = "Ngày";
+            this.Ngay.MinimumWidth = 6;
+            this.Ngay.Name = "Ngay";
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "SĐT";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            // 
+            // Thanh_Tien
+            // 
+            this.Thanh_Tien.HeaderText = "Thành Tiền";
+            this.Thanh_Tien.MinimumWidth = 6;
+            this.Thanh_Tien.Name = "Thanh_Tien";
             // 
             // panel3
             // 
@@ -366,15 +411,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "HÓA ĐƠN BÁN";
             // 
-            // txtMaKH
-            // 
-            this.txtMaKH.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKH.Location = new System.Drawing.Point(187, 168);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(262, 32);
-            this.txtMaKH.TabIndex = 31;
-            // 
             // frm_HoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -386,6 +422,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frm_HoaDonBan";
             this.Text = "frm_HoaDonBan";
+            this.Load += new System.EventHandler(this.frm_HoaDonBan_Load);
             this.gbHDB.ResumeLayout(false);
             this.gbHDB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDB)).EndInit();
@@ -430,6 +467,10 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMaKH;
+        private System.Windows.Forms.TextBox txtSĐT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ma_Hoa_Don_Ban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thanh_Tien;
     }
 }

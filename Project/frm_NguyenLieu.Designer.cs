@@ -40,6 +40,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbNL = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -56,17 +58,15 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.dgvNGUYENLIEU = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgvNGUYENLIEU = new System.Windows.Forms.DataGridView();
             this.gbNL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNGUYENLIEU)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNGUYENLIEU)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSoLuong
@@ -204,6 +204,27 @@
             this.gbNL.TabIndex = 46;
             this.gbNL.TabStop = false;
             this.gbNL.Text = "Thông tin Nguyên Liệu";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(180, 186);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(262, 32);
+            this.textBox1.TabIndex = 35;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label7.Location = new System.Drawing.Point(21, 190);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 25);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Đơn giá";
             // 
             // label3
             // 
@@ -359,19 +380,6 @@
             this.bindingNavigator1.TabIndex = 47;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
-            // dgvNGUYENLIEU
-            // 
-            this.dgvNGUYENLIEU.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvNGUYENLIEU.BackgroundColor = System.Drawing.Color.AliceBlue;
-            this.dgvNGUYENLIEU.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvNGUYENLIEU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNGUYENLIEU.Location = new System.Drawing.Point(483, 133);
-            this.dgvNGUYENLIEU.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvNGUYENLIEU.Name = "dgvNGUYENLIEU";
-            this.dgvNGUYENLIEU.RowHeadersWidth = 51;
-            this.dgvNGUYENLIEU.Size = new System.Drawing.Size(738, 308);
-            this.dgvNGUYENLIEU.TabIndex = 45;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(226)))), ((int)(((byte)(238)))));
@@ -392,29 +400,21 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1221, 142);
+            this.panel1.Size = new System.Drawing.Size(1221, 199);
             this.panel1.TabIndex = 43;
             // 
-            // label7
+            // dgvNGUYENLIEU
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label7.Location = new System.Drawing.Point(21, 190);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 25);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Đơn giá";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 186);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 32);
-            this.textBox1.TabIndex = 35;
+            this.dgvNGUYENLIEU.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNGUYENLIEU.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.dgvNGUYENLIEU.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvNGUYENLIEU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNGUYENLIEU.Location = new System.Drawing.Point(483, 133);
+            this.dgvNGUYENLIEU.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvNGUYENLIEU.Name = "dgvNGUYENLIEU";
+            this.dgvNGUYENLIEU.RowHeadersWidth = 51;
+            this.dgvNGUYENLIEU.Size = new System.Drawing.Size(738, 308);
+            this.dgvNGUYENLIEU.TabIndex = 45;
             // 
             // frm_NguyenLieu
             // 
@@ -432,11 +432,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNGUYENLIEU)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNGUYENLIEU)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -470,10 +470,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.DataGridView dgvNGUYENLIEU;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dgvNGUYENLIEU;
     }
 }
