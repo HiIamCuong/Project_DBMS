@@ -42,14 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnReload = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnSua = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
@@ -57,6 +51,7 @@
             this.dgvCaLamViec = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvcalam = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -64,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaLamViec)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(414, 12);
+            this.label1.Location = new System.Drawing.Point(492, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 40);
@@ -95,7 +91,7 @@
             this.txtNgay.Location = new System.Drawing.Point(162, 133);
             this.txtNgay.Margin = new System.Windows.Forms.Padding(4);
             this.txtNgay.Name = "txtNgay";
-            this.txtNgay.Size = new System.Drawing.Size(276, 34);
+            this.txtNgay.Size = new System.Drawing.Size(164, 34);
             this.txtNgay.TabIndex = 6;
             // 
             // txtGioBD
@@ -106,7 +102,7 @@
             this.txtGioBD.Location = new System.Drawing.Point(162, 171);
             this.txtGioBD.Margin = new System.Windows.Forms.Padding(4);
             this.txtGioBD.Name = "txtGioBD";
-            this.txtGioBD.Size = new System.Drawing.Size(276, 34);
+            this.txtGioBD.Size = new System.Drawing.Size(159, 34);
             this.txtGioBD.TabIndex = 4;
             // 
             // txtGioKT
@@ -117,7 +113,7 @@
             this.txtGioKT.Location = new System.Drawing.Point(162, 217);
             this.txtGioKT.Margin = new System.Windows.Forms.Padding(4);
             this.txtGioKT.Name = "txtGioKT";
-            this.txtGioKT.Size = new System.Drawing.Size(276, 34);
+            this.txtGioKT.Size = new System.Drawing.Size(159, 34);
             this.txtGioKT.TabIndex = 3;
             // 
             // txtMaCa
@@ -128,7 +124,7 @@
             this.txtMaCa.Location = new System.Drawing.Point(162, 91);
             this.txtMaCa.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaCa.Name = "txtMaCa";
-            this.txtMaCa.Size = new System.Drawing.Size(276, 34);
+            this.txtMaCa.Size = new System.Drawing.Size(159, 34);
             this.txtMaCa.TabIndex = 3;
             // 
             // label5
@@ -208,7 +204,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(461, 350);
+            this.panel2.Size = new System.Drawing.Size(387, 350);
             this.panel2.TabIndex = 49;
             // 
             // btnReload
@@ -218,19 +214,7 @@
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(60, 25);
             this.btnReload.Text = "Reload";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 28);
-            // 
-            // btnHuyBo
-            // 
-            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHuyBo.Name = "btnHuyBo";
-            this.btnHuyBo.Size = new System.Drawing.Size(61, 25);
-            this.btnHuyBo.Text = "Hủy Bỏ";
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // toolStripSeparator3
             // 
@@ -244,32 +228,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(94, 25);
             this.btnXoa.Text = "Xóa Dữ Liệu";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 28);
-            // 
-            // btnSua
-            // 
-            this.btnSua.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(88, 25);
-            this.btnSua.Text = "Sửa dữ liệu";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 28);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(92, 25);
-            this.btnLuu.Text = "Lưu Dữ Liệu";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // toolStripSeparator1
             // 
@@ -283,6 +242,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 25);
             this.btnThem.Text = "Thêm Mới";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // bindingNavigator1
             // 
@@ -295,14 +255,8 @@
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThem,
             this.toolStripSeparator1,
-            this.btnLuu,
-            this.toolStripSeparator4,
-            this.btnSua,
-            this.toolStripSeparator2,
             this.btnXoa,
             this.toolStripSeparator3,
-            this.btnHuyBo,
-            this.toolStripSeparator5,
             this.btnReload});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = null;
@@ -312,18 +266,19 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1032, 28);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1189, 28);
             this.bindingNavigator1.TabIndex = 41;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.dgvcalam);
             this.panel5.Controls.Add(this.dgvCaLamViec);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 62);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1032, 350);
+            this.panel5.Size = new System.Drawing.Size(1189, 350);
             this.panel5.TabIndex = 51;
             // 
             // dgvCaLamViec
@@ -334,11 +289,12 @@
             this.dgvCaLamViec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCaLamViec.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCaLamViec.Location = new System.Drawing.Point(0, 0);
-            this.dgvCaLamViec.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCaLamViec.Margin = new System.Windows.Forms.Padding(0);
             this.dgvCaLamViec.Name = "dgvCaLamViec";
             this.dgvCaLamViec.RowHeadersWidth = 51;
-            this.dgvCaLamViec.Size = new System.Drawing.Size(1032, 350);
+            this.dgvCaLamViec.Size = new System.Drawing.Size(1189, 350);
             this.dgvCaLamViec.TabIndex = 33;
+            this.dgvCaLamViec.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCaLamViec_CellContentClick);
             // 
             // panel4
             // 
@@ -347,7 +303,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 412);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1032, 28);
+            this.panel4.Size = new System.Drawing.Size(1189, 28);
             this.panel4.TabIndex = 50;
             // 
             // panel1
@@ -358,14 +314,24 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1032, 62);
+            this.panel1.Size = new System.Drawing.Size(1189, 62);
             this.panel1.TabIndex = 48;
+            // 
+            // dgvcalam
+            // 
+            this.dgvcalam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcalam.Location = new System.Drawing.Point(384, 0);
+            this.dgvcalam.Name = "dgvcalam";
+            this.dgvcalam.RowHeadersWidth = 51;
+            this.dgvcalam.RowTemplate.Height = 24;
+            this.dgvcalam.Size = new System.Drawing.Size(805, 350);
+            this.dgvcalam.TabIndex = 34;
             // 
             // frm_CaLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 440);
+            this.ClientSize = new System.Drawing.Size(1189, 440);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -383,6 +349,7 @@
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -402,14 +369,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolStripButton btnReload;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripButton btnHuyBo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnXoa;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btnSua;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
@@ -417,5 +378,6 @@
         private System.Windows.Forms.DataGridView dgvCaLamViec;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvcalam;
     }
 }

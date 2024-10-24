@@ -29,12 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.label1 = new System.Windows.Forms.Label();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtTK = new System.Windows.Forms.TextBox();
@@ -43,17 +40,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.btnThem = new System.Windows.Forms.ToolStripButton();
-            this.btnLuu = new System.Windows.Forms.ToolStripButton();
-            this.btnSua = new System.Windows.Forms.ToolStripButton();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnReload = new System.Windows.Forms.ToolStripButton();
             this.grBox = new System.Windows.Forms.GroupBox();
             this.cmbMaCa = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvBangPhanCa = new System.Windows.Forms.DataGridView();
+            this.dgvphanca = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -61,20 +55,8 @@
             this.grBox.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangPhanCa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvphanca)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnHuyBo
-            // 
-            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHuyBo.Name = "btnHuyBo";
-            this.btnHuyBo.Size = new System.Drawing.Size(61, 26);
-            this.btnHuyBo.Text = "Hủy Bỏ";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 29);
             // 
             // label1
             // 
@@ -98,11 +80,6 @@
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 29);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 29);
             // 
             // lblTenNV
             // 
@@ -178,15 +155,8 @@
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThem,
             this.toolStripSeparator1,
-            this.btnLuu,
-            this.toolStripSeparator4,
-            this.btnSua,
-            this.toolStripSeparator2,
             this.btnXoa,
-            this.toolStripSeparator3,
-            this.btnHuyBo,
-            this.toolStripSeparator5,
-            this.btnReload});
+            this.toolStripSeparator3});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 124);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
@@ -206,22 +176,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 26);
             this.btnThem.Text = "Thêm Mới";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(92, 26);
-            this.btnLuu.Text = "Lưu Dữ Liệu";
-            // 
-            // btnSua
-            // 
-            this.btnSua.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(88, 26);
-            this.btnSua.Text = "Sửa dữ liệu";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -230,19 +185,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(94, 26);
             this.btnXoa.Text = "Xóa Dữ Liệu";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 29);
-            // 
-            // btnReload
-            // 
-            this.btnReload.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnReload.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(60, 26);
-            this.btnReload.Text = "Reload";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // grBox
             // 
@@ -323,11 +266,22 @@
             this.dgvBangPhanCa.Size = new System.Drawing.Size(699, 597);
             this.dgvBangPhanCa.TabIndex = 52;
             // 
+            // dgvphanca
+            // 
+            this.dgvphanca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvphanca.Location = new System.Drawing.Point(0, 140);
+            this.dgvphanca.Name = "dgvphanca";
+            this.dgvphanca.RowHeadersWidth = 51;
+            this.dgvphanca.RowTemplate.Height = 24;
+            this.dgvphanca.Size = new System.Drawing.Size(699, 299);
+            this.dgvphanca.TabIndex = 53;
+            // 
             // frm_BangPhanCa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 597);
+            this.Controls.Add(this.dgvphanca);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvBangPhanCa);
@@ -345,18 +299,15 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangPhanCa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvphanca)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStripButton btnHuyBo;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Label lblTenNV;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtTK;
@@ -365,16 +316,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton btnThem;
-        private System.Windows.Forms.ToolStripButton btnLuu;
-        private System.Windows.Forms.ToolStripButton btnSua;
         private System.Windows.Forms.ToolStripButton btnXoa;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripButton btnReload;
         private System.Windows.Forms.GroupBox grBox;
         private System.Windows.Forms.ComboBox cmbMaCa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvBangPhanCa;
+        private System.Windows.Forms.DataGridView dgvphanca;
     }
 }

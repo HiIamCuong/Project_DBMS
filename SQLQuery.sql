@@ -175,14 +175,29 @@ END
 GO
 CREATE TRIGGER Xu_Ly_Lap_Nhan_Vien
 ON BangPhanCa
-INSTEAD OF INSERT
+FOR INSERT
 AS
 BEGIN
     SET NOCOUNT ON;
-	DECLARE @CaLam nchar(10), @NhanVien varchar(10);
-	SELECT @CaLam = Ma_Ca, @NhanVien=Ma_Nhan_Vien
-    FROM inserted;
-    -- Kiểm tra các ca làm việc chồng chéo
+
+    -- Check if any Ma_Ca in inserted rows exist in CaLamViec
+    IF EXISTS (
+        SELECT 1 
+        FROM inserted i 
+        WHERE NOT EXISTS (
+            SELECT 1 
+            FROM CaLamViec c 
+            WHERE c.Ma_Ca = i.Ma_Ca
+        )
+    )
+    BEGIN
+        -- If any Ma_Ca does not exist, raise an error
+        RAISERROR('Một hoặc nhiều ca làm việc không tồn tại', 16, 1);
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Check for overlapping shifts
     IF EXISTS (
         SELECT 1
         FROM BangPhanCa s
@@ -200,7 +215,6 @@ BEGIN
         VALUES (@CaLam,@NhanVien);
     END
 END;
-
 GO
 CREATE TRIGGER Xu_Ly_Ca_Lam_Chong_Cheo
 ON CaLamViec
