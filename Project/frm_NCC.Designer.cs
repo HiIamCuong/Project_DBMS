@@ -49,7 +49,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSua = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
@@ -189,6 +188,7 @@
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -226,6 +226,7 @@
             this.dgvNCC.RowHeadersWidth = 62;
             this.dgvNCC.Size = new System.Drawing.Size(887, 360);
             this.dgvNCC.TabIndex = 40;
+            this.dgvNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNCC_CellContentClick);
             // 
             // toolStripSeparator5
             // 
@@ -239,6 +240,7 @@
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.Size = new System.Drawing.Size(61, 24);
             this.btnHuyBo.Text = "Hủy Bỏ";
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // toolStripSeparator3
             // 
@@ -252,6 +254,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(94, 24);
             this.btnXoa.Text = "Xóa Dữ Liệu";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // toolStripSeparator2
             // 
@@ -265,19 +268,12 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 24);
             this.btnSua.Text = "Sửa dữ liệu";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(92, 24);
-            this.btnLuu.Text = "Lưu Dữ Liệu";
             // 
             // toolStripSeparator1
             // 
@@ -291,6 +287,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 24);
             this.btnThem.Text = "Thêm Mới";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // bindingNavigator1
             // 
@@ -303,7 +300,6 @@
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThem,
             this.toolStripSeparator1,
-            this.btnLuu,
             this.toolStripSeparator4,
             this.btnSua,
             this.toolStripSeparator2,
@@ -331,6 +327,7 @@
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(60, 24);
             this.btnReload.Text = "Reload";
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // panel2
             // 
@@ -403,7 +400,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btnSua;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;

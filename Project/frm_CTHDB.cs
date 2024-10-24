@@ -14,7 +14,7 @@ namespace Project
 {
     public partial class frm_CTHDB : Form
     {
-        string connectionString = "Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
+        string connectionString = "Data Source=DESKTOP-GIJL260;Initial Catalog=QLTraSua;Integrated Security=True;Encrypt=False";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;

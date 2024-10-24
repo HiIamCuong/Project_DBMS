@@ -14,7 +14,8 @@ namespace Project
     public partial class KetNoi : Form
     {
         //Tạo biến cục bộ
-        string strCon = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+        string strCon = @"Data Source=DESKTOP-GIJL260;Initial Catalog=QLTraSua;Integrated Security=True";
+
         //Đối tượng kết nối
         SqlConnection sqlCon = null;
         public KetNoi()

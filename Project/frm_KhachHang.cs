@@ -20,7 +20,6 @@ namespace Project
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //string maKH = txtMaKH.Text;
             string tenKH = txtTenKH.Text;
             DateTime ngaySinh = dtpNgayNhap.Value;
             string sdt = txtSDT.Text;

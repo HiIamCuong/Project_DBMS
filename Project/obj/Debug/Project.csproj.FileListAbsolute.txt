@@ -194,3 +194,36 @@ C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.
 C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.exe
 C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.pdb
 >>>>>>> 8b2d81763d6e01bb7cb1b9ca27cf1b2058d46e85
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\bin\Debug\Project.exe.config
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\bin\Debug\Project.exe
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\bin\Debug\Project.pdb
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.exe
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.pdb
+D:\Nam 3\DBMS\Đồ án\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu_NV.resources

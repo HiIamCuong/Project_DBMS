@@ -112,12 +112,12 @@
             // 
             // cbMaSP
             // 
-            this.cbMaSP.Font = new System.Drawing.Font("#9Slide04 Faustina", 12F);
+            this.cbMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbMaSP.FormattingEnabled = true;
             this.cbMaSP.Location = new System.Drawing.Point(194, 13);
             this.cbMaSP.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaSP.Name = "cbMaSP";
-            this.cbMaSP.Size = new System.Drawing.Size(176, 34);
+            this.cbMaSP.Size = new System.Drawing.Size(291, 33);
             this.cbMaSP.TabIndex = 14;
             // 
             // label6
