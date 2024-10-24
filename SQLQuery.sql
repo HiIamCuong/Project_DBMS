@@ -30,7 +30,7 @@ CREATE TABLE NhanVien(
 
 -- Bảng khách hàng
 CREATE TABLE KhachHang(
-	Ma_Khach_Hang varchar(10) PRIMARY KEY,
+	Ma_Khach_Hang int IDENTITY(1,1) PRIMARY KEY,
 	SDT varchar(50) check (len(SDT)=10) UNIQUE,
 	Ten_Khach_Hang nvarchar(50) NOT NULL,
 	Ngay_Sinh date check (DATEDIFF(day, Ngay_Sinh, GETDATE())>=0)
@@ -46,7 +46,7 @@ CREATE TABLE NhaCungCap(
 
 -- Bảng hóa đơn nhập
 CREATE TABLE HoaDonNhap(
-	Ma_Hoa_Don_Nhap varchar(10) PRIMARY KEY,
+	Ma_Hoa_Don_Nhap int IDENTITY(1,1) PRIMARY KEY,
 	Ngay_Nhap date check (DATEDIFF(day, Ngay_Nhap, GETDATE())>=0),
 	Tong_Tien int check (Tong_Tien>=0) NOT NULL,
 	Ma_Nha_Cung_Cap varchar(10),
@@ -68,7 +68,7 @@ CREATE TABLE NguyenLieu(
 
 -- Bảng chi tiết đơn nhập
 CREATE TABLE ChiTietHoaDonNhap(
-	Ma_Hoa_Don_Nhap varchar(10),
+	Ma_Hoa_Don_Nhap int,
 	Ma_Nguyen_Lieu varchar(10),
 	Don_Gia int check (Don_Gia>=0),
 	So_Luong int check (So_Luong>0),
@@ -97,7 +97,7 @@ CREATE TABLE SanPham(
 
 -- Bảng hóa đơn
 CREATE TABLE HoaDonBan(
-	Ma_Hoa_Don_Ban varchar(10) CONSTRAINT PK_HoaDonBan PRIMARY KEY,
+	Ma_Hoa_Don_Ban int IDENTITY(1,1) CONSTRAINT PK_HoaDonBan PRIMARY KEY,
 	Ngay date check (DATEDIFF(year, Ngay, GETDATE())>=0),
 	SDT varchar(50) CONSTRAINT FK_HoaDon_KH FOREIGN KEY REFERENCES KhachHang(SDT),
 	Thanh_Tien int check (Thanh_Tien>=0),
@@ -105,7 +105,7 @@ CREATE TABLE HoaDonBan(
 
 -- Bảng chi tiết đơn bán
 CREATE TABLE ChiTietDonBan(
-	Ma_Hoa_Don_Ban varchar(10) CONSTRAINT FK_ChiTietDB_DB FOREIGN KEY REFERENCES HoaDonBan(Ma_Hoa_Don_Ban),
+	Ma_Hoa_Don_Ban int CONSTRAINT FK_ChiTietDB_DB FOREIGN KEY REFERENCES HoaDonBan(Ma_Hoa_Don_Ban),
 	Ma_San_Pham varchar(10) CONSTRAINT FK_ChiTietDB_SP FOREIGN KEY REFERENCES SanPham(Ma_San_Pham),
 	So_Luong int check (So_Luong>0),
 	Don_Gia float check (Don_Gia>=0),
@@ -256,21 +256,21 @@ VALUES
 ('NV002', N'Nguyễn Thị B', '1995-11-20', 'Nữ', N'456 Đường B, TP HCM', '0923456789', 'VT002', 'TK002', '2021-02-15'),
 ('NV003', N'Lê Văn C', '1998-03-12', 'Nam', N'789 Đường C, TP HCM', '0934567890', 'VT003', 'TK003', '2022-03-01');
 
-INSERT INTO KhachHang (Ma_Khach_Hang, SDT, Ten_Khach_Hang, Ngay_Sinh) 
+INSERT INTO KhachHang (SDT, Ten_Khach_Hang, Ngay_Sinh) 
 VALUES 
-('KH001', '0911123456', N'Phạm Văn D', '1995-07-10'),
-('KH002', '0922234567', N'Tran Thị E', '1992-08-12'),
-('KH003', '0933345678', N'Nguyen Văn F', '1988-01-20');
+('0911123456', N'Phạm Văn D', '1995-07-10'),
+('0922234567', N'Tran Thị E', '1992-08-12'),
+('0933345678', N'Nguyen Văn F', '1988-01-20');
 
 INSERT INTO NhaCungCap (Ma_Nha_Cung_Cap, Ten_Nha_Cung_Cap, Dia_Chi, SDT) 
 VALUES 
 ('NCC001', N'Công ty Nguyên liệu A', N'789 Đường C, TP HCM', '0911223344'),
 ('NCC002', N'Công ty Nguyên liệu B', N'456 Đường B, Hà Nội', '0911334455');
 
-INSERT INTO HoaDonNhap (Ma_Hoa_Don_Nhap, Ngay_Nhap, Tong_Tien, Ma_Nha_Cung_Cap, Thoi_Gian) 
+INSERT INTO HoaDonNhap (Ngay_Nhap, Tong_Tien, Ma_Nha_Cung_Cap, Thoi_Gian) 
 VALUES 
-('HDN001', '2024-10-01', 5000000, 'NCC001', '08:00:00'),
-('HDN002', '2024-10-02', 3000000, 'NCC002', '09:30:00');
+('2024-10-01', 5000000, 'NCC001', '08:00:00'),
+('2024-10-02', 3000000, 'NCC002', '09:30:00');
 
 INSERT INTO NguyenLieu (Ma_Nguyen_Lieu, Ten_Nguyen_Lieu, So_Luong, Don_Vi, Don_Gia, Ma_Nha_Cung_Cap, Anh) 
 VALUES 
@@ -286,8 +286,8 @@ VALUES
 
 INSERT INTO ChiTietHoaDonNhap (Ma_Hoa_Don_Nhap, Ma_Nguyen_Lieu, Don_Gia, So_Luong, Don_Vi) 
 VALUES 
-('HDN001', 'NL001', 50000, 50, 'Kg'),
-('HDN002', 'NL002', 20000, 30, 'Lít');
+(1, 'NL001', 50000, 50, 'Kg'),
+(2, 'NL002', 20000, 30, 'Lít');
 
 INSERT INTO LoaiSanPham (Ma_Loai_San_Pham, Ten_Loai_San_Pham) 
 VALUES 
@@ -304,15 +304,15 @@ VALUES
 ('SP006', N'Sinh tố bơ', 42000, N'Còn hàng', 'LSP002');
 
 
-INSERT INTO HoaDonBan (Ma_Hoa_Don_Ban, Ngay, SDT, Thanh_Tien) 
+INSERT INTO HoaDonBan (Ngay, SDT, Thanh_Tien) 
 VALUES 
-('HDB001', '2024-10-02', '0911123456', 70000),
-('HDB002', '2024-10-03', '0922234567', 80000);
+('2024-10-02', '0911123456', 70000),
+('2024-10-03', '0922234567', 80000);
 
 INSERT INTO ChiTietDonBan (Ma_Hoa_Don_Ban, Ma_San_Pham, So_Luong, Don_Gia, Tong_Tien) 
 VALUES 
-('HDB001', 'SP001', 2, 35000, 70000),
-('HDB002', 'SP002', 2, 40000, 80000);
+(1, 'SP001', 2, 35000, 70000),
+(2, 'SP002', 2, 40000, 80000);
 
 INSERT INTO CaLamViec (Ma_Ca, Ngay, Gio_Bat_Dau, Gio_Ket_Thuc) 
 VALUES 
@@ -458,14 +458,13 @@ END;
 -- Thêm khách hàng
 GO
 CREATE PROCEDURE [dbo].[pro_ThemKhachHang]
-@MaKH nchar(10),
 @TenKH nvarchar(50),
 @NgaySinh date,
 @SDT nvarchar(50)
 AS
 BEGIN
-    INSERT INTO KhachHang (Ma_Khach_Hang, Ten_Khach_Hang, Ngay_Sinh, SDT)
-    VALUES (@MaKH, @TenKH, @NgaySinh, @SDT)
+    INSERT INTO KhachHang (Ten_Khach_Hang, Ngay_Sinh, SDT)
+    VALUES (@TenKH, @NgaySinh, @SDT)
 END;
 
 
@@ -484,8 +483,8 @@ END;
 SELECT * FROM HoaDonNhap WHERE Ma_Hoa_Don_Nhap = 'HDN001';
 
 ---------------------------------------------------------------------------------------
-INSERT INTO HoaDonNhap (Ma_Hoa_Don_Nhap, Ngay_Nhap, Tong_Tien, Ma_Nha_Cung_Cap, Thoi_Gian)
-VALUES ('HDN001', '2024-09-01', 500000, 'NCC001', '08:00');
+INSERT INTO HoaDonNhap (Ngay_Nhap, Tong_Tien, Ma_Nha_Cung_Cap, Thoi_Gian)
+VALUES ('2024-09-01', 500000, 'NCC001', '08:00');
 --Procedure (Cập nhật chi tiết hóa đơn nhập)
 ---------------------------------------------------------------------------------------
 INSERT INTO NguyenLieu (Ma_Nguyen_Lieu, Ten_Nguyen_Lieu, So_Luong, Don_Vi, Don_Gia, Ma_Nha_Cung_Cap)
@@ -493,7 +492,7 @@ VALUES ('NL001', N'Đường', 5000, 'gram', 20000, 'NCC001');
 --Procedure (Nhập, Sủa, Cập nhật thông tin nguyên liệu)
 GO
 CREATE PROCEDURE QuanLyHoaDonNhap
-    @Ma_Hoa_Don_Nhap varchar(10),
+	@Ma_Hoa_Don_Nhap int,
     @Ngay_Nhap date,
     @Tong_Tien int,
     @Ma_Nha_Cung_Cap varchar(10),
@@ -506,8 +505,8 @@ AS
 BEGIN
     IF NOT EXISTS (SELECT 1 FROM HoaDonNhap WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap)
     BEGIN
-        INSERT INTO HoaDonNhap (Ma_Hoa_Don_Nhap, Ngay_Nhap, Tong_Tien, Ma_Nha_Cung_Cap, Thoi_Gian)
-        VALUES (@Ma_Hoa_Don_Nhap, @Ngay_Nhap, @Tong_Tien, @Ma_Nha_Cung_Cap, @Thoi_Gian);
+        INSERT INTO HoaDonNhap (Ngay_Nhap, Tong_Tien, Ma_Nha_Cung_Cap, Thoi_Gian)
+        VALUES (@Ngay_Nhap, @Tong_Tien, @Ma_Nha_Cung_Cap, @Thoi_Gian);
     END
     ELSE
     BEGIN
@@ -521,8 +520,8 @@ BEGIN
 
     IF NOT EXISTS (SELECT 1 FROM ChiTietHoaDonNhap WHERE Ma_Hoa_Don_Nhap = @Ma_Hoa_Don_Nhap AND Ma_Nguyen_Lieu = @Ma_Nguyen_Lieu)
     BEGIN
-        INSERT INTO ChiTietHoaDonNhap (Ma_Hoa_Don_Nhap, Ma_Nguyen_Lieu, Don_Gia, So_Luong, Don_Vi)
-        VALUES (@Ma_Hoa_Don_Nhap, @Ma_Nguyen_Lieu, @Don_Gia, @So_Luong, @Don_Vi);
+        INSERT INTO ChiTietHoaDonNhap (Ma_Nguyen_Lieu, Don_Gia, So_Luong, Don_Vi)
+        VALUES (@Ma_Nguyen_Lieu, @Don_Gia, @So_Luong, @Don_Vi);
     END
     ELSE
     BEGIN
@@ -606,7 +605,7 @@ END;
 GO
 -- Tạo function tính tổng tiền của tất cả các sản phẩm theo mã hóa đơn
 CREATE FUNCTION TinhTongTienTheoHoaDon (
-    @Ma_Hoa_Don_Ban varchar(10)
+    @Ma_Hoa_Don_Ban int
 )
 RETURNS FLOAT
 AS
@@ -628,7 +627,7 @@ END;
 GO
 -- Tạo procedure thêm sản phẩm vào hóa đơn bán
 CREATE PROCEDURE ThemSanPhamVaoHoaDonBan
-    @Ma_Hoa_Don_Ban varchar(10),
+    @Ma_Hoa_Don_Ban int,
     @Ma_San_Pham varchar(10),
     @So_Luong int,
     @Don_Gia float,
