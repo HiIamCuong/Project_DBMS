@@ -588,7 +588,7 @@ BEGIN
 END;
 
 GO
-CREATE FUNCTION TinhTongTienNguyenLieuNhap(@Ma_Hoa_Don_Nhap VARCHAR(10))
+CREATE FUNCTION TinhTongTienNguyenLieuNhap(@Ma_Hoa_Don_Nhap int)
 RETURNS INT
 AS
 BEGIN
