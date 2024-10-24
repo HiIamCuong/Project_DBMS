@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\\u0111\u1ED3 \u00E1n\\project_dbms\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,15 +27,15 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\\u0111\u1ED3 \u00E1n\\project_dbms\\project\\frm_loainhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_loainhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_loainhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\\u0111\u1ED3 \u00E1n\\project_dbms\\project\\frm_ncc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_ncc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\\u0111\u1ED3 \u00E1n\\project_dbms\\project\\frm_ketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_ketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -113,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\project\\frm_lichdaphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -218,24 +218,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frm_NCC.cs",
-              "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NCC.cs",
-              "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
-              "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NCC.cs",
-              "RelativeToolTip": "Project\\frm_NCC.cs",
-              "ViewState": "AQIAANAAAAAAAAAAAAAqwPAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T14:27:07.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "frm_NguyenLieu.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
@@ -247,32 +234,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frm_NguyenLieu.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NguyenLieu.cs",
               "RelativeToolTip": "Project\\frm_NguyenLieu.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwDoBAAAdAAAA",
+              "ViewState": "AQIAABQBAAAAAAAAAAAqwB8BAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T11:33:19.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frm_LoaiNhanVien.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_LoaiNhanVien.cs",
               "RelativeDocumentMoniker": "Project\\frm_LoaiNhanVien.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_LoaiNhanVien.cs [Design]",
               "RelativeToolTip": "Project\\frm_LoaiNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.931Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "frm_KetNoi.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_KetNoi.cs",
               "RelativeDocumentMoniker": "Project\\frm_KetNoi.cs",
@@ -280,12 +266,11 @@
               "RelativeToolTip": "Project\\frm_KetNoi.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAArwBAAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:23:39.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T15:23:39.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\Program.cs",
               "RelativeDocumentMoniker": "Project\\Program.cs",
@@ -293,24 +278,46 @@
               "RelativeToolTip": "Project\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:28:27.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "frm_CongThuc.cs [Design]",
+              "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CongThuc.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",
+              "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CongThuc.cs [Design]",
+              "RelativeToolTip": "Project\\frm_CongThuc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:28:27.942Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_NCC.cs",
+              "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NCC.cs",
+              "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
+              "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NCC.cs",
+              "RelativeToolTip": "Project\\frm_NCC.cs",
+              "ViewState": "AQIAANAAAAAAAAAAAAAqwPAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:27:07.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frm_NCC.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NCC.cs",
               "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NCC.cs [Design]",
               "RelativeToolTip": "Project\\frm_NCC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.928Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "frm_NCC.Designer.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_NCC.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_NCC.Designer.cs",
@@ -318,12 +325,11 @@
               "RelativeToolTip": "Project\\frm_NCC.Designer.cs",
               "ViewState": "AQIAANYAAAAAAAAAAADwv+MAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:47:48.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T15:47:48.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "frm_SanPham.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_SanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
@@ -334,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "frm_SanPham.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_SanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
@@ -346,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "frm_DoanhThu.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_DoanhThu.cs",
               "RelativeDocumentMoniker": "Project\\frm_DoanhThu.cs",
@@ -357,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "frm_TaiKhoan.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_TaiKhoan.cs",
               "RelativeDocumentMoniker": "Project\\frm_TaiKhoan.cs",
@@ -365,12 +371,11 @@
               "RelativeToolTip": "Project\\frm_TaiKhoan.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAmwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T14:28:14.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T14:28:14.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "frm_LoaiSanPham.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_LoaiSanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_LoaiSanPham.cs",
@@ -381,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "frm_LoaiSanPham.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_LoaiSanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_LoaiSanPham.cs",
@@ -393,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "frm_LoaiNhanVien.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_LoaiNhanVien.cs",
               "RelativeDocumentMoniker": "Project\\frm_LoaiNhanVien.cs",
@@ -405,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "frm_LichDaPhanCa.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_LichDaPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_LichDaPhanCa.cs",
@@ -416,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "frm_KhachHang.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_KhachHang.cs",
               "RelativeDocumentMoniker": "Project\\frm_KhachHang.cs",
@@ -428,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "frm_KhachHang.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_KhachHang.cs",
               "RelativeDocumentMoniker": "Project\\frm_KhachHang.cs",
@@ -439,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "frm_HoaDonNhap.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_HoaDonNhap.cs",
               "RelativeDocumentMoniker": "Project\\frm_HoaDonNhap.cs",
@@ -451,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "frm_HoaDonNhap.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_HoaDonNhap.cs",
               "RelativeDocumentMoniker": "Project\\frm_HoaDonNhap.cs",
@@ -462,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "frm_HoaDonBan.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_HoaDonBan.cs",
               "RelativeDocumentMoniker": "Project\\frm_HoaDonBan.cs",
@@ -474,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "frm_HoaDonBan.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_HoaDonBan.cs",
               "RelativeDocumentMoniker": "Project\\frm_HoaDonBan.cs",
@@ -485,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "frm_DangNhap.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_DangNhap.cs",
               "RelativeDocumentMoniker": "Project\\frm_DangNhap.cs",
@@ -496,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "frm_CTHDN.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CTHDN.cs",
               "RelativeDocumentMoniker": "Project\\frm_CTHDN.cs",
@@ -508,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "frm_CTHDB.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CTHDB.cs",
               "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
@@ -520,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "frm_CTHDB.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CTHDB.cs",
               "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
@@ -531,15 +536,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "frm_CongThuc.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CongThuc.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",
-              "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CongThuc.cs*",
-              "RelativeToolTip": "Project\\frm_CongThuc.cs*",
+              "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CongThuc.cs",
+              "RelativeToolTip": "Project\\frm_CongThuc.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAmwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T14:24:03.934Z"
+              "WhenOpened": "2024-10-24T14:24:03.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -555,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "frm_CTHDN.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CTHDN.cs",
               "RelativeDocumentMoniker": "Project\\frm_CTHDN.cs",
@@ -574,17 +580,6 @@
               "RelativeToolTip": "Project\\frm_CaLamViec.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T10:28:27.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "frm_CongThuc.cs [Design]",
-              "DocumentMoniker": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CongThuc.cs",
-              "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",
-              "ToolTip": "D:\\Nam 3\\DBMS\\\u0110\u1ED3 \u00E1n\\Project_DBMS\\Project\\frm_CongThuc.cs [Design]*",
-              "RelativeToolTip": "Project\\frm_CongThuc.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.942Z"
             },
             {
               "$type": "Document",
@@ -666,8 +661,7 @@
               "RelativeToolTip": "Project\\frm_KetNoi.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:01:36.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:01:36.364Z"
             },
             {
               "$type": "Document",
@@ -679,8 +673,7 @@
               "RelativeToolTip": "Project\\frm_DanhMucNhanVien.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:06:43.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:06:43.862Z"
             },
             {
               "$type": "Document",
@@ -692,8 +685,7 @@
               "RelativeToolTip": "Project\\frm_DanhMucNhanVien.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:58:07.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:58:07.346Z"
             },
             {
               "$type": "Document",

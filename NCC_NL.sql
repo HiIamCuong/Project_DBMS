@@ -135,7 +135,7 @@ BEGIN
 END
 GO
 -- Tìm kiếm qua tên nguyên liệu
-CREATE FUNCTION [dbo].[TimKiemNCCBangTenNguyenLieu] 
+CREATE FUNCTION [dbo].[TimKiemBangTenNguyenLieu] 
 (
     @NL nvarchar(50)
 )
@@ -147,3 +147,52 @@ RETURN
     FROM NguyenLieu
     WHERE Ten_Nguyen_Lieu LIKE @NL
 );
+
+
+--Procedure thêm xóa sửa công thức
+CREATE PROCEDURE [dbo].[proc_ThemCongThuc]
+	@MaSP varchar(10),
+	@MaNL varchar(10),
+	@SoLuong int,
+	@DonVi nchar(10) 
+AS
+BEGIN
+	INSERT INTO CongThuc(Ma_San_Pham, Ma_Nguyen_Lieu, So_Luong, DonVi)
+	VALUES (@MaSP, @MaNL, @SoLuong, @DonVi)
+END
+GO
+
+CREATE PROCEDURE [dbo].[proc_SuaCongThuc]
+    @MaSP varchar(10),
+    @MaNL varchar(10),
+    @SoLuong int,
+    @DonVi nchar(10)
+AS
+BEGIN
+    BEGIN TRY
+        UPDATE CongThuc
+        SET So_Luong = @SoLuong, DonVi = @DonVi
+        WHERE Ma_San_Pham = @MaSP AND Ma_Nguyen_Lieu = @MaNL;
+    END TRY
+    BEGIN CATCH
+        DECLARE @ErrorMsg nvarchar(4000) = ERROR_MESSAGE();
+        RAISERROR(@ErrorMsg, 16, 1);
+    END CATCH
+END
+GO
+
+CREATE PROCEDURE [dbo].[proc_XoaCongThuc]
+    @MaSP varchar(10),
+    @MaNL varchar(10)
+AS
+BEGIN
+    BEGIN TRY
+        DELETE FROM CongThuc
+        WHERE Ma_San_Pham = @MaSP AND Ma_Nguyen_Lieu = @MaNL;
+    END TRY
+    BEGIN CATCH
+        DECLARE @ErrorMsg nvarchar(4000) = ERROR_MESSAGE();
+        RAISERROR(@ErrorMsg, 16, 1);
+    END CATCH
+END
+GO

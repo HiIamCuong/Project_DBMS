@@ -284,7 +284,7 @@ namespace Project
             {
                 sqlCon = new SqlConnection(strCon);
                 sqlCon.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM dbo.TimKiemNCCBangTenNguyenLieu(@NL)", sqlCon);
+                SqlCommand command = new SqlCommand("SELECT * FROM dbo.TimKiemBangTenNguyenLieu(@NL)", sqlCon);
                 command.Parameters.Add("@NL", SqlDbType.NVarChar).Value = "%" + tennl + "%";
                 DataTable table = new DataTable();
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
