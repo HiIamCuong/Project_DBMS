@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_bangphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\project_dbms\\project\\frm_bangphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_bangphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\project_dbms\\project\\frm_bangphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_bangphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_bangphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_vitricongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -51,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\project_dbms\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -71,7 +71,7 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\project_dbms\\project\\frm_ketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_ketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -83,7 +83,7 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\project_dbms\\project\\frm_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -91,7 +91,7 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_danhmucnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\project_dbms\\project\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -103,7 +103,7 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\project_dbms\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -130,11 +130,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\Program.cs",
               "RelativeDocumentMoniker": "Project\\Program.cs",
@@ -147,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "frm_CaLamViec.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_CaLamViec.cs",
               "RelativeDocumentMoniker": "Project\\frm_CaLamViec.cs",
@@ -159,33 +159,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "frm_CaLamViec.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_CaLamViec.cs",
               "RelativeDocumentMoniker": "Project\\frm_CaLamViec.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_CaLamViec.cs",
               "RelativeToolTip": "Project\\frm_CaLamViec.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAhwEwAAAAJAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAqwC0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T19:06:43.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frm_BangPhanCa.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_BangPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_BangPhanCa.cs",
               "RelativeToolTip": "Project\\frm_BangPhanCa.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAqwC4AAAArAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAqwCYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T19:53:53.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frm_ViTriCongViec.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_ViTriCongViec.cs",
               "RelativeDocumentMoniker": "Project\\frm_ViTriCongViec.cs",
@@ -197,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frm_BangPhanCa.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_BangPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
@@ -217,8 +217,7 @@
               "RelativeToolTip": "Project\\frm_TrangChu_NV.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAuwEMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T12:44:12.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T12:44:12.553Z"
             },
             {
               "$type": "Document",
@@ -229,8 +228,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_TrangChu_QL.cs [Design]",
               "RelativeToolTip": "Project\\frm_TrangChu_QL.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T12:51:22.35Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T12:51:22.35Z"
             },
             {
               "$type": "Document",
@@ -241,8 +239,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_TrangChu_NV.cs [Design]",
               "RelativeToolTip": "Project\\frm_TrangChu_NV.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T12:43:38.492Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T12:43:38.492Z"
             },
             {
               "$type": "Document",
@@ -253,8 +250,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_TaiKhoan.cs [Design]",
               "RelativeToolTip": "Project\\frm_TaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:49:31.404Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:49:31.404Z"
             },
             {
               "$type": "Document",
@@ -265,8 +261,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_SanPham.cs [Design]",
               "RelativeToolTip": "Project\\frm_SanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:55:38.722Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:55:38.722Z"
             },
             {
               "$type": "Document",
@@ -277,8 +272,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_NguyenLieu.cs [Design]",
               "RelativeToolTip": "Project\\frm_NguyenLieu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:47:01.644Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:47:01.644Z"
             },
             {
               "$type": "Document",
@@ -289,8 +283,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_NCC.cs [Design]",
               "RelativeToolTip": "Project\\frm_NCC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T03:27:13.709Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T03:27:13.709Z"
             },
             {
               "$type": "Document",
@@ -301,8 +294,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_LoaiSanPham.cs [Design]",
               "RelativeToolTip": "Project\\frm_LoaiSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:55:40.958Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:55:40.958Z"
             },
             {
               "$type": "Document",
@@ -313,8 +305,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_LoaiNhanVien.cs [Design]",
               "RelativeToolTip": "Project\\frm_LoaiNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:59:21.124Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:59:21.124Z"
             },
             {
               "$type": "Document",
@@ -325,8 +316,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_LichDaPhanCa.cs [Design]",
               "RelativeToolTip": "Project\\frm_LichDaPhanCa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:35:42.171Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:35:42.171Z"
             },
             {
               "$type": "Document",
@@ -337,8 +327,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_KhachHang.cs [Design]",
               "RelativeToolTip": "Project\\frm_KhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:55:42.865Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:55:42.865Z"
             },
             {
               "$type": "Document",
@@ -349,8 +338,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_KetNoi.cs [Design]",
               "RelativeToolTip": "Project\\frm_KetNoi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T03:27:06.746Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T03:27:06.746Z"
             },
             {
               "$type": "Document",
@@ -361,8 +349,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_HoaDonBan.cs [Design]",
               "RelativeToolTip": "Project\\frm_HoaDonBan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:45:38.313Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:45:38.313Z"
             },
             {
               "$type": "Document",
@@ -373,8 +360,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_DoanhThu.cs [Design]",
               "RelativeToolTip": "Project\\frm_DoanhThu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T03:27:01.289Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T03:27:01.289Z"
             },
             {
               "$type": "Document",
@@ -386,8 +372,7 @@
               "RelativeToolTip": "Project\\frm_DangNhap.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAgwBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T03:26:44.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T03:26:44.402Z"
             },
             {
               "$type": "Document",
@@ -398,8 +383,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_DangNhap.cs [Design]",
               "RelativeToolTip": "Project\\frm_DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T12:45:13.294Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T12:45:13.294Z"
             },
             {
               "$type": "Document",
@@ -410,8 +394,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_CTHDN.cs [Design]",
               "RelativeToolTip": "Project\\frm_CTHDN.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:57:50.774Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:57:50.774Z"
             },
             {
               "$type": "Document",
@@ -422,8 +405,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_HoaDonNhap.cs [Design]",
               "RelativeToolTip": "Project\\frm_HoaDonNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:55:44.289Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:55:44.289Z"
             },
             {
               "$type": "Document",
@@ -434,8 +416,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_CTHDB.cs [Design]",
               "RelativeToolTip": "Project\\frm_CTHDB.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T03:26:38.159Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T03:26:38.159Z"
             },
             {
               "$type": "Document",
@@ -446,8 +427,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_DanhMucNhanVien.cs [Design]",
               "RelativeToolTip": "Project\\frm_DanhMucNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:57:57.31Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:57:57.31Z"
             },
             {
               "$type": "Document",
@@ -458,8 +438,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_ChinhSuaTTCaNhan.cs [Design]",
               "RelativeToolTip": "Project\\frm_ChinhSuaTTCaNhan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T12:44:05.147Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T12:44:05.147Z"
             },
             {
               "$type": "Document",
@@ -470,8 +449,7 @@
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\Project_DBMS\\Project\\frm_CongThuc.cs [Design]",
               "RelativeToolTip": "Project\\frm_CongThuc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:49:56.286Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T13:49:56.286Z"
             },
             {
               "$type": "Document",
@@ -483,8 +461,7 @@
               "RelativeToolTip": "Project\\frm_TrangChu_QL.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAADwv9YAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T12:51:24.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T12:51:24.51Z"
             },
             {
               "$type": "Document",
@@ -496,8 +473,7 @@
               "RelativeToolTip": "Project\\frm_TrangChu_NV.Designer.cs",
               "ViewState": "AQIAAFsAAAAAAAAAAAAswG0AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:10:16.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T13:10:16.898Z"
             }
           ]
         }

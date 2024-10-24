@@ -43,8 +43,7 @@ namespace Project
                 {
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
-                    dgvBangPhanCa.DataSource = dt;
-                    MessageBox.Show(dt.Rows.Count.ToString());
+                    dgvphanca.DataSource = dt;
                 }
             }
         }

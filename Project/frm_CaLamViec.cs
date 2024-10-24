@@ -43,7 +43,7 @@ namespace Project
                 {
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
-                    dgvCaLamViec.DataSource = dt;
+                    dgvcalam.DataSource = dt;
                 }
             }
         }

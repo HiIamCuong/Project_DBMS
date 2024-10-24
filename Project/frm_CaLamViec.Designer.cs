@@ -51,6 +51,7 @@
             this.dgvCaLamViec = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvcalam = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -58,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaLamViec)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -100,7 +102,7 @@
             this.txtGioBD.Location = new System.Drawing.Point(162, 171);
             this.txtGioBD.Margin = new System.Windows.Forms.Padding(4);
             this.txtGioBD.Name = "txtGioBD";
-            this.txtGioBD.Size = new System.Drawing.Size(164, 34);
+            this.txtGioBD.Size = new System.Drawing.Size(159, 34);
             this.txtGioBD.TabIndex = 4;
             // 
             // txtGioKT
@@ -111,7 +113,7 @@
             this.txtGioKT.Location = new System.Drawing.Point(162, 217);
             this.txtGioKT.Margin = new System.Windows.Forms.Padding(4);
             this.txtGioKT.Name = "txtGioKT";
-            this.txtGioKT.Size = new System.Drawing.Size(164, 34);
+            this.txtGioKT.Size = new System.Drawing.Size(159, 34);
             this.txtGioKT.TabIndex = 3;
             // 
             // txtMaCa
@@ -122,7 +124,7 @@
             this.txtMaCa.Location = new System.Drawing.Point(162, 91);
             this.txtMaCa.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaCa.Name = "txtMaCa";
-            this.txtMaCa.Size = new System.Drawing.Size(164, 34);
+            this.txtMaCa.Size = new System.Drawing.Size(159, 34);
             this.txtMaCa.TabIndex = 3;
             // 
             // label5
@@ -202,7 +204,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(392, 350);
+            this.panel2.Size = new System.Drawing.Size(387, 350);
             this.panel2.TabIndex = 49;
             // 
             // btnReload
@@ -270,6 +272,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.dgvcalam);
             this.panel5.Controls.Add(this.dgvCaLamViec);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 62);
@@ -314,6 +317,16 @@
             this.panel1.Size = new System.Drawing.Size(1189, 62);
             this.panel1.TabIndex = 48;
             // 
+            // dgvcalam
+            // 
+            this.dgvcalam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcalam.Location = new System.Drawing.Point(384, 0);
+            this.dgvcalam.Name = "dgvcalam";
+            this.dgvcalam.RowHeadersWidth = 51;
+            this.dgvcalam.RowTemplate.Height = 24;
+            this.dgvcalam.Size = new System.Drawing.Size(805, 350);
+            this.dgvcalam.TabIndex = 34;
+            // 
             // frm_CaLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -336,6 +349,7 @@
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,5 +378,6 @@
         private System.Windows.Forms.DataGridView dgvCaLamViec;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvcalam;
     }
 }

@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvBangPhanCa = new System.Windows.Forms.DataGridView();
+            this.dgvphanca = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -54,6 +55,7 @@
             this.grBox.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangPhanCa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvphanca)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -264,11 +266,22 @@
             this.dgvBangPhanCa.Size = new System.Drawing.Size(699, 597);
             this.dgvBangPhanCa.TabIndex = 52;
             // 
+            // dgvphanca
+            // 
+            this.dgvphanca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvphanca.Location = new System.Drawing.Point(0, 140);
+            this.dgvphanca.Name = "dgvphanca";
+            this.dgvphanca.RowHeadersWidth = 51;
+            this.dgvphanca.RowTemplate.Height = 24;
+            this.dgvphanca.Size = new System.Drawing.Size(699, 299);
+            this.dgvphanca.TabIndex = 53;
+            // 
             // frm_BangPhanCa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 597);
+            this.Controls.Add(this.dgvphanca);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvBangPhanCa);
@@ -286,6 +299,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangPhanCa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvphanca)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,5 +323,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvBangPhanCa;
+        private System.Windows.Forms.DataGridView dgvphanca;
     }
 }
