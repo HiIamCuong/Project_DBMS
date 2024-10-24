@@ -38,11 +38,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbHDN = new System.Windows.Forms.GroupBox();
+            this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvHDN = new System.Windows.Forms.DataGridView();
+            this.Ma_Hoa_Don_Nhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngay_Nhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tong_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ma_Nha_Cung_Cap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thoi_Gian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnReload = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
@@ -57,8 +64,6 @@
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gbHDN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -81,21 +86,19 @@
             // 
             // cmbNCC
             // 
-            this.cmbNCC.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNCC.Font = new System.Drawing.Font("#9Slide04 Faustina", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNCC.FormattingEnabled = true;
             this.cmbNCC.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ ",
-            "Khác"});
+            ""});
             this.cmbNCC.Location = new System.Drawing.Point(179, 227);
             this.cmbNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbNCC.Name = "cmbNCC";
-            this.cmbNCC.Size = new System.Drawing.Size(262, 31);
+            this.cmbNCC.Size = new System.Drawing.Size(262, 34);
             this.cmbNCC.TabIndex = 26;
             // 
             // dtpNgayNhap
             // 
-            this.dtpNgayNhap.CustomFormat = "";
+            this.dtpNgayNhap.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayNhap.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayNhap.Location = new System.Drawing.Point(179, 107);
@@ -161,7 +164,7 @@
             // gbHDN
             // 
             this.gbHDN.BackColor = System.Drawing.Color.AliceBlue;
-            this.gbHDN.Controls.Add(this.dateTimePicker1);
+            this.gbHDN.Controls.Add(this.dtpThoiGian);
             this.gbHDN.Controls.Add(this.label4);
             this.gbHDN.Controls.Add(this.lblTenNCC);
             this.gbHDN.Controls.Add(this.cmbNCC);
@@ -181,6 +184,30 @@
             this.gbHDN.TabIndex = 50;
             this.gbHDN.TabStop = false;
             this.gbHDN.Text = "Thông tin Hóa Đơn Nhập";
+            // 
+            // dtpThoiGian
+            // 
+            this.dtpThoiGian.CustomFormat = "";
+            this.dtpThoiGian.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpThoiGian.Location = new System.Drawing.Point(179, 166);
+            this.dtpThoiGian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpThoiGian.Name = "dtpThoiGian";
+            this.dtpThoiGian.ShowUpDown = true;
+            this.dtpThoiGian.Size = new System.Drawing.Size(262, 32);
+            this.dtpThoiGian.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label4.Location = new System.Drawing.Point(18, 173);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 25);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Thời Gian";
             // 
             // label3
             // 
@@ -236,12 +263,54 @@
             this.dgvHDN.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.dgvHDN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvHDN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHDN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ma_Hoa_Don_Nhap,
+            this.Ngay_Nhap,
+            this.Tong_Tien,
+            this.Ma_Nha_Cung_Cap,
+            this.Thoi_Gian});
             this.dgvHDN.Location = new System.Drawing.Point(461, 131);
             this.dgvHDN.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHDN.Name = "dgvHDN";
             this.dgvHDN.RowHeadersWidth = 51;
             this.dgvHDN.Size = new System.Drawing.Size(605, 331);
             this.dgvHDN.TabIndex = 49;
+            this.dgvHDN.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDN_RowEnter);
+            // 
+            // Ma_Hoa_Don_Nhap
+            // 
+            this.Ma_Hoa_Don_Nhap.DataPropertyName = "Ma_Hoa_Don_Nhap";
+            this.Ma_Hoa_Don_Nhap.HeaderText = "Mã Hóa Đơn Nhập";
+            this.Ma_Hoa_Don_Nhap.MinimumWidth = 6;
+            this.Ma_Hoa_Don_Nhap.Name = "Ma_Hoa_Don_Nhap";
+            // 
+            // Ngay_Nhap
+            // 
+            this.Ngay_Nhap.DataPropertyName = "Ngay_Nhap";
+            this.Ngay_Nhap.HeaderText = "Ngày Nhập";
+            this.Ngay_Nhap.MinimumWidth = 6;
+            this.Ngay_Nhap.Name = "Ngay_Nhap";
+            // 
+            // Tong_Tien
+            // 
+            this.Tong_Tien.DataPropertyName = "Tong_Tien";
+            this.Tong_Tien.HeaderText = "Tổng Tiền";
+            this.Tong_Tien.MinimumWidth = 6;
+            this.Tong_Tien.Name = "Tong_Tien";
+            // 
+            // Ma_Nha_Cung_Cap
+            // 
+            this.Ma_Nha_Cung_Cap.DataPropertyName = "Ma_Nha_Cung_Cap";
+            this.Ma_Nha_Cung_Cap.HeaderText = "Mã Nhà Cung Cấp";
+            this.Ma_Nha_Cung_Cap.MinimumWidth = 6;
+            this.Ma_Nha_Cung_Cap.Name = "Ma_Nha_Cung_Cap";
+            // 
+            // Thoi_Gian
+            // 
+            this.Thoi_Gian.DataPropertyName = "Thoi_Gian";
+            this.Thoi_Gian.HeaderText = "Thời Gian";
+            this.Thoi_Gian.MinimumWidth = 6;
+            this.Thoi_Gian.Name = "Thoi_Gian";
             // 
             // btnReload
             // 
@@ -289,6 +358,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 31);
             this.btnSua.Text = "Sửa dữ liệu";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // toolStripSeparator4
             // 
@@ -315,6 +385,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 31);
             this.btnThem.Text = "Thêm Mới";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // bindingNavigator1
             // 
@@ -371,29 +442,6 @@
             this.panel1.Size = new System.Drawing.Size(1067, 153);
             this.panel1.TabIndex = 47;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label4.Location = new System.Drawing.Point(18, 173);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 25);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Thời Gian";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(179, 166);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(262, 32);
-            this.dateTimePicker1.TabIndex = 29;
-            // 
             // frm_HoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -405,6 +453,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frm_HoaDonNhap";
             this.Text = "frm_HoaDonNhap";
+            this.Load += new System.EventHandler(this.frm_HoaDonNhap_Load);
             this.gbHDN.ResumeLayout(false);
             this.gbHDN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDN)).EndInit();
@@ -449,7 +498,12 @@
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpThoiGian;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ma_Hoa_Don_Nhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ngay_Nhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tong_Tien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ma_Nha_Cung_Cap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thoi_Gian;
     }
 }

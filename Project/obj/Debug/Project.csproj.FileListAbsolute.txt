@@ -161,3 +161,36 @@ D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.pdb
 D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.exe.config
 D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.exe
 D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.exe.config
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.exe
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.exe
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.pdb
+>>>>>>> 8b2d81763d6e01bb7cb1b9ca27cf1b2058d46e85
