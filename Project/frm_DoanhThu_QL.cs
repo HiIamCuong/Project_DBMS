@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class frm_DoanhThu : Form
+    public partial class frm_DoanhThu_QL : Form
     {
-        public frm_DoanhThu()
+        public frm_DoanhThu_QL()
         {
             InitializeComponent();
         }

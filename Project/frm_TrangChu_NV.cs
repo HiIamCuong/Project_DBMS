@@ -78,12 +78,12 @@ namespace Project
 
         private void doanhthutoolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = kiemtratontai(typeof(frm_DoanhThu));
+            Form frm = kiemtratontai(typeof(frm_DoanhThu_NV));
             if (frm != null)
                 frm.Activate();
             else
             {
-                frm_DoanhThu fr = new frm_DoanhThu();
+                frm_DoanhThu_NV fr = new frm_DoanhThu_NV();
                 fr.MdiParent = this;
                 fr.Show();
             }

@@ -194,3 +194,5 @@ C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.
 C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.exe
 C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.pdb
 >>>>>>> 8b2d81763d6e01bb7cb1b9ca27cf1b2058d46e85
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu_QL.resources

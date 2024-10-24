@@ -3,11 +3,43 @@
   "WorkspaceRootPath": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\frm_doanhthu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_doanhthu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\frm_doanhthu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_doanhthu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,23 +47,19 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\frm_hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\frm_hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_hoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\merge\\project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -111,18 +139,6 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_vitricongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_nv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -147,10 +163,6 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_lichdaphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -159,20 +171,12 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_chinhsuattcanhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_chinhsuattcanhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_trangchu_ql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\project\\frm_trangchu_nv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -186,37 +190,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\Program.cs",
-              "RelativeDocumentMoniker": "Project\\Program.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\Program.cs",
-              "RelativeToolTip": "Project\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
+              "DocumentIndex": 2,
+              "Title": "frm_TrangChu_QL.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs",
+              "RelativeDocumentMoniker": "Project\\frm_TrangChu_QL.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs",
+              "RelativeToolTip": "Project\\frm_TrangChu_QL.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAADIAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.851Z",
+              "WhenOpened": "2024-10-24T10:28:27.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frm_HoaDonNhap.cs",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonNhap.cs",
-              "RelativeDocumentMoniker": "Project\\frm_HoaDonNhap.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonNhap.cs",
-              "RelativeToolTip": "Project\\frm_HoaDonNhap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABcAAAA",
+              "DocumentIndex": 0,
+              "Title": "frm_TrangChu_NV.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs",
+              "RelativeDocumentMoniker": "Project\\frm_TrangChu_NV.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs",
+              "RelativeToolTip": "Project\\frm_TrangChu_NV.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAFIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:33:04.419Z",
+              "WhenOpened": "2024-10-24T10:28:27.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "frm_TrangChu_QL.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs",
+              "RelativeDocumentMoniker": "Project\\frm_TrangChu_QL.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs [Design]",
+              "RelativeToolTip": "Project\\frm_TrangChu_QL.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:28:27.923Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_TrangChu_NV.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs",
+              "RelativeDocumentMoniker": "Project\\frm_TrangChu_NV.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs [Design]",
+              "RelativeToolTip": "Project\\frm_TrangChu_NV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:28:27.924Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frm_DoanhThu_NV.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DoanhThu_NV.cs",
+              "RelativeDocumentMoniker": "Project\\frm_DoanhThu_NV.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DoanhThu_NV.cs [Design]",
+              "RelativeToolTip": "Project\\frm_DoanhThu_NV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:42:25.443Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frm_DoanhThu_QL.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DoanhThu_QL.cs",
+              "RelativeDocumentMoniker": "Project\\frm_DoanhThu_QL.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DoanhThu_QL.cs [Design]",
+              "RelativeToolTip": "Project\\frm_DoanhThu_QL.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:42:09.668Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frm_CTHDN.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CTHDN.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDN.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CTHDN.cs [Design]",
+              "RelativeToolTip": "Project\\frm_CTHDN.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:28:27.938Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "frm_NguyenLieu.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
@@ -229,19 +293,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frm_BangPhanCa.cs [Design]",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.cs",
-              "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.cs [Design]",
-              "RelativeToolTip": "Project\\frm_BangPhanCa.cs [Design]",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Project\\Program.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\Program.cs",
+              "RelativeToolTip": "Project\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.922Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.851Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "frm_BangPhanCa.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
@@ -249,24 +314,33 @@
               "RelativeToolTip": "Project\\frm_BangPhanCa.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:28:27.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 17,
+              "Title": "frm_BangPhanCa.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.cs",
+              "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.cs [Design]",
+              "RelativeToolTip": "Project\\frm_BangPhanCa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:28:27.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "frm_CTHDB.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CTHDB.cs",
               "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CTHDB.cs [Design]",
               "RelativeToolTip": "Project\\frm_CTHDB.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.939Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "frm_CTHDB.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CTHDB.cs",
               "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
@@ -274,24 +348,34 @@
               "RelativeToolTip": "Project\\frm_CTHDB.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:28:15.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:28:15.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
+              "Title": "frm_HoaDonNhap.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonNhap.cs",
+              "RelativeDocumentMoniker": "Project\\frm_HoaDonNhap.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonNhap.cs",
+              "RelativeToolTip": "Project\\frm_HoaDonNhap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T11:33:04.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "frm_HoaDonNhap.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonNhap.cs",
               "RelativeDocumentMoniker": "Project\\frm_HoaDonNhap.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonNhap.cs [Design]",
               "RelativeToolTip": "Project\\frm_HoaDonNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.939Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "frm_NguyenLieu.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
@@ -303,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "frm_HoaDonBan.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonBan.cs",
               "RelativeDocumentMoniker": "Project\\frm_HoaDonBan.cs",
@@ -311,36 +395,33 @@
               "RelativeToolTip": "Project\\frm_HoaDonBan.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAowA8AAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:29:55.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:29:55.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "frm_HoaDonBan.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonBan.cs",
               "RelativeDocumentMoniker": "Project\\frm_HoaDonBan.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_HoaDonBan.cs [Design]",
               "RelativeToolTip": "Project\\frm_HoaDonBan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.935Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "frm_KhachHang.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KhachHang.cs",
               "RelativeDocumentMoniker": "Project\\frm_KhachHang.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KhachHang.cs [Design]",
               "RelativeToolTip": "Project\\frm_KhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:14:18.648Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T11:14:18.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "frm_KetNoi.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KetNoi.cs",
               "RelativeDocumentMoniker": "Project\\frm_KetNoi.cs",
@@ -348,12 +429,11 @@
               "RelativeToolTip": "Project\\frm_KetNoi.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAEwD0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:06:58.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:06:58.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "frm_KhachHang.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KhachHang.cs",
               "RelativeDocumentMoniker": "Project\\frm_KhachHang.cs",
@@ -361,12 +441,11 @@
               "RelativeToolTip": "Project\\frm_KhachHang.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAkwEgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:08:29.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:08:29.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "frm_KhachHang.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KhachHang.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_KhachHang.Designer.cs",
@@ -374,12 +453,11 @@
               "RelativeToolTip": "Project\\frm_KhachHang.Designer.cs",
               "ViewState": "AQIAAJ4AAAAAAAAAAAAAADoAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:04:12.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:04:12.419Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "frm_KetNoi.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KetNoi.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_KetNoi.Designer.cs",
@@ -387,12 +465,11 @@
               "RelativeToolTip": "Project\\frm_KetNoi.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:01:36.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:01:36.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "frm_DanhMucNhanVien.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DanhMucNhanVien.cs",
               "RelativeDocumentMoniker": "Project\\frm_DanhMucNhanVien.cs",
@@ -400,12 +477,11 @@
               "RelativeToolTip": "Project\\frm_DanhMucNhanVien.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:06:43.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:06:43.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "frm_DanhMucNhanVien.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DanhMucNhanVien.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_DanhMucNhanVien.Designer.cs",
@@ -413,24 +489,22 @@
               "RelativeToolTip": "Project\\frm_DanhMucNhanVien.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:58:07.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:58:07.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "frm_CaLamViec.resx",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CaLamViec.resx",
               "RelativeDocumentMoniker": "Project\\frm_CaLamViec.resx",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CaLamViec.resx",
               "RelativeToolTip": "Project\\frm_CaLamViec.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-10-24T10:57:56.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:57:56.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "frm_CaLamViec.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CaLamViec.cs",
               "RelativeDocumentMoniker": "Project\\frm_CaLamViec.cs",
@@ -438,24 +512,22 @@
               "RelativeToolTip": "Project\\frm_CaLamViec.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:28:27.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "frm_BangPhanCa.resx",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.resx",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.resx",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.resx",
               "RelativeToolTip": "Project\\frm_BangPhanCa.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-10-24T10:57:54.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:57:54.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "frm_CaLamViec.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CaLamViec.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_CaLamViec.Designer.cs",
@@ -463,12 +535,11 @@
               "RelativeToolTip": "Project\\frm_CaLamViec.Designer.cs",
               "ViewState": "AQIAAIYBAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:55:59.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:55:59.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "frm_BangPhanCa.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_BangPhanCa.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.Designer.cs",
@@ -476,181 +547,121 @@
               "RelativeToolTip": "Project\\frm_BangPhanCa.Designer.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:53:21.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:53:21.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "frm_KetNoi.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KetNoi.cs",
               "RelativeDocumentMoniker": "Project\\frm_KetNoi.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_KetNoi.cs [Design]",
               "RelativeToolTip": "Project\\frm_KetNoi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.934Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "frm_DanhMucNhanVien.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DanhMucNhanVien.cs",
               "RelativeDocumentMoniker": "Project\\frm_DanhMucNhanVien.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DanhMucNhanVien.cs [Design]",
               "RelativeToolTip": "Project\\frm_DanhMucNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.94Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "frm_ViTriCongViec.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_ViTriCongViec.cs",
               "RelativeDocumentMoniker": "Project\\frm_ViTriCongViec.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_ViTriCongViec.cs [Design]",
               "RelativeToolTip": "Project\\frm_ViTriCongViec.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.921Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "frm_CaLamViec.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CaLamViec.cs",
               "RelativeDocumentMoniker": "Project\\frm_CaLamViec.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CaLamViec.cs [Design]",
               "RelativeToolTip": "Project\\frm_CaLamViec.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.917Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "frm_TrangChu_NV.cs",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs",
-              "RelativeDocumentMoniker": "Project\\frm_TrangChu_NV.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs",
-              "RelativeToolTip": "Project\\frm_TrangChu_NV.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAuwEMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "frm_TrangChu_QL.cs [Design]",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs",
-              "RelativeDocumentMoniker": "Project\\frm_TrangChu_QL.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs [Design]",
-              "RelativeToolTip": "Project\\frm_TrangChu_QL.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.923Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "frm_TrangChu_NV.cs [Design]",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs",
-              "RelativeDocumentMoniker": "Project\\frm_TrangChu_NV.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.cs [Design]",
-              "RelativeToolTip": "Project\\frm_TrangChu_NV.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.924Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "frm_TaiKhoan.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TaiKhoan.cs",
               "RelativeDocumentMoniker": "Project\\frm_TaiKhoan.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TaiKhoan.cs [Design]",
               "RelativeToolTip": "Project\\frm_TaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.925Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "frm_SanPham.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_SanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_SanPham.cs [Design]",
               "RelativeToolTip": "Project\\frm_SanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.926Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "frm_NCC.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_NCC.cs",
               "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_NCC.cs [Design]",
               "RelativeToolTip": "Project\\frm_NCC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.928Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "frm_LoaiSanPham.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_LoaiSanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_LoaiSanPham.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_LoaiSanPham.cs [Design]",
               "RelativeToolTip": "Project\\frm_LoaiSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.929Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "frm_LoaiNhanVien.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_LoaiNhanVien.cs",
               "RelativeDocumentMoniker": "Project\\frm_LoaiNhanVien.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_LoaiNhanVien.cs [Design]",
               "RelativeToolTip": "Project\\frm_LoaiNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.931Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "frm_LichDaPhanCa.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_LichDaPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_LichDaPhanCa.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_LichDaPhanCa.cs [Design]",
               "RelativeToolTip": "Project\\frm_LichDaPhanCa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.932Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "frm_DoanhThu.cs [Design]",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DoanhThu.cs",
-              "RelativeDocumentMoniker": "Project\\frm_DoanhThu.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DoanhThu.cs [Design]",
-              "RelativeToolTip": "Project\\frm_DoanhThu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.936Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "frm_DangNhap.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DangNhap.cs",
               "RelativeDocumentMoniker": "Project\\frm_DangNhap.cs",
@@ -658,73 +669,44 @@
               "RelativeToolTip": "Project\\frm_DangNhap.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAgwBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:28:27.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "frm_DangNhap.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DangNhap.cs",
               "RelativeDocumentMoniker": "Project\\frm_DangNhap.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_DangNhap.cs [Design]",
               "RelativeToolTip": "Project\\frm_DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.937Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "frm_CTHDN.cs [Design]",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CTHDN.cs",
-              "RelativeDocumentMoniker": "Project\\frm_CTHDN.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CTHDN.cs [Design]",
-              "RelativeToolTip": "Project\\frm_CTHDN.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.938Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "frm_ChinhSuaTTCaNhan.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_ChinhSuaTTCaNhan.cs",
               "RelativeDocumentMoniker": "Project\\frm_ChinhSuaTTCaNhan.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_ChinhSuaTTCaNhan.cs [Design]",
               "RelativeToolTip": "Project\\frm_ChinhSuaTTCaNhan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.941Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "frm_CongThuc.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CongThuc.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",
               "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_CongThuc.cs [Design]",
               "RelativeToolTip": "Project\\frm_CongThuc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.942Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:28:27.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "frm_TrangChu_QL.cs",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs",
-              "RelativeDocumentMoniker": "Project\\frm_TrangChu_QL.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_QL.cs",
-              "RelativeToolTip": "Project\\frm_TrangChu_QL.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAADwv9YAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:28:27.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "frm_TrangChu_NV.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\merge\\Project\\frm_TrangChu_NV.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_TrangChu_NV.Designer.cs",

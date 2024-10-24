@@ -94,11 +94,17 @@
     <Compile Include="frm_DanhMucNhanVien.Designer.cs">
       <DependentUpon>frm_DanhMucNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_DoanhThu.cs">
+    <Compile Include="frm_DoanhThu_NV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_DoanhThu.Designer.cs">
-      <DependentUpon>frm_DoanhThu.cs</DependentUpon>
+    <Compile Include="frm_DoanhThu_NV.Designer.cs">
+      <DependentUpon>frm_DoanhThu_NV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DoanhThu_QL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DoanhThu_QL.Designer.cs">
+      <DependentUpon>frm_DoanhThu_QL.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_HoaDonBan.cs">
       <SubType>Form</SubType>
@@ -210,8 +216,11 @@
     <EmbeddedResource Include="frm_DanhMucNhanVien.resx">
       <DependentUpon>frm_DanhMucNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_DoanhThu.resx">
-      <DependentUpon>frm_DoanhThu.cs</DependentUpon>
+    <EmbeddedResource Include="frm_DoanhThu_NV.resx">
+      <DependentUpon>frm_DoanhThu_NV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DoanhThu_QL.resx">
+      <DependentUpon>frm_DoanhThu_QL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_HoaDonBan.resx">
       <DependentUpon>frm_HoaDonBan.cs</DependentUpon>

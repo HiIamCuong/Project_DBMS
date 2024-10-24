@@ -43,12 +43,12 @@ namespace Project
 
         private void dOANHTHUToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = kiemtratontai(typeof(frm_DoanhThu));
+            Form frm = kiemtratontai(typeof(frm_DoanhThu_QL));
             if (frm != null)
                 frm.Activate();
             else
             {
-                frm_DoanhThu fr = new frm_DoanhThu();
+                frm_DoanhThu_QL fr = new frm_DoanhThu_QL();
                 fr.MdiParent = this;
                 fr.Show();
             }
