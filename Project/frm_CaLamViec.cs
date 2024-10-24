@@ -101,7 +101,7 @@ namespace Project
 
         private void dgvCaLamViec_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
     }
 }

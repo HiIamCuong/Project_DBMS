@@ -14,7 +14,7 @@ namespace Project
     public partial class KetNoi : Form
     {
         //Tạo biến cục bộ
-        string strCon = @"Data Source=DESKTOP-GIJL260;Initial Catalog=QLHS;Integrated Security=True;Encrypt=False";
+        string strCon = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
         //Đối tượng kết nối
         SqlConnection sqlCon = null;
         public KetNoi()
@@ -54,6 +54,11 @@ namespace Project
             {
                 MessageBox.Show("Chưa tạo kết nối!");
             }
+        }
+
+        private void KetNoi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

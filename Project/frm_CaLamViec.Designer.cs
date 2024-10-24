@@ -42,8 +42,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnReload = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnSua = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
@@ -216,6 +222,14 @@
             this.btnReload.Text = "Reload";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
+            // btnHuyBo
+            // 
+            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnHuyBo.Name = "btnHuyBo";
+            this.btnHuyBo.Size = new System.Drawing.Size(61, 25);
+            this.btnHuyBo.Text = "Hủy Bỏ";
+            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
@@ -229,6 +243,14 @@
             this.btnXoa.Size = new System.Drawing.Size(94, 25);
             this.btnXoa.Text = "Xóa Dữ Liệu";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(92, 25);
+            this.btnLuu.Text = "Lưu Dữ Liệu";
             // 
             // toolStripSeparator1
             // 
@@ -255,8 +277,14 @@
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThem,
             this.toolStripSeparator1,
+            this.btnLuu,
+            this.toolStripSeparator4,
+            this.btnSua,
+            this.toolStripSeparator2,
             this.btnXoa,
             this.toolStripSeparator3,
+            this.btnHuyBo,
+            this.toolStripSeparator5,
             this.btnReload});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = null;
@@ -369,8 +397,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolStripButton btnReload;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton btnHuyBo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnXoa;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton btnSua;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
