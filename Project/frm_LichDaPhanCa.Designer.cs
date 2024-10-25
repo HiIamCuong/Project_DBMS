@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvHDB = new System.Windows.Forms.DataGridView();
+            this.dgvcalam = new System.Windows.Forms.DataGridView();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel1.Controls.Add(this.dgvHDB);
+            this.panel1.Controls.Add(this.dgvcalam);
             this.panel1.Controls.Add(this.btnTimKiem);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -50,18 +50,18 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 46;
             // 
-            // dgvHDB
+            // dgvcalam
             // 
-            this.dgvHDB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvHDB.BackgroundColor = System.Drawing.Color.AliceBlue;
-            this.dgvHDB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvHDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHDB.Location = new System.Drawing.Point(29, 84);
-            this.dgvHDB.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvHDB.Name = "dgvHDB";
-            this.dgvHDB.RowHeadersWidth = 51;
-            this.dgvHDB.Size = new System.Drawing.Size(738, 332);
-            this.dgvHDB.TabIndex = 52;
+            this.dgvcalam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvcalam.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.dgvcalam.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvcalam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcalam.Location = new System.Drawing.Point(29, 84);
+            this.dgvcalam.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvcalam.Name = "dgvcalam";
+            this.dgvcalam.RowHeadersWidth = 51;
+            this.dgvcalam.Size = new System.Drawing.Size(738, 332);
+            this.dgvcalam.TabIndex = 52;
             // 
             // btnTimKiem
             // 
@@ -112,7 +112,7 @@
             this.Text = "frm_LichDaPhanCa";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,7 +121,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvHDB;
+        private System.Windows.Forms.DataGridView dgvcalam;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

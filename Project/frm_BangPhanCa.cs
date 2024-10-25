@@ -47,6 +47,25 @@ namespace Project
                 }
             }
         }
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            {
+                using (SqlConnection connection = new SqlConnection(strCon))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand("Xoa_Nhan_Vien_Vao_Ca_Lam", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@Ma_Ca", cmbMaCa.Text);
+                        command.Parameters.AddWithValue("@Ma_Nhan_Vien", cmbMaNV.Text);
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Xóa thành công");
+                        loaddata();
+                    }
+                }
+            }
+        }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -63,35 +82,15 @@ namespace Project
                             command.Parameters.AddWithValue("@Ma_Ca", cmbMaCa.Text);
                             command.Parameters.AddWithValue("@Ma_Nhan_Vien", cmbMaNV.Text);
                             command.ExecuteNonQuery();
-                            MessageBox.Show("Thêm sinh viên thành công");
+                            MessageBox.Show("Thêm thành công");
                             loaddata();
                         }
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
-            {
-                using (SqlConnection connection = new SqlConnection(strCon))
-                {
-                    connection.Open();
-                    using (SqlCommand command = new SqlCommand("Xoa_Nhan_Vien_Vao_Ca_Lam", connection))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-                        command.Parameters.AddWithValue("@Ma_Ca", cmbMaCa.Text);
-                        command.Parameters.AddWithValue("@Ma_Nhan_Vien", cmbMaNV.Text);
-                        command.ExecuteNonQuery();
-                        MessageBox.Show("Thêm sinh viên thành công");
-                        loaddata();
-                    }
-                }
             }
         }
     }
