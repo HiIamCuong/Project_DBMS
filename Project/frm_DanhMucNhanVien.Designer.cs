@@ -71,7 +71,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnTKKH = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbMaNV = new System.Windows.Forms.ComboBox();
+            this.txtMaTK = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.panel5.SuspendLayout();
@@ -109,10 +109,10 @@
             // 
             this.cmbMaLoaiNV.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaLoaiNV.FormattingEnabled = true;
-            this.cmbMaLoaiNV.Location = new System.Drawing.Point(192, 276);
+            this.cmbMaLoaiNV.Location = new System.Drawing.Point(608, 274);
             this.cmbMaLoaiNV.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMaLoaiNV.Name = "cmbMaLoaiNV";
-            this.cmbMaLoaiNV.Size = new System.Drawing.Size(241, 35);
+            this.cmbMaLoaiNV.Size = new System.Drawing.Size(241, 39);
             this.cmbMaLoaiNV.TabIndex = 45;
             // 
             // label8
@@ -123,9 +123,9 @@
             this.label8.Location = new System.Drawing.Point(14, 348);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(167, 29);
+            this.label8.Size = new System.Drawing.Size(166, 29);
             this.label8.TabIndex = 44;
-            this.label8.Text = "Mã Nhân Viên";
+            this.label8.Text = "Mã Tài Khoản";
             // 
             // lblTenLoaiNV
             // 
@@ -207,7 +207,7 @@
             this.txtDChi.Location = new System.Drawing.Point(218, 292);
             this.txtDChi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDChi.Name = "txtDChi";
-            this.txtDChi.Size = new System.Drawing.Size(271, 39);
+            this.txtDChi.Size = new System.Drawing.Size(273, 39);
             this.txtDChi.TabIndex = 4;
             // 
             // txtTenNV
@@ -218,7 +218,7 @@
             this.txtTenNV.Location = new System.Drawing.Point(218, 88);
             this.txtTenNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.Size = new System.Drawing.Size(274, 39);
+            this.txtTenNV.Size = new System.Drawing.Size(276, 39);
             this.txtTenNV.TabIndex = 4;
             // 
             // txtSdt
@@ -229,7 +229,7 @@
             this.txtSdt.Location = new System.Drawing.Point(218, 240);
             this.txtSdt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSdt.Name = "txtSdt";
-            this.txtSdt.Size = new System.Drawing.Size(271, 39);
+            this.txtSdt.Size = new System.Drawing.Size(273, 39);
             this.txtSdt.TabIndex = 3;
             // 
             // txtMaNV
@@ -240,7 +240,7 @@
             this.txtMaNV.Location = new System.Drawing.Point(218, 32);
             this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(274, 39);
+            this.txtMaNV.Size = new System.Drawing.Size(276, 39);
             this.txtMaNV.TabIndex = 3;
             // 
             // label5
@@ -330,7 +330,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel2.Controls.Add(this.cmbMaNV);
+            this.panel2.Controls.Add(this.txtMaTK);
             this.panel2.Controls.Add(this.txtNgayTD);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.cmbMaLoaiNV);
@@ -356,7 +356,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 152);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(519, 600);
+            this.panel2.Size = new System.Drawing.Size(521, 600);
             this.panel2.TabIndex = 49;
             // 
             // txtTK
@@ -378,17 +378,18 @@
             this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 51;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1299, 600);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1472, 600);
             this.dgvNhanVien.TabIndex = 33;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.dgvNhanVien);
+            this.panel5.Controls.Add(this.cmbMaLoaiNV);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 152);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1299, 600);
+            this.panel5.Size = new System.Drawing.Size(1472, 600);
             this.panel5.TabIndex = 51;
             // 
             // label1
@@ -397,7 +398,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(426, 15);
+            this.label1.Location = new System.Drawing.Point(513, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(438, 47);
@@ -411,7 +412,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 752);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1299, 38);
+            this.panel4.Size = new System.Drawing.Size(1472, 38);
             this.panel4.TabIndex = 50;
             // 
             // bindingNavigator1
@@ -442,7 +443,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1299, 38);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1472, 38);
             this.bindingNavigator1.TabIndex = 41;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -542,6 +543,7 @@
             this.btnTKKH.TabIndex = 7;
             this.btnTKKH.Text = "Tìm Kiếm";
             this.btnTKKH.UseVisualStyleBackColor = true;
+            this.btnTKKH.Click += new System.EventHandler(this.btnTKKH_Click);
             // 
             // panel1
             // 
@@ -552,28 +554,25 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1299, 152);
+            this.panel1.Size = new System.Drawing.Size(1472, 152);
             this.panel1.TabIndex = 48;
             // 
-            // cmbMaNV
+            // txtMaTK
             // 
-            this.cmbMaNV.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMaNV.FormattingEnabled = true;
-            this.cmbMaNV.Items.AddRange(new object[] {
-            "TK001",
-            "TK002",
-            "TK003"});
-            this.cmbMaNV.Location = new System.Drawing.Point(218, 348);
-            this.cmbMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbMaNV.Name = "cmbMaNV";
-            this.cmbMaNV.Size = new System.Drawing.Size(271, 37);
-            this.cmbMaNV.TabIndex = 34;
+            this.txtMaTK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaTK.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaTK.Location = new System.Drawing.Point(216, 348);
+            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMaTK.Name = "txtMaTK";
+            this.txtMaTK.Size = new System.Drawing.Size(273, 39);
+            this.txtMaTK.TabIndex = 48;
             // 
             // frm_DanhMucNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1299, 790);
+            this.ClientSize = new System.Drawing.Size(1472, 790);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -643,6 +642,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnTKKH;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cmbMaNV;
+        private System.Windows.Forms.TextBox txtMaTK;
     }
 }

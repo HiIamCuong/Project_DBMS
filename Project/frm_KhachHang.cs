@@ -97,8 +97,57 @@ namespace Project
                 }
             }
         }
-    }
 
+        private void btnTKKH_Click(object sender, EventArgs e)
+        {
+            String timKiem = txtTK.Text;
+            DataTable result = TimKiemKhachHang(timKiem);
+            if (result != null && result.Rows.Count > 0)
+
+            {
+                dgvKH.DataSource = result;
+            }
+
+            else
+            {
+                MessageBox.Show("Không tìm thấy khách hàng nào phù hợp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private DataTable TimKiemKhachHang(string timKiem)
+        {
+            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.TimKiemKhachHang(@TimKiem)", conn);
+                    cmd.Parameters.Add("@TimKiem", SqlDbType.NVarChar).Value = timKiem;
+                    DataTable table = new DataTable();
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(table);
+                    return table;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return null;
+                }
+                finally
+                {
+                    if (conn != null && conn.State == ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
+                }
+            }
+
+        }
+
+    }
 }
 
 

@@ -32,7 +32,7 @@ namespace Project
             string diaChi = txtDChi.Text;
             string sdt = txtSdt.Text;
             string maViTri = cmbMaViTri.Text;
-            string maTaiKhoan = cmbMaNV.Text;
+            string maTaiKhoan = txtMaTK.Text;
             DateTime ngayTuyenDung = txtNgayTD.Value.Date;
 
             //MessageBox.Show(ngaySinh.ToShortDateString());
@@ -118,7 +118,7 @@ namespace Project
             string diaChi = txtDChi.Text;
             string sdt = txtSdt.Text;
             string maViTri = cmbMaViTri.Text;
-            string maTaiKhoan = cmbMaNV.Text;
+            string maTaiKhoan = txtMaTK.Text;
             DateTime ngayTuyenDung = txtNgayTD.Value.Date;
             CapNhatNhanVien(maNV, tenNV, ngaySinh, gioiTinh, diaChi, sdt, maViTri, maTaiKhoan, ngayTuyenDung);
 
@@ -156,10 +156,56 @@ namespace Project
                 }
             }
         }
+
+        private void btnTKKH_Click(object sender, EventArgs e)
+        {
+            String timKiem = txtTK.Text;
+            DataTable result = TimKiemNhanVien(timKiem);
+            if (result != null && result.Rows.Count > 0)
+
+            {
+                dgvNhanVien.DataSource = result;
+            }
+
+            else
+            {
+                MessageBox.Show("Không tìm thấy nhân viên nào phù hợp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+        private DataTable TimKiemNhanVien(string timKiem)
+        {
+            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.TimKiemNhanVien(@TimKiem)", conn);
+                    cmd.Parameters.Add("@TimKiem", SqlDbType.NVarChar).Value = timKiem;
+                    DataTable table = new DataTable();
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(table);
+                    return table;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return null;
+                }
+                finally
+                {
+                    if (conn != null && conn.State == ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
+                }
+            }
+
+        }
     }
-
 }
-
 
 
 
