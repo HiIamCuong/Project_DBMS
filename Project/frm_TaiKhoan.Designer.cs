@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnLuu = new System.Windows.Forms.ToolStripLabel();
+            this.btnCapNhat = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnReload = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
@@ -43,6 +44,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmbMaNV = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -67,6 +69,13 @@
             this.btnLuu.Size = new System.Drawing.Size(41, 29);
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(71, 24);
+            this.btnCapNhat.Text = "Cập Nhật";
             // 
             // toolStripSeparator1
             // 
@@ -180,6 +189,16 @@
             this.label3.TabIndex = 51;
             this.label3.Text = "Họ và tên";
             // 
+            // cmbMaNV
+            // 
+            this.cmbMaNV.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaNV.FormattingEnabled = true;
+            this.cmbMaNV.Location = new System.Drawing.Point(509, 71);
+            this.cmbMaNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbMaNV.Name = "cmbMaNV";
+            this.cmbMaNV.Size = new System.Drawing.Size(261, 33);
+            this.cmbMaNV.TabIndex = 50;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -207,6 +226,7 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.cmbMaNV);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.bindingNavigator1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -231,6 +251,7 @@
             this.toolStripSeparator5,
             this.btnReload,
             this.toolStripSeparator1,
+            this.btnCapNhat,
             this.toolStripSeparator2,
             this.btnLuu});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 178);
@@ -331,6 +352,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStripLabel btnLuu;
+        private System.Windows.Forms.ToolStripLabel btnCapNhat;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnReload;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
@@ -344,6 +366,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnXoa;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmbMaNV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Panel panel3;

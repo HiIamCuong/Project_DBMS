@@ -37,13 +37,37 @@ namespace Project
 
         public void TongDonGia()
         {
-            int gia = dgv_CTHDB.Rows.Count;
-            float DonGia = 0;
-            for (int i = 0; i < gia - 1; i++)
+            int DonGia = 0;
+            if (ma_HDB != -1)
             {
-                DonGia += float.Parse(dgv_CTHDB.Rows[i].Cells["Tong_Tien"].Value.ToString());
+                //int gia = dgv_CTHDB.Rows.Count;
+                //int DonGia = 0;
+                //for (int i = 0; i < gia - 1; i++)
+                //{
+                //    DonGia += float.Parse(dgv_CTHDB.Rows[i].Cells["Tong_Tien"].Value.ToString());
+                //}
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        conn.Open();
+                        using (SqlCommand cmd = new SqlCommand("SELECT dbo.TinhTongTienTheoHoaDon(@Ma_Hoa_Don_Ban)", conn))
+                        {
+                            cmd.CommandType = CommandType.Text;
+
+                            cmd.Parameters.AddWithValue("@Ma_Hoa_Don_Ban", ma_HDB);
+
+                            DonGia = (int)cmd.ExecuteScalar();
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show("Có lỗi" + e.Message);
+                    }
+                }                
             }
-            lbl_TongTien.Text = DonGia.ToString("#,### vnđ");
+            lbl_TongTien.Text = DonGia + "vnđ";
         }
 
         void LoadMaSanPham()
@@ -84,7 +108,7 @@ namespace Project
                         }
 
                         LoadHoaDonBan();
-                        MessageBox.Show("Thêm sản phẩm thành công.");
+                        //MessageBox.Show("Thêm sản phẩm thành công.");
 
                     }
                 }
@@ -105,7 +129,7 @@ namespace Project
 
                         cmd.ExecuteNonQuery();
                         LoadHoaDonBan();
-                        MessageBox.Show("Thêm sản phẩm thành công.");
+                        //MessageBox.Show("Thêm sản phẩm thành công.");
 
                     }
                 }

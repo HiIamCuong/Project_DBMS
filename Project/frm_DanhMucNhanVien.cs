@@ -165,7 +165,7 @@ namespace Project
 
             {
                 dgvNhanVien.DataSource = result;
-            }
+    }
 
             else
             {
@@ -188,7 +188,7 @@ namespace Project
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     adapter.Fill(table);
                     return table;
-                }
+}
                 catch (Exception ex)
                 {
                     MessageBox.Show("Lỗi: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);

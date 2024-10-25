@@ -379,6 +379,17 @@
             this.dgvKH.Size = new System.Drawing.Size(1311, 368);
             this.dgvKH.TabIndex = 40;
             // 
+            // dtpNgayNhap
+            // 
+            this.dtpNgayNhap.CustomFormat = "";
+            this.dtpNgayNhap.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayNhap.Location = new System.Drawing.Point(509, 82);
+            this.dtpNgayNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpNgayNhap.Name = "dtpNgayNhap";
+            this.dtpNgayNhap.Size = new System.Drawing.Size(262, 32);
+            this.dtpNgayNhap.TabIndex = 26;
+            // 
             // frm_KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);

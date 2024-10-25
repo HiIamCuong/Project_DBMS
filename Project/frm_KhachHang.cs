@@ -106,7 +106,7 @@ namespace Project
 
             {
                 dgvKH.DataSource = result;
-            }
+    }
 
             else
             {

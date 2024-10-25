@@ -219,7 +219,14 @@
             this.nhânViênToolStripMenuItem1.Text = "Nhân Viên";
             this.nhânViênToolStripMenuItem1.Click += new System.EventHandler(this.nhânViênToolStripMenuItem1_Click);
             // 
-            
+            // loạiNhânViênToolStripMenuItem
+            // 
+            this.loạiNhânViênToolStripMenuItem.BackColor = System.Drawing.Color.OldLace;
+            this.loạiNhânViênToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.loạiNhânViênToolStripMenuItem.Name = "loạiNhânViênToolStripMenuItem";
+            this.loạiNhânViênToolStripMenuItem.Size = new System.Drawing.Size(254, 40);
+            this.loạiNhânViênToolStripMenuItem.Text = "Loại Nhân Viên";
+            this.loạiNhânViênToolStripMenuItem.Click += new System.EventHandler(this.loạiNhânViênToolStripMenuItem_Click);
             // 
             // nhânViênToolStripMenuItem
             // 

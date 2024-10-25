@@ -71,7 +71,7 @@ namespace Project
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            } 
+            }
             
 
         }
@@ -79,22 +79,22 @@ namespace Project
         private void btnThem_Click(object sender, EventArgs e)
             { 
             try
+        {
+            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            {
+                using (SqlConnection connection = new SqlConnection(strCon))
                 {
-                    if (sqlCon != null && sqlCon.State == ConnectionState.Open)
-                    {
-                        using (SqlConnection connection = new SqlConnection(strCon))
-                        {
-                            connection.Open();
+                    connection.Open();
                             using (SqlCommand command = new SqlCommand("Them_Nhan_Vien_Vao_Ca_Lam", connection))
-                            {
-                                command.CommandType = CommandType.StoredProcedure;
-                                command.Parameters.AddWithValue("@Ma_Ca", cmbMaCa.Text);
-                                command.Parameters.AddWithValue("@Ma_Nhan_Vien", cmbMaNV.Text);
-                                command.ExecuteNonQuery();
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@Ma_Ca", cmbMaCa.Text);
+                        command.Parameters.AddWithValue("@Ma_Nhan_Vien", cmbMaNV.Text);
+                        command.ExecuteNonQuery();
                                 MessageBox.Show("Thêm thành công");
-                                loaddata();
-                            }
-                        }
+                        loaddata();
+                    }
+                }
                     }
             }
             catch (Exception ex)
