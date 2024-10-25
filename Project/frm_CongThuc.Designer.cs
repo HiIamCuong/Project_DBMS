@@ -30,13 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dgvCaLamViec = new System.Windows.Forms.DataGridView();
+            this.dgvCongthuc = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSua = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -46,6 +45,10 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.btnReload = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
+            this.cbbMaSP = new System.Windows.Forms.ComboBox();
+            this.cbMaNL = new System.Windows.Forms.ComboBox();
+            this.txtDonVi = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lblTenQue = new System.Windows.Forms.Label();
@@ -53,12 +56,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txtMaCa = new System.Windows.Forms.TextBox();
-            this.cbMaSP = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCaLamViec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCongthuc)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -68,7 +67,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dgvCaLamViec);
+            this.panel5.Controls.Add(this.dgvCongthuc);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(461, 62);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -76,19 +75,20 @@
             this.panel5.Size = new System.Drawing.Size(571, 350);
             this.panel5.TabIndex = 55;
             // 
-            // dgvCaLamViec
+            // dgvCongthuc
             // 
-            this.dgvCaLamViec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCaLamViec.BackgroundColor = System.Drawing.Color.AliceBlue;
-            this.dgvCaLamViec.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvCaLamViec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCaLamViec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCaLamViec.Location = new System.Drawing.Point(0, 0);
-            this.dgvCaLamViec.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvCaLamViec.Name = "dgvCaLamViec";
-            this.dgvCaLamViec.RowHeadersWidth = 51;
-            this.dgvCaLamViec.Size = new System.Drawing.Size(571, 350);
-            this.dgvCaLamViec.TabIndex = 33;
+            this.dgvCongthuc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCongthuc.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.dgvCongthuc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvCongthuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCongthuc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCongthuc.Location = new System.Drawing.Point(0, 0);
+            this.dgvCongthuc.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCongthuc.Name = "dgvCongthuc";
+            this.dgvCongthuc.RowHeadersWidth = 51;
+            this.dgvCongthuc.Size = new System.Drawing.Size(571, 350);
+            this.dgvCongthuc.TabIndex = 33;
+            this.dgvCongthuc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCongthuc_CellContentClick);
             // 
             // panel1
             // 
@@ -125,7 +125,6 @@
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThem,
             this.toolStripSeparator1,
-            this.btnLuu,
             this.toolStripSeparator4,
             this.btnSua,
             this.toolStripSeparator2,
@@ -153,19 +152,12 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 25);
             this.btnThem.Text = "Thêm Mới";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(92, 25);
-            this.btnLuu.Text = "Lưu Dữ Liệu";
             // 
             // toolStripSeparator4
             // 
@@ -179,6 +171,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 25);
             this.btnSua.Text = "Sửa dữ liệu";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // toolStripSeparator2
             // 
@@ -192,6 +185,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(94, 25);
             this.btnXoa.Text = "Xóa Dữ Liệu";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // toolStripSeparator3
             // 
@@ -205,6 +199,7 @@
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.Size = new System.Drawing.Size(61, 25);
             this.btnHuyBo.Text = "Hủy Bỏ";
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click_1);
             // 
             // toolStripSeparator5
             // 
@@ -218,14 +213,15 @@
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(60, 25);
             this.btnReload.Text = "Reload";
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click_1);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.cbMaSP);
-            this.panel2.Controls.Add(this.txtMaCa);
+            this.panel2.Controls.Add(this.txtSoLuong);
+            this.panel2.Controls.Add(this.cbbMaSP);
+            this.panel2.Controls.Add(this.cbMaNL);
+            this.panel2.Controls.Add(this.txtDonVi);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lblTenQue);
@@ -238,6 +234,48 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(461, 412);
             this.panel2.TabIndex = 53;
+            // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSoLuong.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Location = new System.Drawing.Point(205, 199);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(239, 34);
+            this.txtSoLuong.TabIndex = 46;
+            // 
+            // cbbMaSP
+            // 
+            this.cbbMaSP.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbMaSP.FormattingEnabled = true;
+            this.cbbMaSP.Location = new System.Drawing.Point(205, 113);
+            this.cbbMaSP.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbMaSP.Name = "cbbMaSP";
+            this.cbbMaSP.Size = new System.Drawing.Size(239, 35);
+            this.cbbMaSP.TabIndex = 45;
+            // 
+            // cbMaNL
+            // 
+            this.cbMaNL.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMaNL.FormattingEnabled = true;
+            this.cbMaNL.Location = new System.Drawing.Point(205, 156);
+            this.cbMaNL.Margin = new System.Windows.Forms.Padding(4);
+            this.cbMaNL.Name = "cbMaNL";
+            this.cbMaNL.Size = new System.Drawing.Size(239, 35);
+            this.cbMaNL.TabIndex = 44;
+            // 
+            // txtDonVi
+            // 
+            this.txtDonVi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDonVi.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDonVi.Location = new System.Drawing.Point(205, 242);
+            this.txtDonVi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDonVi.Name = "txtDonVi";
+            this.txtDonVi.Size = new System.Drawing.Size(239, 34);
+            this.txtDonVi.TabIndex = 43;
             // 
             // panel3
             // 
@@ -317,48 +355,6 @@
             this.panel4.Size = new System.Drawing.Size(1032, 28);
             this.panel4.TabIndex = 54;
             // 
-            // txtMaCa
-            // 
-            this.txtMaCa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaCa.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaCa.Location = new System.Drawing.Point(205, 242);
-            this.txtMaCa.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaCa.Name = "txtMaCa";
-            this.txtMaCa.Size = new System.Drawing.Size(239, 34);
-            this.txtMaCa.TabIndex = 43;
-            // 
-            // cbMaSP
-            // 
-            this.cbMaSP.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMaSP.FormattingEnabled = true;
-            this.cbMaSP.Location = new System.Drawing.Point(205, 156);
-            this.cbMaSP.Margin = new System.Windows.Forms.Padding(4);
-            this.cbMaSP.Name = "cbMaSP";
-            this.cbMaSP.Size = new System.Drawing.Size(239, 35);
-            this.cbMaSP.TabIndex = 44;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(205, 113);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(239, 35);
-            this.comboBox1.TabIndex = 45;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(205, 199);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 34);
-            this.textBox1.TabIndex = 46;
-            // 
             // frm_CongThuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,7 +367,7 @@
             this.Name = "frm_CongThuc";
             this.Text = "frm_CongThuc";
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCaLamViec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCongthuc)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
@@ -388,13 +384,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dgvCaLamViec;
+        private System.Windows.Forms.DataGridView dgvCongthuc;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton btnSua;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -411,9 +406,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtMaCa;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox cbMaSP;
+        private System.Windows.Forms.TextBox txtDonVi;
+        private System.Windows.Forms.TextBox txtSoLuong;
+        private System.Windows.Forms.ComboBox cbbMaSP;
+        private System.Windows.Forms.ComboBox cbMaNL;
     }
 }
