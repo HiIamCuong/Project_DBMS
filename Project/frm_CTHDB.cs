@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,18 @@ namespace Project
 {
     public partial class frm_CTHDB : Form
     {
-        string connectionString = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTS;Persist Security Info=True;User ID=sa;Password=hello";
+        string connectionString = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTraSua;Persist Security Info=True;User ID=sa;Password=hello";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
         private int ma_HDB = -1;
         
+        public frm_CTHDB(int Ma)
+        {
+            InitializeComponent();
+            ma_HDB = Ma;
+        }
+
         public frm_CTHDB()
         {
             InitializeComponent();
@@ -27,11 +34,24 @@ namespace Project
 
         void LoadHoaDonBan()
         {
-            da = new SqlDataAdapter("Select * From ChiTietDonBan where Ma_Hoa_Don_Ban ='" + ma_HDB + "'", conn);
-            ds = new DataSet();
-            da.Fill(ds, "ChiTietDonBan");
-            dgv_CTHDB.DataSource = ds.Tables["ChiTietDonBan"];
-            TongDonGia();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using(SqlCommand cmd = new SqlCommand("SELECT * FROM LayThongTinHoaDonBan(@Ma_Hoa_Don_Ban)", conn))
+                {
+                    cmd.Parameters.AddWithValue("@Ma_Hoa_Don_Ban", ma_HDB);
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable table = new DataTable();
+                    adapter.Fill(table);
+                    dgv_CTHDB.DataSource = table;
+                    TongDonGia();
+                }
+                
+                
+            }
+            
+            
         }
 
         public void TongDonGia()
@@ -39,13 +59,6 @@ namespace Project
             int DonGia = 0;
             if (ma_HDB != -1)
             {
-                //int gia = dgv_CTHDB.Rows.Count;
-                //int DonGia = 0;
-                //for (int i = 0; i < gia - 1; i++)
-                //{
-                //    DonGia += float.Parse(dgv_CTHDB.Rows[i].Cells["Tong_Tien"].Value.ToString());
-                //}
-
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     try
@@ -146,8 +159,109 @@ namespace Project
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            ma_HDB = -1;
+        }
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();            
+        }
+
+        private void dgv_CTHDB_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < dgv_CTHDB.Rows.Count - 1)
+            {
+                soLuong.Text = dgv_CTHDB.Rows[e.RowIndex].Cells[1].Value.ToString();
+
+                string maSP;
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT dbo.LayMaSanPham(@Ten_San_Pham)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Ten_San_Pham", dgv_CTHDB.Rows[e.RowIndex].Cells[0].Value.ToString());
+
+                        maSP = cmd.ExecuteScalar().ToString();
+                    }                  
+                }
+
+                cbMaSP.SelectedValue = maSP;
+
+                
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand("SuaChiTietHoaDonBan", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@Ma_Hoa_Don_Ban", ma_HDB);
+                    cmd.Parameters.AddWithValue("@So_Luong", (int)soLuong.Value);
+                    cmd.Parameters.AddWithValue("@Ma_San_Pham", cbMaSP.SelectedValue.ToString());
+
+                    cmd.ExecuteNonQuery();
+
+                    LoadHoaDonBan();
+                    //MessageBox.Show("Thêm sản phẩm thành công.");
+
+                }
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand("XoaSanPhamTrongCTHD", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@Ma_Hoa_Don_Ban", ma_HDB);
+                    cmd.Parameters.AddWithValue("@Ma_San_Pham", cbMaSP.SelectedValue.ToString());
+
+                    cmd.ExecuteNonQuery();                 
+                    LoadHoaDonBan();
+                    //MessageBox.Show("Thêm sản phẩm thành công.");
+
+                }
+            }
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
             LoadHoaDonBan();
+        }
+
+
+        private void btn_TK_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.TimKiemSanPhamTrongCTHD(@Ten_San_Pham, @Ma_Hoa_Don_Ban)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Ma_Hoa_Don_Ban", ma_HDB);
+                        cmd.Parameters.AddWithValue("@Ten_San_Pham", cbMaSP.Text);
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataSet ds = new DataSet();
+                        da.Fill(ds, "TimKiem");
+                        dgv_CTHDB.DataSource = ds.Tables["TimKiem"];
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                }
+            }
         }
     }
 }

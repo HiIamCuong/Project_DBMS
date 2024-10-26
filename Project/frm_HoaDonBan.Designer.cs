@@ -41,12 +41,9 @@
             this.txtSĐT = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvHDB = new System.Windows.Forms.DataGridView();
-            this.Ma_Hoa_Don_Ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thanh_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btnXemCTHD = new System.Windows.Forms.ToolStripButton();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnLuu = new System.Windows.Forms.ToolStripButton();
@@ -57,11 +54,15 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnReload = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Ma_Hoa_Don_Ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thanh_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbHDB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDB)).BeginInit();
             this.panel3.SuspendLayout();
@@ -87,7 +88,7 @@
             this.dtpNgayBan.CustomFormat = "";
             this.dtpNgayBan.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayBan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayBan.Location = new System.Drawing.Point(187, 88);
+            this.dtpNgayBan.Location = new System.Drawing.Point(187, 96);
             this.dtpNgayBan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgayBan.Name = "dtpNgayBan";
             this.dtpNgayBan.Size = new System.Drawing.Size(262, 32);
@@ -101,6 +102,7 @@
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.Size = new System.Drawing.Size(262, 32);
             this.txtThanhTien.TabIndex = 29;
+            this.txtThanhTien.Text = "0";
             // 
             // txtMaHDB
             // 
@@ -219,33 +221,7 @@
             this.dgvHDB.RowHeadersWidth = 51;
             this.dgvHDB.Size = new System.Drawing.Size(738, 265);
             this.dgvHDB.TabIndex = 45;
-            // 
-            // Ma_Hoa_Don_Ban
-            // 
-            this.Ma_Hoa_Don_Ban.DataPropertyName = "Ma_Hoa_Don_Ban";
-            this.Ma_Hoa_Don_Ban.HeaderText = "Mã Hóa Đơn Bán";
-            this.Ma_Hoa_Don_Ban.MinimumWidth = 6;
-            this.Ma_Hoa_Don_Ban.Name = "Ma_Hoa_Don_Ban";
-            // 
-            // Ngay
-            // 
-            this.Ngay.DataPropertyName = "Ngay";
-            this.Ngay.HeaderText = "Ngày";
-            this.Ngay.MinimumWidth = 6;
-            this.Ngay.Name = "Ngay";
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "SĐT";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            // 
-            // Thanh_Tien
-            // 
-            this.Thanh_Tien.HeaderText = "Thành Tiền";
-            this.Thanh_Tien.MinimumWidth = 6;
-            this.Thanh_Tien.Name = "Thanh_Tien";
+            this.dgvHDB.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDB_RowEnter);
             // 
             // panel3
             // 
@@ -266,6 +242,7 @@
             this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnXemCTHD,
             this.btnThem,
             this.toolStripSeparator1,
             this.btnLuu,
@@ -276,7 +253,7 @@
             this.toolStripSeparator3,
             this.btnHuyBo,
             this.toolStripSeparator5,
-            this.btnReload});
+            this.toolStripButton1});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
@@ -289,6 +266,15 @@
             this.bindingNavigator1.TabIndex = 47;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
+            // btnXemCTHD
+            // 
+            this.btnXemCTHD.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnXemCTHD.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnXemCTHD.Name = "btnXemCTHD";
+            this.btnXemCTHD.Size = new System.Drawing.Size(151, 24);
+            this.btnXemCTHD.Text = "Xem chi tiết hóa đơn";
+            this.btnXemCTHD.Click += new System.EventHandler(this.btnXemCTHD_Click);
+            // 
             // btnThem
             // 
             this.btnThem.ForeColor = System.Drawing.Color.SaddleBrown;
@@ -296,6 +282,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 24);
             this.btnThem.Text = "Thêm Mới";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -322,6 +309,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 24);
             this.btnSua.Text = "Sửa dữ liệu";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // toolStripSeparator2
             // 
@@ -335,6 +323,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(89, 24);
             this.btnXoa.Text = "Xóa dữ liệu";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // toolStripSeparator3
             // 
@@ -354,13 +343,14 @@
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
             // 
-            // btnReload
+            // toolStripButton1
             // 
-            this.btnReload.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnReload.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(60, 24);
-            this.btnReload.Text = "Reload";
+            this.toolStripButton1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(60, 24);
+            this.toolStripButton1.Text = "Reload";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // panel1
             // 
@@ -386,6 +376,7 @@
             this.btnTimKiem.TabIndex = 51;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -410,6 +401,34 @@
             this.label1.Size = new System.Drawing.Size(242, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "HÓA ĐƠN BÁN";
+            // 
+            // Ma_Hoa_Don_Ban
+            // 
+            this.Ma_Hoa_Don_Ban.DataPropertyName = "Ma_Hoa_Don_Ban";
+            this.Ma_Hoa_Don_Ban.HeaderText = "Mã Hóa Đơn Bán";
+            this.Ma_Hoa_Don_Ban.MinimumWidth = 6;
+            this.Ma_Hoa_Don_Ban.Name = "Ma_Hoa_Don_Ban";
+            // 
+            // Ngay
+            // 
+            this.Ngay.DataPropertyName = "Ngay";
+            this.Ngay.HeaderText = "Ngày";
+            this.Ngay.MinimumWidth = 6;
+            this.Ngay.Name = "Ngay";
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "SĐT";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            // 
+            // Thanh_Tien
+            // 
+            this.Thanh_Tien.DataPropertyName = "Thanh_Tien";
+            this.Thanh_Tien.HeaderText = "Thành Tiền";
+            this.Thanh_Tien.MinimumWidth = 6;
+            this.Thanh_Tien.Name = "Thanh_Tien";
             // 
             // frm_HoaDonBan
             // 
@@ -462,12 +481,13 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnHuyBo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripButton btnReload;
+        private System.Windows.Forms.ToolStripButton btnXemCTHD;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSĐT;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ma_Hoa_Don_Ban;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;

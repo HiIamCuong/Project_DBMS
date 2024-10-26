@@ -79,7 +79,6 @@
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Name = "chiTiếtHóaĐơnBánToolStripMenuItem";
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Size = new System.Drawing.Size(308, 40);
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Text = "Chi Tiết Hóa Đơn Bán";
-            this.chiTiếtHóaĐơnBánToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtHóaĐơnBánToolStripMenuItem_Click);
             // 
             // hóaĐơnXuấtHàngToolStripMenuItem
             // 

@@ -16,11 +16,12 @@ BEGIN
     END
     ELSE
     BEGIN
-        -- Nếu mã sản phẩm đã tồn tại, có thể chọn cập nhật hoặc thông báo lỗi
-        -- Ví dụ: UPDATE hoặc thông báo lỗi
         RAISERROR('Mã sản phẩm đã tồn tại!', 16, 1);
     END
 END;
+
+
+GO
 
 CREATE PROCEDURE XoaSanPham
     @Ma_San_Pham varchar(10)
@@ -60,6 +61,7 @@ BEGIN
     END
 END;
 
+GO
 
 CREATE PROCEDURE SuaSanPham
     @Ma_San_Pham VARCHAR(10),        
@@ -87,8 +89,8 @@ BEGIN
     WHERE Ma_San_Pham = @Ma_San_Pham;
 END;
 
+GO
 
-<<<<<<< HEAD
 CREATE FUNCTION TimKiemSanPham
     (@Ten_San_Pham NVARCHAR(50))
 RETURNS TABLE

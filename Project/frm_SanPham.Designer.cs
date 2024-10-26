@@ -58,7 +58,8 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSua = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnXoa = new System.Windows.Forms.ToolStripButton();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
+            this.btn_Reload = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -110,11 +111,11 @@
             // 
             // txtTenSP
             // 
-            this.txtTenSP.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenSP.Font = new System.Drawing.Font("#9Slide04 Rokkitt", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenSP.Location = new System.Drawing.Point(205, 75);
             this.txtTenSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenSP.Name = "txtTenSP";
-            this.txtTenSP.Size = new System.Drawing.Size(264, 32);
+            this.txtTenSP.Size = new System.Drawing.Size(264, 36);
             this.txtTenSP.TabIndex = 31;
             // 
             // txtMaSP
@@ -346,7 +347,8 @@
             this.toolStripSeparator4,
             this.btnSua,
             this.toolStripSeparator2,
-            this.btnXoa,
+            this.btn_Xoa,
+            this.btn_Reload,
             this.toolStripSeparator3,
             this.toolStripSeparator5});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
@@ -394,14 +396,23 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // btnXoa
+            // btn_Xoa
             // 
-            this.btnXoa.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(89, 24);
-            this.btnXoa.Text = "Xóa dữ liệu";
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btn_Xoa.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(89, 24);
+            this.btn_Xoa.Text = "Xóa dữ liệu";
+            this.btn_Xoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btn_Reload
+            // 
+            this.btn_Reload.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Reload.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Reload.Name = "btn_Reload";
+            this.btn_Reload.Size = new System.Drawing.Size(60, 24);
+            this.btn_Reload.Text = "Reload";
+            this.btn_Reload.Click += new System.EventHandler(this.btn_Reload_Click);
             // 
             // toolStripSeparator3
             // 
@@ -499,7 +510,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton btnSua;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btnXoa;
+        private System.Windows.Forms.ToolStripButton btn_Reload;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.Panel panel1;
@@ -515,5 +526,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tinh_Trang;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ma_Loai_San_Pham;
         private System.Windows.Forms.DataGridViewImageColumn Anh;
+        private System.Windows.Forms.ToolStripButton btn_Xoa;
     }
 }

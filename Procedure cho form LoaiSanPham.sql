@@ -1,4 +1,5 @@
-﻿CREATE PROCEDURE ThemLoaiSanPham
+﻿GO
+CREATE PROCEDURE ThemLoaiSanPham
     @Ma_Loai_San_Pham VARCHAR(10),          
     @Ten_Loai_San_Pham NVARCHAR(255)      
 
@@ -23,6 +24,7 @@ BEGIN
 
 END;
 
+GO
 
 CREATE PROCEDURE SuaLoaiSanPham
     @Ma_Loai_San_Pham VARCHAR(10),        
@@ -51,6 +53,8 @@ BEGIN
     PRINT 'Sửa loại sản phẩm thành công.';
 END;
 
+GO 
+
 CREATE PROCEDURE XoaLoaiSanPham
     @Ma_Loai_San_Pham VARCHAR(10)  
 AS
@@ -74,4 +78,17 @@ BEGIN
 
     PRINT N'Xóa loại sản phẩm thành công.';
 END;
+
+GO
+
+CREATE FUNCTION TimKiemLoaiSanPham
+    (@Ten_Loai_San_Pham NVARCHAR(50))
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT *
+    FROM LoaiSanPham
+    WHERE Ten_Loai_San_Pham LIKE '%' + @Ten_Loai_San_Pham + '%'
+);
 

@@ -189,6 +189,7 @@
             this.btnTKKH.TabIndex = 7;
             this.btnTKKH.Text = "Tìm Kiếm";
             this.btnTKKH.UseVisualStyleBackColor = false;
+            this.btnTKKH.Click += new System.EventHandler(this.btnTKKH_Click);
             // 
             // panel2
             // 

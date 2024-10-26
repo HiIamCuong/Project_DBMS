@@ -1,9 +1,9 @@
-﻿CREATE TRIGGER TRG_Update_Tinh_Trang_SanPham
+﻿
+CREATE TRIGGER TRG_Update_Tinh_Trang_SanPham
 ON NguyenLieu
 AFTER INSERT, UPDATE, DELETE
 AS
 BEGIN
-    -- Cập nhật tất cả các sản phẩm có nguyên liệu đủ số lượng trong kho
     UPDATE SanPham
     SET Tinh_Trang = N'Còn hàng'
     WHERE Ma_San_Pham IN (
@@ -11,10 +11,15 @@ BEGIN
         FROM CongThuc CT
         JOIN NguyenLieu NL ON CT.Ma_Nguyen_Lieu = NL.Ma_Nguyen_Lieu
         GROUP BY CT.Ma_San_Pham
-        HAVING MIN(NL.So_Luong / CT.So_Luong) >= 1 -- Đủ nguyên liệu cho tất cả các thành phần của sản phẩm
+        HAVING MIN(
+            CASE
+                WHEN NL.Don_Vi = 'kg' AND CT.DonVi = 'gram' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                WHEN NL.Don_Vi = 'lit' AND CT.DonVi = 'ml' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                ELSE NL.So_Luong * 1.0 / CT.So_Luong
+            END
+        ) >= 1
     );
 
-    -- Cập nhật tất cả các sản phẩm không đủ nguyên liệu trong kho
     UPDATE SanPham
     SET Tinh_Trang = N'Hết hàng'
     WHERE Ma_San_Pham NOT IN (
@@ -22,11 +27,105 @@ BEGIN
         FROM CongThuc CT
         JOIN NguyenLieu NL ON CT.Ma_Nguyen_Lieu = NL.Ma_Nguyen_Lieu
         GROUP BY CT.Ma_San_Pham
-        HAVING MIN(NL.So_Luong / CT.So_Luong) >= 1 -- Đủ nguyên liệu cho tất cả các thành phần của sản phẩm
+        HAVING MIN(
+            CASE
+                WHEN NL.Don_Vi = 'kg' AND CT.DonVi = 'gram' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                WHEN NL.Don_Vi = 'lit' AND CT.DonVi = 'ml' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                ELSE NL.So_Luong * 1.0 / CT.So_Luong
+            END
+        ) >= 1
     );
-END
+END;
+
+------------------------------------------------------------------------------------------------
+CREATE TRIGGER UpdateThanhTienHoaDonBan
+ON ChiTietDonBan
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    DECLARE @Ma_Hoa_Don_Ban INT;
+
+    IF EXISTS(SELECT 1 FROM INSERTED)
+        SELECT TOP 1 @Ma_Hoa_Don_Ban = Ma_Hoa_Don_Ban FROM INSERTED;
+    ELSE IF EXISTS(SELECT 1 FROM DELETED)
+        SELECT TOP 1 @Ma_Hoa_Don_Ban = Ma_Hoa_Don_Ban FROM DELETED;
+
+    DECLARE @NewThanhTien INT;
+    SET @NewThanhTien = dbo.TinhTongTienTheoHoaDon(@Ma_Hoa_Don_Ban);
+
+    UPDATE HoaDonBan
+    SET Thanh_Tien = @NewThanhTien
+    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+END;
+----------------------------------------------------------------------------------------------
+	
+CREATE PROCEDURE ThemHoaDonBan
+    @Thoi_gian DATE,
+    @SDT VARCHAR(10)
+AS
+BEGIN
+    INSERT INTO HoaDonBan (Ngay, SDT, Thanh_Tien)
+    VALUES (@Thoi_gian, @SDT, 0);
+END;
 
 
+CREATE PROCEDURE SuaHoaDonBan
+    @Ma_Hoa_Don_Ban INT,
+    @Thoi_gian DATE,
+    @SDT VARCHAR(10)
+AS
+BEGIN
+    UPDATE HoaDonBan
+    SET 
+        Ngay = @Thoi_gian,
+        SDT =  @SDT
+    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+END;
+
+
+CREATE PROCEDURE XoaHoaDonBan
+    @Ma_Hoa_Don_Ban INT
+AS
+BEGIN
+    DELETE FROM ChiTietDonBan WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+
+    DELETE FROM HoaDonBan WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+
+    PRINT 'Hóa đơn bán và chi tiết đã được xóa thành công.';
+END;
+
+
+---------------------------------------------------------------------------------
+CREATE FUNCTION TinhTongTienTheoHoaDon (@Ma_Hoa_Don_Ban int)
+RETURNS INT
+AS
+BEGIN
+    DECLARE @Tong_Tien INT;
+
+    -- Tính tổng tiền của tất cả sản phẩm trong hóa đơn dựa theo mã hóa đơn
+    SELECT @Tong_Tien = SUM(Tong_Tien)
+    FROM ChiTietDonBan
+    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+
+    RETURN ISNULL(@Tong_Tien, 0);
+END;
+
+
+CREATE FUNCTION TimKiemHoaDonBan
+(
+    @Keyword nvarchar(50)
+)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT *
+    FROM HoaDonBan
+    WHERE (SDT LIKE @Keyword) OR (Ma_Hoa_Don_Ban  LIKE @Keyword)
+);
+
+------------------------------------------------------------------------------------
+/*
 CREATE PROCEDURE TaoHoaDonBan
     @Ma_San_Pham varchar(10),
     @So_Luong int
@@ -34,14 +133,7 @@ AS
 BEGIN
 
     DECLARE @Ma_Hoa_Don_Ban int;
-    DECLARE @Don_Gia float;
     DECLARE @Thanh_Tien float;
-
-    -- Lấy đơn giá của sản phẩm
-    SELECT @Don_Gia = Don_Gia FROM SanPham WHERE Ma_San_Pham = @Ma_San_Pham;
-
-    -- Tính tổng tiền
-    SET @Thanh_Tien = @Don_Gia * @So_Luong;
 
     -- Tạo hóa đơn bán mới (không cần số điện thoại)
     INSERT INTO HoaDonBan (Ngay, SDT, Thanh_Tien)
@@ -51,24 +143,45 @@ BEGIN
     SET @Ma_Hoa_Don_Ban = SCOPE_IDENTITY();
 
     -- Thêm chi tiết hóa đơn bán
-    INSERT INTO ChiTietDonBan (Ma_Hoa_Don_Ban, Ma_San_Pham, So_Luong, Don_Gia, Tong_Tien)
-    VALUES (@Ma_Hoa_Don_Ban, @Ma_San_Pham, @So_Luong, @Don_Gia, @Thanh_Tien);
+    INSERT INTO ChiTietDonBan (Ma_Hoa_Don_Ban, Ma_San_Pham, So_Luong, Tong_Tien)
+    VALUES (@Ma_Hoa_Don_Ban, @Ma_San_Pham, @So_Luong, @Thanh_Tien);
     
     PRINT 'Hóa đơn bán đã được tạo thành công với mã hóa đơn: ' + CAST(@Ma_Hoa_Don_Ban AS varchar);
-END
+END;
+*/
+-------------------------------------------------------
+CREATE FUNCTION LayThongTinHoaDonBan
+    (@Ma_Hoa_Don_Ban INT)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT 
+        sp.Ten_San_Pham as Ten_San_Pham,
+        ctdb.So_Luong as So_Luong,
+        sp.Don_Gia as Don_Gia,
+        ctdb.Tong_Tien as Tong_Tien
+    FROM ChiTietDonBan AS ctdb
+    JOIN SanPham AS sp ON ctdb.Ma_San_Pham = sp.Ma_San_Pham
+    WHERE ctdb.Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban
+);
 
-
-
-CREATE FUNCTION LayMaHoaDonCuoi()
-RETURNS int
+-----------------------------------------------------------
+CREATE FUNCTION LayMaSanPham
+(
+    @Ten_San_Pham NVARCHAR(50)
+)
+RETURNS VARCHAR(10)
 AS
 BEGIN
-    DECLARE @Ma_Hoa_Don_Ban int;
+    DECLARE @Ma_San_Pham VARCHAR(10);
 
-    SELECT @Ma_Hoa_Don_Ban = MAX(Ma_Hoa_Don_Ban) FROM HoaDonBan;
+    SELECT @Ma_San_Pham = Ma_San_Pham
+    FROM SanPham
+    WHERE Ten_San_Pham = @Ten_San_Pham;
 
-    RETURN @Ma_Hoa_Don_Ban;
-END
+    RETURN @Ma_San_Pham;
+END;
 
 
 CREATE PROCEDURE ThemSanPhamVaoHoaDonBan
@@ -77,11 +190,11 @@ CREATE PROCEDURE ThemSanPhamVaoHoaDonBan
     @So_Luong int
 AS
 BEGIN
-    -- Kiểm tra nếu hóa đơn chưa tồn tại, thì tạo mới
-    IF NOT EXISTS (SELECT 1 FROM HoaDonBan WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban)
+	
+	IF @So_Luong = 0
     BEGIN
-        INSERT INTO HoaDonBan (Ma_Hoa_Don_Ban, Ngay, SDT, Thanh_Tien)
-        VALUES (@Ma_Hoa_Don_Ban, GETDATE(), NULL, 0); 
+        RAISERROR('Số lượng phải > 0', 16, 1)
+        RETURN;
     END
 
     -- Tính giá của sản phẩm từ bảng SanPham
@@ -104,29 +217,72 @@ BEGIN
     ELSE
     BEGIN
         -- Nếu sản phẩm chưa tồn tại, thêm sản phẩm vào chi tiết hóa đơn bán
-        INSERT INTO ChiTietDonBan (Ma_Hoa_Don_Ban, Ma_San_Pham, So_Luong, Don_Gia, Tong_Tien)
-        VALUES (@Ma_Hoa_Don_Ban, @Ma_San_Pham, @So_Luong, @Don_Gia, @Tong_Tien);
-    END
+        INSERT INTO ChiTietDonBan (Ma_Hoa_Don_Ban, Ma_San_Pham, So_Luong, Tong_Tien)
+        VALUES (@Ma_Hoa_Don_Ban, @Ma_San_Pham, @So_Luong, @Tong_Tien);
+		
+		---Không cần cập nhật tổng tiền cho hóa đơn bán vì đã có trigger UpdateThanhTienHoaDonBan
 
-    -- Cập nhật tổng tiền cho hóa đơn bán
-    UPDATE HoaDonBan
-    SET Thanh_Tien = Thanh_Tien + @Tong_Tien
-    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+    END
+END;
+
+CREATE PROCEDURE XoaSanPhamTrongCTHD
+    @Ma_Hoa_Don_Ban INT,
+    @Ma_San_Pham VARCHAR(10)
+AS
+BEGIN   
+    DELETE FROM ChiTietDonBan
+    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban AND Ma_San_Pham = @Ma_San_Pham;
 END;
 
 
-CREATE FUNCTION TinhTongTienTheoHoaDon (@Ma_Hoa_Don_Ban int)
-RETURNS INT
+CREATE PROCEDURE SuaChiTietHoaDonBan
+    @Ma_Hoa_Don_Ban INT,
+    @Ma_San_Pham VARCHAR(10),
+    @So_Luong INT
 AS
 BEGIN
-    DECLARE @Tong_Tien INT;
+    IF @So_Luong = 0
+    BEGIN
+        EXEC XoaSanPhamTrongCTHD @Ma_Hoa_Don_Ban, @Ma_San_Pham;
+        RETURN;
+    END
 
-    -- Tính tổng tiền của tất cả sản phẩm trong hóa đơn dựa theo mã hóa đơn
-    SELECT @Tong_Tien = SUM(Tong_Tien)
-    FROM ChiTietDonBan
-    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+	DECLARE @Don_Gia float;
+    SELECT @Don_Gia = Don_Gia FROM SanPham WHERE Ma_San_Pham = @Ma_San_Pham;
 
-    -- Trả về tổng tiền
-    RETURN ISNULL(@Tong_Tien, 0);
+    UPDATE ChiTietDonBan
+    SET So_Luong = @So_Luong,
+        Tong_Tien = @So_Luong * @Don_Gia
+    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban AND Ma_San_Pham = @Ma_San_Pham;
+
 END;
+
+
+
+
+CREATE FUNCTION TimKiemSanPhamTrongCTHD
+    (@Ten_San_Pham NVARCHAR(50), @Ma_Hoa_Don_Ban INT)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT 
+        sp.Ten_San_Pham,
+        ctdb.So_Luong,
+        sp.Don_Gia,
+        ctdb.Tong_Tien
+    FROM 
+        ChiTietDonBan ctdb
+    JOIN 
+        SanPham sp ON ctdb.Ma_San_Pham = sp.Ma_San_Pham AND ctdb.Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban
+    WHERE 
+        sp.Ten_San_Pham LIKE '%' + @Ten_San_Pham + '%'
+);
+
+
+
+
+
+
+
 

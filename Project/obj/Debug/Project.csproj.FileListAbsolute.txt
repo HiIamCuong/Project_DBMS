@@ -30,3 +30,4 @@ C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateR
 C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.exe
 C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.pdb
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_BanHang.resources

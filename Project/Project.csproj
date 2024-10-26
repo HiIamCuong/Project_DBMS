@@ -52,6 +52,12 @@
     <Compile Include="frm_BangPhanCa.Designer.cs">
       <DependentUpon>frm_BangPhanCa.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_BanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BanHang.Designer.cs">
+      <DependentUpon>frm_BanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_CaLamViec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_BangPhanCa.resx">
       <DependentUpon>frm_BangPhanCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BanHang.resx">
+      <DependentUpon>frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_CaLamViec.resx">
       <DependentUpon>frm_CaLamViec.cs</DependentUpon>

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,13 +10,12 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class frm_CTHDN : Form
+    public partial class frm_BanHang : Form
     {
-        public frm_CTHDN()
+        public frm_BanHang()
         {
             InitializeComponent();
         }
 
-        
     }
 }
