@@ -14,7 +14,7 @@ namespace Project
 {
     public partial class frm_SanPham : Form
     {
-        string strconn = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTS;Persist Security Info=True;User ID=sa;Password=hello";
+        string strconn = "Data Source=DESKTOP-GIJL260;Initial Catalog=QLTraSua;Integrated Security=True";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
@@ -33,7 +33,6 @@ namespace Project
 
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        // Tải hình ảnh vào PictureBox
                         pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
                         pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                     }
@@ -79,8 +78,6 @@ namespace Project
                 try
                 {
                     conn.Open();
-
-                    // Tạo SqlCommand để gọi Stored Procedure
                     using (SqlCommand cmd = new SqlCommand("ThemSanPham", conn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -93,7 +90,6 @@ namespace Project
                         byte[] imageBytes = null;
                         if (pictureBox1.Image != null)
                         {
-                            // Chuyển đổi ảnh từ PictureBox thành mảng byte
                             using (MemoryStream ms = new MemoryStream())
                             {
                                 pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
@@ -101,8 +97,6 @@ namespace Project
                                 cmd.Parameters.AddWithValue("@Anh", imageBytes);
                             }
                         }                       
-
-                        // Thực thi thủ tục
                         cmd.ExecuteNonQuery();
                         LoadSanPham();
 
