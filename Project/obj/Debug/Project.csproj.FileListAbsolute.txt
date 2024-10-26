@@ -298,3 +298,36 @@ D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
 D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
 D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.exe
 D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.pdb

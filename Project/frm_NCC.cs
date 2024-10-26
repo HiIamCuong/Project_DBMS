@@ -18,7 +18,7 @@ namespace Project
             InitializeComponent();
             LayNhaCungCap();
         }
-        string strCon = @"Data Source=DESKTOP-GIJL260;Initial Catalog=QLTraSua;Integrated Security=True";
+        string strCon = @"Data Source = DELL; Initial Catalog = QLTraSua; Integrated Security = True";
         SqlConnection sqlCon = null;
         private void btnThem_Click(object sender, EventArgs e)
         {

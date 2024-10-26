@@ -19,7 +19,7 @@ namespace Project
             InitializeComponent();
         }
 
-        string strconn = @"Data Source=DESKTOP-GIJL260;Initial Catalog=QLTraSua;Integrated Security=True";
+        string strconn = @"Data Source = DELL; Initial Catalog = QLTraSua; Integrated Security = True";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
