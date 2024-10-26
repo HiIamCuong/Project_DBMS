@@ -31,12 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btn_Upanh = new System.Windows.Forms.Button();
-            this.pic = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtDongia = new System.Windows.Forms.TextBox();
             this.btnReload = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -63,7 +62,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
+            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNGUYENLIEU)).BeginInit();
@@ -95,13 +95,13 @@
             this.btn_Upanh.UseVisualStyleBackColor = true;
             this.btn_Upanh.Click += new System.EventHandler(this.btn_Upanh_Click);
             // 
-            // pic
+            // pictureBox1
             // 
-            this.pic.Location = new System.Drawing.Point(180, 334);
-            this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(190, 140);
-            this.pic.TabIndex = 37;
-            this.pic.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(180, 334);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(190, 140);
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
             // 
             // label8
             // 
@@ -137,15 +137,6 @@
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
-            // 
-            // btnHuyBo
-            // 
-            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHuyBo.Name = "btnHuyBo";
-            this.btnHuyBo.Size = new System.Drawing.Size(61, 24);
-            this.btnHuyBo.Text = "Hủy Bỏ";
-            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // toolStripSeparator3
             // 
@@ -250,7 +241,7 @@
             this.dgvNGUYENLIEU.RowHeadersWidth = 51;
             this.dgvNGUYENLIEU.Size = new System.Drawing.Size(744, 440);
             this.dgvNGUYENLIEU.TabIndex = 49;
-            this.dgvNGUYENLIEU.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNGUYENLIEU_CellContentClick_1);
+            this.dgvNGUYENLIEU.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNGUYENLIEU_RowEnter);
             // 
             // label7
             // 
@@ -290,7 +281,7 @@
             // 
             this.panel.BackColor = System.Drawing.Color.AliceBlue;
             this.panel.Controls.Add(this.btn_Upanh);
-            this.panel.Controls.Add(this.pic);
+            this.panel.Controls.Add(this.pictureBox1);
             this.panel.Controls.Add(this.label8);
             this.panel.Controls.Add(this.txtDongia);
             this.panel.Controls.Add(this.label7);
@@ -447,6 +438,15 @@
             this.panel1.Size = new System.Drawing.Size(1221, 199);
             this.panel1.TabIndex = 47;
             // 
+            // btnHuyBo
+            // 
+            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnHuyBo.Name = "btnHuyBo";
+            this.btnHuyBo.Size = new System.Drawing.Size(61, 24);
+            this.btnHuyBo.Text = "Hủy Bỏ";
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
+            // 
             // frm_NguyenLieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -458,7 +458,8 @@
             this.Controls.Add(this.panel1);
             this.Name = "frm_NguyenLieu";
             this.Text = "frm_NguyenLieu";
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
+            this.Load += new System.EventHandler(this.frm_NguyenLieu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -477,12 +478,11 @@
 
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btn_Upanh;
-        private System.Windows.Forms.PictureBox pic;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtDongia;
         private System.Windows.Forms.ToolStripButton btnReload;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripButton btnHuyBo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnXoa;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -509,5 +509,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripButton btnHuyBo;
     }
 }
