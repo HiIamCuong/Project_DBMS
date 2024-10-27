@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|c:\\users\\admin\\downloads\\project_dbms\\project\\frm_loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|C:\\Users\\Admin\\Downloads\\Project_DBMS\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|c:\\users\\admin\\downloads\\project_dbms\\project\\frm_loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|C:\\Users\\Admin\\Downloads\\Project_DBMS\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|c:\\users\\admin\\downloads\\project_dbms\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|c:\\users\\admin\\downloads\\project_dbms\\project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|C:\\Users\\Admin\\Downloads\\Project_DBMS\\project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,41 +30,53 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frm_LoaiSanPham.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_LoaiSanPham.cs",
-              "RelativeDocumentMoniker": "Project\\frm_LoaiSanPham.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_LoaiSanPham.cs [Design]",
-              "RelativeToolTip": "Project\\frm_LoaiSanPham.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "frm_HoaDonBan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_HoaDonBan.cs",
+              "RelativeDocumentMoniker": "Project\\frm_HoaDonBan.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_HoaDonBan.cs [Design]",
+              "RelativeToolTip": "Project\\frm_HoaDonBan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T19:26:29.727Z",
+              "WhenOpened": "2024-10-27T09:52:34.408Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frm_LoaiSanPham.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_LoaiSanPham.cs",
-              "RelativeDocumentMoniker": "Project\\frm_LoaiSanPham.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_LoaiSanPham.cs",
-              "RelativeToolTip": "Project\\frm_LoaiSanPham.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAABLAAAAAAAAAA==",
+              "Title": "frm_CTHDB.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_CTHDB.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_CTHDB.cs*",
+              "RelativeToolTip": "Project\\frm_CTHDB.cs*",
+              "ViewState": "AgIAAGIAAAAAAAAAAIA/wLUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T19:24:01.68Z",
+              "WhenOpened": "2024-10-27T09:35:08.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\Program.cs",
-              "RelativeDocumentMoniker": "Project\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\Program.cs",
-              "RelativeToolTip": "Project\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwA8AAAAvAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frm_HoaDonBan.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_HoaDonBan.cs",
+              "RelativeDocumentMoniker": "Project\\frm_HoaDonBan.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_HoaDonBan.cs",
+              "RelativeToolTip": "Project\\frm_HoaDonBan.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAwL8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T18:20:56.592Z",
+              "WhenOpened": "2024-10-27T09:53:53.242Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_CTHDB.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_CTHDB.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\Project_DBMS\\Project\\frm_CTHDB.cs [Design]*",
+              "RelativeToolTip": "Project\\frm_CTHDB.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T08:17:30.74Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

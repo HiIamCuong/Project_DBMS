@@ -26,6 +26,7 @@ namespace Project
 
         private void frm_HoaDonBan_Load(object sender, EventArgs e)
         {
+            dtpNgayBan.Value = DateTime.Now;
             txtMaHDB.Enabled = false;
             txtThanhTien.Enabled = false;
             txtSĐT.Focus();
@@ -60,6 +61,7 @@ namespace Project
                 txtSĐT.Focus();
                 txtSĐT.Text = "";
                 txtThanhTien.Text = "";
+                dtpNgayBan.Value = DateTime.Now;
             }
             else
             {
@@ -78,6 +80,7 @@ namespace Project
             txtSĐT.Focus();
             txtSĐT.Text = "";
             txtThanhTien.Text = "";
+            dtpNgayBan.Value = DateTime.Now;
         }
 
         private void btnThem_Click(object sender, EventArgs e)

@@ -47,16 +47,14 @@ namespace Project
                     dgv_CTHDB.DataSource = table;
                     TongDonGia();
                 }
-                
-                
-            }
-            
-            
+                conn.Close();
+            }                       
         }
 
         public void TongDonGia()
         {
             int DonGia = 0;
+            int sauChietKhau = 0;
             if (ma_HDB != -1)
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -72,14 +70,30 @@ namespace Project
 
                             DonGia = (int)cmd.ExecuteScalar();
                         }
+                        conn.Close();
                     }
                     catch (Exception e)
                     {
-                        MessageBox.Show("Có lỗi" + e.Message);
+                        MessageBox.Show("Có lỗi: " + e.Message);
                     }
+                    try
+                    {
+                        conn.Open();
+                        using (SqlCommand cmd = new SqlCommand("SELECT Thanh_Tien FROM HoaDonBan WHERE Ma_Hoa_Don_Ban =" + ma_HDB, conn))
+                        {
+                            sauChietKhau = (int)cmd.ExecuteScalar();
+                        }
+                        conn.Close();
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show("Có lỗi: " + e.Message);
+                    }                    
                 }                
             }
-            lbl_TongTien.Text = DonGia + "vnđ";
+            lbl_TongTien.Text = DonGia + " VNĐ";
+            lblSauChietKhau.Text = sauChietKhau + " VNĐ";
+
         }
 
         void LoadMaSanPham()
@@ -157,9 +171,6 @@ namespace Project
             conn.Close();
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-        }
 
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
@@ -168,25 +179,18 @@ namespace Project
 
         private void dgv_CTHDB_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
+            // phải load mã sp trước để tránh cbb bị null
+            LoadMaSanPham();
             if (e.RowIndex < dgv_CTHDB.Rows.Count - 1)
             {
                 soLuong.Text = dgv_CTHDB.Rows[e.RowIndex].Cells[1].Value.ToString();
 
                 string maSP;
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT dbo.LayMaSanPham(@Ten_San_Pham)", conn))
-                    {
-                        cmd.Parameters.AddWithValue("@Ten_San_Pham", dgv_CTHDB.Rows[e.RowIndex].Cells[0].Value.ToString());
+                DataRow[] rows = ds.Tables["SanPham"].Select("Ten_San_Pham = '" + dgv_CTHDB.Rows[e.RowIndex].Cells[0].Value.ToString() + "'");
 
-                        maSP = cmd.ExecuteScalar().ToString();
-                    }                  
-                }
+                cbMaSP.SelectedValue = rows[0]["Ma_San_Pham"].ToString();
 
-                cbMaSP.SelectedValue = maSP;
 
-                
             }
         }
 

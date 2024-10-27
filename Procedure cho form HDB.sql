@@ -1,4 +1,4 @@
-﻿
+﻿GO
 CREATE TRIGGER TRG_Update_Tinh_Trang_SanPham
 ON NguyenLieu
 AFTER INSERT, UPDATE, DELETE
@@ -37,28 +37,85 @@ BEGIN
     );
 END;
 
-------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+GO
+CREATE TRIGGER TRG_Update_Tinh_Trang_SanPham2
+ON CongThuc
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    UPDATE SanPham
+    SET Tinh_Trang = N'Còn hàng'
+    WHERE Ma_San_Pham IN (
+        SELECT CT.Ma_San_Pham
+        FROM CongThuc CT
+        JOIN NguyenLieu NL ON CT.Ma_Nguyen_Lieu = NL.Ma_Nguyen_Lieu
+        GROUP BY CT.Ma_San_Pham
+        HAVING MIN(
+            CASE
+                WHEN NL.Don_Vi = 'kg' AND CT.DonVi = 'gram' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                WHEN NL.Don_Vi = 'lit' AND CT.DonVi = 'ml' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                ELSE NL.So_Luong * 1.0 / CT.So_Luong
+            END
+        ) >= 1
+    );
+
+    UPDATE SanPham
+    SET Tinh_Trang = N'Hết hàng'
+    WHERE Ma_San_Pham NOT IN (
+        SELECT CT.Ma_San_Pham
+        FROM CongThuc CT
+        JOIN NguyenLieu NL ON CT.Ma_Nguyen_Lieu = NL.Ma_Nguyen_Lieu
+        GROUP BY CT.Ma_San_Pham
+        HAVING MIN(
+            CASE
+                WHEN NL.Don_Vi = 'kg' AND CT.DonVi = 'gram' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                WHEN NL.Don_Vi = 'lit' AND CT.DonVi = 'ml' THEN (NL.So_Luong * 1000.0) / CT.So_Luong
+                ELSE NL.So_Luong * 1.0 / CT.So_Luong
+            END
+        ) >= 1
+    );
+END;
+
+----------------------------------------------------------------------------------------------
+GO
 CREATE TRIGGER UpdateThanhTienHoaDonBan
 ON ChiTietDonBan
 AFTER INSERT, UPDATE, DELETE
 AS
 BEGIN
     DECLARE @Ma_Hoa_Don_Ban INT;
+    DECLARE @SDT VARCHAR(10);
+    DECLARE @Thoi_Gian DATE;
+    DECLARE @NewThanhTien INT;
 
     IF EXISTS(SELECT 1 FROM INSERTED)
         SELECT TOP 1 @Ma_Hoa_Don_Ban = Ma_Hoa_Don_Ban FROM INSERTED;
     ELSE IF EXISTS(SELECT 1 FROM DELETED)
         SELECT TOP 1 @Ma_Hoa_Don_Ban = Ma_Hoa_Don_Ban FROM DELETED;
 
-    DECLARE @NewThanhTien INT;
     SET @NewThanhTien = dbo.TinhTongTienTheoHoaDon(@Ma_Hoa_Don_Ban);
 
-    UPDATE HoaDonBan
-    SET Thanh_Tien = @NewThanhTien
-    WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+    SELECT @SDT = hdb.SDT, @Thoi_Gian = hdb.Ngay
+    FROM HoaDonBan hdb
+    WHERE hdb.Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+
+    IF dbo.CheckTongTienHoaDon(@SDT, @Thoi_Gian) = 1
+    BEGIN
+        UPDATE HoaDonBan
+        SET Thanh_Tien = @NewThanhTien * 0.9
+        WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+    END
+    ELSE
+    BEGIN
+        UPDATE HoaDonBan
+        SET Thanh_Tien = @NewThanhTien
+        WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
+    END
 END;
-----------------------------------------------------------------------------------------------
 	
+----------------------------------------------------------------------------------------------------
+GO
 CREATE PROCEDURE ThemHoaDonBan
     @Thoi_gian DATE,
     @SDT VARCHAR(10)
@@ -68,7 +125,7 @@ BEGIN
     VALUES (@Thoi_gian, @SDT, 0);
 END;
 
-
+GO
 CREATE PROCEDURE SuaHoaDonBan
     @Ma_Hoa_Don_Ban INT,
     @Thoi_gian DATE,
@@ -82,7 +139,7 @@ BEGIN
     WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban;
 END;
 
-
+GO
 CREATE PROCEDURE XoaHoaDonBan
     @Ma_Hoa_Don_Ban INT
 AS
@@ -96,6 +153,7 @@ END;
 
 
 ---------------------------------------------------------------------------------
+GO
 CREATE FUNCTION TinhTongTienTheoHoaDon (@Ma_Hoa_Don_Ban int)
 RETURNS INT
 AS
@@ -110,7 +168,32 @@ BEGIN
     RETURN ISNULL(@Tong_Tien, 0);
 END;
 
+-------------------------------------------------------------------------------------
+GO
+CREATE FUNCTION CheckTongTienHoaDon
+    (@SDT VARCHAR(10), @Ngay DATE)
+RETURNS BIT
+AS
+BEGIN
+    DECLARE @Result BIT;
+    DECLARE @TotalAmount INT;
 
+    SELECT @TotalAmount = SUM(Thanh_Tien)
+    FROM HoaDonBan
+    WHERE SDT = @SDT
+      AND Ngay < @Ngay;
+
+    IF @TotalAmount >= 1000000
+        SET @Result = 1;  
+    ELSE
+        SET @Result = 0; 
+
+    RETURN @Result;
+END;
+
+
+--------------------------------------------------------------------------------------
+GO
 CREATE FUNCTION TimKiemHoaDonBan
 (
     @Keyword nvarchar(50)
@@ -125,7 +208,7 @@ RETURN
 );
 
 ------------------------------------------------------------------------------------
-/*
+GO
 CREATE PROCEDURE TaoHoaDonBan
     @Ma_San_Pham varchar(10),
     @So_Luong int
@@ -135,7 +218,6 @@ BEGIN
     DECLARE @Ma_Hoa_Don_Ban int;
     DECLARE @Thanh_Tien float;
 
-    -- Tạo hóa đơn bán mới (không cần số điện thoại)
     INSERT INTO HoaDonBan (Ngay, SDT, Thanh_Tien)
     VALUES (GETDATE(), NULL, @Thanh_Tien);
 
@@ -148,8 +230,9 @@ BEGIN
     
     PRINT 'Hóa đơn bán đã được tạo thành công với mã hóa đơn: ' + CAST(@Ma_Hoa_Don_Ban AS varchar);
 END;
-*/
+
 -------------------------------------------------------
+GO
 CREATE FUNCTION LayThongTinHoaDonBan
     (@Ma_Hoa_Don_Ban INT)
 RETURNS TABLE
@@ -167,22 +250,7 @@ RETURN
 );
 
 -----------------------------------------------------------
-CREATE FUNCTION LayMaSanPham
-(
-    @Ten_San_Pham NVARCHAR(50)
-)
-RETURNS VARCHAR(10)
-AS
-BEGIN
-    DECLARE @Ma_San_Pham VARCHAR(10);
-
-    SELECT @Ma_San_Pham = Ma_San_Pham
-    FROM SanPham
-    WHERE Ten_San_Pham = @Ten_San_Pham;
-
-    RETURN @Ma_San_Pham;
-END;
-
+GO
 
 CREATE PROCEDURE ThemSanPhamVaoHoaDonBan
     @Ma_Hoa_Don_Ban int,
@@ -225,6 +293,7 @@ BEGIN
     END
 END;
 
+GO
 CREATE PROCEDURE XoaSanPhamTrongCTHD
     @Ma_Hoa_Don_Ban INT,
     @Ma_San_Pham VARCHAR(10)
@@ -234,7 +303,7 @@ BEGIN
     WHERE Ma_Hoa_Don_Ban = @Ma_Hoa_Don_Ban AND Ma_San_Pham = @Ma_San_Pham;
 END;
 
-
+GO
 CREATE PROCEDURE SuaChiTietHoaDonBan
     @Ma_Hoa_Don_Ban INT,
     @Ma_San_Pham VARCHAR(10),
@@ -257,9 +326,9 @@ BEGIN
 
 END;
 
+---------------------------------------------------------------------------------------
 
-
-
+GO
 CREATE FUNCTION TimKiemSanPhamTrongCTHD
     (@Ten_San_Pham NVARCHAR(50), @Ma_Hoa_Don_Ban INT)
 RETURNS TABLE

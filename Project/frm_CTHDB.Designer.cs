@@ -36,6 +36,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_TK = new System.Windows.Forms.Button();
             this.soLuong = new System.Windows.Forms.NumericUpDown();
             this.cbMaSP = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,17 +48,16 @@
             this.dgvCTHDB = new System.Windows.Forms.DataGridView();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnReload = new System.Windows.Forms.Button();
-            this.btnXuatHD = new System.Windows.Forms.Button();
             this.btnQuayLai = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.dgv_CTHDB = new System.Windows.Forms.DataGridView();
             this.Ten_San_Pham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.So_Luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Don_Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tong_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_TongTien = new System.Windows.Forms.Label();
-            this.btn_TK = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblSauChietKhau = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.soLuong)).BeginInit();
             this.panel1.SuspendLayout();
@@ -72,7 +72,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(210, 12);
+            this.label1.Location = new System.Drawing.Point(86, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(487, 40);
@@ -91,8 +91,18 @@
             this.panel4.Location = new System.Drawing.Point(0, 62);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(980, 140);
+            this.panel4.Size = new System.Drawing.Size(729, 140);
             this.panel4.TabIndex = 32;
+            // 
+            // btn_TK
+            // 
+            this.btn_TK.Location = new System.Drawing.Point(557, 12);
+            this.btn_TK.Name = "btn_TK";
+            this.btn_TK.Size = new System.Drawing.Size(109, 35);
+            this.btn_TK.TabIndex = 39;
+            this.btn_TK.Text = "Tìm kiếm";
+            this.btn_TK.UseVisualStyleBackColor = true;
+            this.btn_TK.Click += new System.EventHandler(this.btn_TK_Click);
             // 
             // soLuong
             // 
@@ -145,7 +155,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Location = new System.Drawing.Point(680, 495);
+            this.label3.Location = new System.Drawing.Point(44, 495);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 26);
@@ -160,7 +170,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(980, 62);
+            this.panel1.Size = new System.Drawing.Size(729, 62);
             this.panel1.TabIndex = 31;
             // 
             // btnSua
@@ -170,7 +180,7 @@
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnSua.Location = new System.Drawing.Point(179, 0);
+            this.btnSua.Location = new System.Drawing.Point(117, 0);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(67, 34);
@@ -230,7 +240,7 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCTHDB.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvCTHDB.RowHeadersWidth = 62;
-            this.dgvCTHDB.Size = new System.Drawing.Size(980, 539);
+            this.dgvCTHDB.Size = new System.Drawing.Size(729, 539);
             this.dgvCTHDB.TabIndex = 33;
             // 
             // btnXoa
@@ -240,7 +250,7 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnXoa.Location = new System.Drawing.Point(246, 0);
+            this.btnXoa.Location = new System.Drawing.Point(184, 0);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(71, 34);
@@ -256,7 +266,7 @@
             this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReload.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnReload.Location = new System.Drawing.Point(806, 0);
+            this.btnReload.Location = new System.Drawing.Point(571, 0);
             this.btnReload.Margin = new System.Windows.Forms.Padding(4);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(100, 34);
@@ -265,21 +275,6 @@
             this.btnReload.UseVisualStyleBackColor = false;
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
-            // btnXuatHD
-            // 
-            this.btnXuatHD.BackColor = System.Drawing.Color.AliceBlue;
-            this.btnXuatHD.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnXuatHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXuatHD.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatHD.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnXuatHD.Location = new System.Drawing.Point(633, 0);
-            this.btnXuatHD.Margin = new System.Windows.Forms.Padding(4);
-            this.btnXuatHD.Name = "btnXuatHD";
-            this.btnXuatHD.Size = new System.Drawing.Size(173, 34);
-            this.btnXuatHD.TabIndex = 8;
-            this.btnXuatHD.Text = "Xuất Hóa Đơn";
-            this.btnXuatHD.UseVisualStyleBackColor = false;
-            // 
             // btnQuayLai
             // 
             this.btnQuayLai.BackColor = System.Drawing.Color.AliceBlue;
@@ -287,7 +282,7 @@
             this.btnQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuayLai.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuayLai.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQuayLai.Location = new System.Drawing.Point(317, 0);
+            this.btnQuayLai.Location = new System.Drawing.Point(255, 0);
             this.btnQuayLai.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(316, 34);
@@ -300,35 +295,17 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel2.Controls.Add(this.btnReload);
-            this.panel2.Controls.Add(this.btnXuatHD);
             this.panel2.Controls.Add(this.btnQuayLai);
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnSua);
-            this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Controls.Add(this.btnThem);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.ForeColor = System.Drawing.SystemColors.Control;
             this.panel2.Location = new System.Drawing.Point(0, 539);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(980, 34);
+            this.panel2.Size = new System.Drawing.Size(729, 34);
             this.panel2.TabIndex = 34;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.AliceBlue;
-            this.btnLuu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLuu.Location = new System.Drawing.Point(117, 0);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(62, 34);
-            this.btnLuu.TabIndex = 1;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // dgv_CTHDB
             // 
@@ -407,28 +384,44 @@
             this.lbl_TongTien.AutoSize = true;
             this.lbl_TongTien.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TongTien.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_TongTien.Location = new System.Drawing.Point(806, 495);
+            this.lbl_TongTien.Location = new System.Drawing.Point(225, 495);
             this.lbl_TongTien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TongTien.Name = "lbl_TongTien";
             this.lbl_TongTien.Size = new System.Drawing.Size(24, 26);
             this.lbl_TongTien.TabIndex = 37;
             this.lbl_TongTien.Text = "0";
             // 
-            // btn_TK
+            // label2
             // 
-            this.btn_TK.Location = new System.Drawing.Point(557, 12);
-            this.btn_TK.Name = "btn_TK";
-            this.btn_TK.Size = new System.Drawing.Size(109, 35);
-            this.btn_TK.TabIndex = 39;
-            this.btn_TK.Text = "Tìm kiếm";
-            this.btn_TK.UseVisualStyleBackColor = true;
-            this.btn_TK.Click += new System.EventHandler(this.btn_TK_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Location = new System.Drawing.Point(395, 495);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 26);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Sau chiết khấu:";
+            // 
+            // lblSauChietKhau
+            // 
+            this.lblSauChietKhau.AutoSize = true;
+            this.lblSauChietKhau.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSauChietKhau.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lblSauChietKhau.Location = new System.Drawing.Point(609, 495);
+            this.lblSauChietKhau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSauChietKhau.Name = "lblSauChietKhau";
+            this.lblSauChietKhau.Size = new System.Drawing.Size(24, 26);
+            this.lblSauChietKhau.TabIndex = 39;
+            this.lblSauChietKhau.Text = "0";
             // 
             // frm_CTHDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 573);
+            this.ClientSize = new System.Drawing.Size(729, 573);
+            this.Controls.Add(this.lblSauChietKhau);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_TongTien);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgv_CTHDB);
@@ -465,18 +458,18 @@
         private System.Windows.Forms.DataGridView dgvCTHDB;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnReload;
-        private System.Windows.Forms.Button btnXuatHD;
         private System.Windows.Forms.Button btnQuayLai;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.NumericUpDown soLuong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgv_CTHDB;
         private System.Windows.Forms.Label lbl_TongTien;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten_San_Pham;
         private System.Windows.Forms.DataGridViewTextBoxColumn So_Luong;
         private System.Windows.Forms.DataGridViewTextBoxColumn Don_Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tong_Tien;
         private System.Windows.Forms.Button btn_TK;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSauChietKhau;
     }
 }
