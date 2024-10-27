@@ -56,7 +56,7 @@ namespace Project
                         cmd.Parameters.AddWithValue("@TenNL", txtTenNL.Text);
                         cmd.Parameters.AddWithValue("@DonGia", txtDongia.Text);
                         cmd.Parameters.AddWithValue("@SoLuong", txtSoLuong.Text);
-                        cmd.Parameters.AddWithValue("@DonVi", txtDonVi.Text);
+                        cmd.Parameters.AddWithValue("@DonVi", cmbDonVi.SelectedText.ToString());
                         cmd.Parameters.AddWithValue("@MaNCC", cmbNCC.SelectedValue.ToString());
 
                         byte[] imageBytes = null;
@@ -71,12 +71,15 @@ namespace Project
                         }
                         cmd.ExecuteNonQuery();
                         LoadNguyenLieu();
-
                     }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Lỗi từ trigger hoặc cơ sở dữ liệu: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -97,7 +100,7 @@ namespace Project
                         cmd.Parameters.AddWithValue("@TenNL", txtTenNL.Text);
                         cmd.Parameters.AddWithValue("@DonGia", txtDongia.Text);
                         cmd.Parameters.AddWithValue("@SoLuong", txtSoLuong.Text);
-                        cmd.Parameters.AddWithValue("@DonVi", txtDonVi.Text);
+                        cmd.Parameters.AddWithValue("@DonVi", cmbDonVi.SelectedText.ToString());
                         cmd.Parameters.AddWithValue("@MaNCC", cmbNCC.SelectedValue.ToString());
 
                         byte[] imageBytes = null;
@@ -110,17 +113,18 @@ namespace Project
                                 cmd.Parameters.AddWithValue("@Anh", imageBytes);
                             }
                         }
-
-
                         cmd.ExecuteNonQuery();
                         LoadNguyenLieu();
                         txtMaNL.Enabled = true;
-
                     }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Lỗi từ trigger hoặc cơ sở dữ liệu: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -155,7 +159,6 @@ namespace Project
             txtTenNL.Clear();
             txtDongia.Clear();
             txtSoLuong.Clear();
-            txtDonVi.Clear();
             pictureBox1.Image = null;
         }
 
@@ -241,7 +244,7 @@ namespace Project
             {
                 txtMaNL.Enabled = true;
                 txtTenNL.Text = "";
-                txtDonVi.Text = "";
+                cmbDonVi.Text = "";
                 txtDongia.Text = "";
                 txtSoLuong.Text = "";
             }
@@ -252,7 +255,7 @@ namespace Project
                 txtTenNL.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ten_Nguyen_Lieu"].Value.ToString();
                 txtDongia.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Don_Gia"].Value.ToString();
                 txtSoLuong.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["So_Luong"].Value.ToString();
-                txtDonVi.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Don_Vi"].Value.ToString();
+                cmbDonVi.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Don_Vi"].Value.ToString();
                 string maNCC = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ma_Nha_Cung_Cap"].Value.ToString();
                 if (cmbNCC.Items.Cast<DataRowView>().Any(item => item["Ma_Nha_Cung_Cap"].ToString() == maNCC))
                 {

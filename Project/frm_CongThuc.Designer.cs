@@ -45,10 +45,10 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.btnReload = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbDonVi = new System.Windows.Forms.ComboBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.cbbMaSP = new System.Windows.Forms.ComboBox();
             this.cbMaNL = new System.Windows.Forms.ComboBox();
-            this.txtDonVi = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lblTenQue = new System.Windows.Forms.Label();
@@ -218,10 +218,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel2.Controls.Add(this.cmbDonVi);
             this.panel2.Controls.Add(this.txtSoLuong);
             this.panel2.Controls.Add(this.cbbMaSP);
             this.panel2.Controls.Add(this.cbMaNL);
-            this.panel2.Controls.Add(this.txtDonVi);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lblTenQue);
@@ -234,6 +234,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(461, 412);
             this.panel2.TabIndex = 53;
+            // 
+            // cmbDonVi
+            // 
+            this.cmbDonVi.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDonVi.FormattingEnabled = true;
+            this.cmbDonVi.Items.AddRange(new object[] {
+            "gram",
+            "ml"});
+            this.cmbDonVi.Location = new System.Drawing.Point(205, 242);
+            this.cmbDonVi.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbDonVi.Name = "cmbDonVi";
+            this.cmbDonVi.Size = new System.Drawing.Size(239, 35);
+            this.cmbDonVi.TabIndex = 47;
             // 
             // txtSoLuong
             // 
@@ -265,17 +278,6 @@
             this.cbMaNL.Name = "cbMaNL";
             this.cbMaNL.Size = new System.Drawing.Size(239, 35);
             this.cbMaNL.TabIndex = 44;
-            // 
-            // txtDonVi
-            // 
-            this.txtDonVi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDonVi.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonVi.Location = new System.Drawing.Point(205, 242);
-            this.txtDonVi.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(239, 34);
-            this.txtDonVi.TabIndex = 43;
             // 
             // panel3
             // 
@@ -406,9 +408,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtDonVi;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.ComboBox cbbMaSP;
         private System.Windows.Forms.ComboBox cbMaNL;
+        private System.Windows.Forms.ComboBox cmbDonVi;
     }
 }

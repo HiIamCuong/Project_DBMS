@@ -55,7 +55,7 @@ namespace Project
             string MaSP = cbbMaSP.SelectedValue.ToString();
             string MaNL = cbMaNL.SelectedValue.ToString();
             int SoLuong = int.Parse(txtSoLuong.Text);
-            string DonVi = txtDonVi.Text;
+            string DonVi = cmbDonVi.SelectedText.ToString();
 
             bool isSuccess = ThemCongThuc(MaSP, MaNL, SoLuong, DonVi);
             if (isSuccess)
@@ -64,7 +64,6 @@ namespace Project
                 LayCongThuc();
                 txtSoLuong.Clear();
                 txtSoLuong.Clear();
-                txtDonVi.Clear();
             }
             else
             {
@@ -104,7 +103,7 @@ namespace Project
             string MaSP = cbbMaSP.SelectedValue.ToString();
             string MaNL = cbMaNL.SelectedValue.ToString();
             int SoLuong = int.Parse(txtSoLuong.Text);
-            string DonVi = txtDonVi.Text;
+            string DonVi = cmbDonVi.SelectedText.ToString();
 
             bool isSuccess = SuaCongThuc(MaSP, MaNL, SoLuong, DonVi);
             if (isSuccess)
@@ -163,7 +162,6 @@ namespace Project
             cbbMaSP.Focus();
             cbMaNL.Focus();
             txtSoLuong.Clear();
-            txtDonVi.Clear();
         }
 
         private void btnReload_Click(object sender, EventArgs e)
@@ -259,7 +257,7 @@ namespace Project
                 cbbMaSP.SelectedValue = row.Cells["Ma_San_Pham"].Value.ToString();
                 cbMaNL.SelectedValue = row.Cells["Ma_Nguyen_Lieu"].Value.ToString();
                 txtSoLuong.Text = row.Cells["So_Luong"].Value.ToString();
-                txtDonVi.Text = row.Cells["DonVi"].Value.ToString();
+                cmbDonVi.Text = row.Cells["DonVi"].Selected.ToString();
             }
         }
 
@@ -268,12 +266,12 @@ namespace Project
             cbbMaSP.Focus();
             cbMaNL.Focus();
             txtSoLuong.Clear();
-            txtDonVi.Clear();
         }
 
         private void btnReload_Click_1(object sender, EventArgs e)
         {
             LayCongThuc();
         }
+
     }
 }

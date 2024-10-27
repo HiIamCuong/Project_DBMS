@@ -39,7 +39,6 @@ AS
 BEGIN
 	BEGIN TRANSACTION
 		BEGIN TRY
-			-- Xoá nhà cung cấp theo @MaNCC trong bảng NhaCungCap
 			DELETE FROM dbo.NhaCungCap WHERE NhaCungCap.Ma_Nha_Cung_Cap = @MaNCC
 			COMMIT TRAN
 		END TRY
@@ -168,6 +167,23 @@ RETURN
     WHERE Ten_Nguyen_Lieu LIKE '%' + @NL + '%'
 );
 GO
+---Trigger về nguyên liệu---
+CREATE TRIGGER TRG_Validate_DonVi_NguyenLieu
+ON NguyenLieu
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    IF EXISTS (
+        SELECT 1
+        FROM inserted
+        WHERE Don_Vi NOT IN ('kg', 'gram', 'lit', 'ml')
+    )
+    BEGIN
+        -- Gây ra lỗi nếu có đơn vị không hợp lệ
+        RAISERROR (N'Chỉ được phép nhập đơn vị "kg", "gram", "lit", hoặc "ml" cho NguyenLieu.', 16, 1);
+        ROLLBACK TRANSACTION;
+    END
+END;
 
 
 --Procedure thêm xóa sửa công thức
@@ -217,3 +233,21 @@ BEGIN
     END CATCH
 END
 GO
+
+---Trigger để đúng đơn vị của công thức ---
+CREATE TRIGGER trg_SetDonVi
+ON CongThuc
+AFTER INSERT
+AS
+BEGIN
+    UPDATE c
+    SET DonVi = CASE 
+                    WHEN i.Ma_Nguyen_Lieu LIKE 'ML%' THEN 'ml'
+                    WHEN i.Ma_Nguyen_Lieu LIKE 'GR%' THEN 'gram'
+                    ELSE c.DonVi 
+                END
+    FROM CongThuc c
+    INNER JOIN inserted i 
+        ON c.Ma_San_Pham = i.Ma_San_Pham
+        AND c.Ma_Nguyen_Lieu = i.Ma_Nguyen_Lieu;
+END;

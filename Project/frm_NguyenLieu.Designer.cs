@@ -44,6 +44,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvNGUYENLIEU = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,14 +56,13 @@
             this.txtTenNL = new System.Windows.Forms.TextBox();
             this.lblTenNCC = new System.Windows.Forms.Label();
             this.cmbNCC = new System.Windows.Forms.ComboBox();
-            this.txtDonVi = new System.Windows.Forms.TextBox();
             this.txtMaNL = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
+            this.cmbDonVi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -129,59 +129,59 @@
             this.btnReload.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnReload.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(60, 24);
+            this.btnReload.Size = new System.Drawing.Size(60, 28);
             this.btnReload.Text = "Reload";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // btnXoa
             // 
             this.btnXoa.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(89, 24);
+            this.btnXoa.Size = new System.Drawing.Size(89, 28);
             this.btnXoa.Text = "Xóa dữ liệu";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // btnSua
             // 
             this.btnSua.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(88, 24);
+            this.btnSua.Size = new System.Drawing.Size(88, 28);
             this.btnSua.Text = "Sửa dữ liệu";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // btnThem
             // 
             this.btnThem.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(80, 24);
+            this.btnThem.Size = new System.Drawing.Size(80, 28);
             this.btnThem.Text = "Thêm Mới";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -204,7 +204,7 @@
             this.btnHuyBo,
             this.toolStripSeparator5,
             this.btnReload});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
+            this.bindingNavigator1.Location = new System.Drawing.Point(0, -3);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
@@ -212,9 +212,18 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(741, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(741, 31);
             this.bindingNavigator1.TabIndex = 47;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // btnHuyBo
+            // 
+            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnHuyBo.Name = "btnHuyBo";
+            this.btnHuyBo.Size = new System.Drawing.Size(61, 28);
+            this.btnHuyBo.Text = "Hủy Bỏ";
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // label1
             // 
@@ -280,6 +289,7 @@
             // panel
             // 
             this.panel.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel.Controls.Add(this.cmbDonVi);
             this.panel.Controls.Add(this.btn_Upanh);
             this.panel.Controls.Add(this.pictureBox1);
             this.panel.Controls.Add(this.label8);
@@ -290,7 +300,6 @@
             this.panel.Controls.Add(this.txtTenNL);
             this.panel.Controls.Add(this.lblTenNCC);
             this.panel.Controls.Add(this.cmbNCC);
-            this.panel.Controls.Add(this.txtDonVi);
             this.panel.Controls.Add(this.txtMaNL);
             this.panel.Controls.Add(this.label5);
             this.panel.Controls.Add(this.label6);
@@ -357,15 +366,6 @@
             this.cmbNCC.Name = "cmbNCC";
             this.cmbNCC.Size = new System.Drawing.Size(262, 31);
             this.cmbNCC.TabIndex = 28;
-            // 
-            // txtDonVi
-            // 
-            this.txtDonVi.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonVi.Location = new System.Drawing.Point(180, 281);
-            this.txtDonVi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(262, 32);
-            this.txtDonVi.TabIndex = 29;
             // 
             // txtMaNL
             // 
@@ -438,14 +438,18 @@
             this.panel1.Size = new System.Drawing.Size(1221, 199);
             this.panel1.TabIndex = 47;
             // 
-            // btnHuyBo
+            // cmbDonVi
             // 
-            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHuyBo.Name = "btnHuyBo";
-            this.btnHuyBo.Size = new System.Drawing.Size(61, 24);
-            this.btnHuyBo.Text = "Hủy Bỏ";
-            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
+            this.cmbDonVi.FormattingEnabled = true;
+            this.cmbDonVi.Items.AddRange(new object[] {
+            "kg",
+            "gram",
+            "lit",
+            "ml"});
+            this.cmbDonVi.Location = new System.Drawing.Point(180, 279);
+            this.cmbDonVi.Name = "cmbDonVi";
+            this.cmbDonVi.Size = new System.Drawing.Size(262, 31);
+            this.cmbDonVi.TabIndex = 39;
             // 
             // frm_NguyenLieu
             // 
@@ -502,7 +506,6 @@
         private System.Windows.Forms.TextBox txtTenNL;
         private System.Windows.Forms.Label lblTenNCC;
         private System.Windows.Forms.ComboBox cmbNCC;
-        private System.Windows.Forms.TextBox txtDonVi;
         private System.Windows.Forms.TextBox txtMaNL;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -510,5 +513,6 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripButton btnHuyBo;
+        private System.Windows.Forms.ComboBox cmbDonVi;
     }
 }

@@ -3,27 +3,47 @@
   "WorkspaceRootPath": "D:\\Nam 3\\DBMS\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\project\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\project\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\project\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_congthuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\nam 3\\dbms\\project\\project\\frm_nguyenlieu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_nguyenlieu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,28 +59,8 @@
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_bangphanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_congthuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\Nam 3\\DBMS\\Project\\project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_congthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "frm_NguyenLieu.Designer.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NguyenLieu.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.Designer.cs",
@@ -87,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "frm_SanPham.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_SanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
@@ -100,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "frm_SanPham.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_SanPham.cs",
               "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
@@ -112,20 +112,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frm_NguyenLieu.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NguyenLieu.cs",
               "RelativeToolTip": "Project\\frm_NguyenLieu.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAcwIoAAAAuAAAA",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAawGIAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T05:46:39.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "frm_NguyenLieu.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
@@ -137,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "frm_BangPhanCa.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_BangPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
@@ -149,19 +149,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "frm_KhachHang.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_KhachHang.cs",
               "RelativeDocumentMoniker": "Project\\frm_KhachHang.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_KhachHang.cs [Design]",
               "RelativeToolTip": "Project\\frm_KhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:59:03.35Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-25T05:59:03.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "frm_BangPhanCa.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_BangPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
@@ -185,18 +184,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "frm_NCC.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NCC.cs",
               "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NCC.cs [Design]",
               "RelativeToolTip": "Project\\frm_NCC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:26:44.005Z"
+              "WhenOpened": "2024-10-25T05:26:44.005Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "frm_TaiKhoan.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_TaiKhoan.cs",
               "RelativeDocumentMoniker": "Project\\frm_TaiKhoan.cs",
@@ -207,50 +207,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "frm_NCC.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NCC.cs",
               "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_NCC.cs",
               "RelativeToolTip": "Project\\frm_NCC.cs",
-              "ViewState": "AQIAAJ8AAAAAAAAAAADwvwIBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:32:02.818Z"
+              "WhenOpened": "2024-10-25T05:32:02.818Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "frm_CongThuc.Designer.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_CongThuc.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.Designer.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_CongThuc.Designer.cs",
               "RelativeToolTip": "Project\\frm_CongThuc.Designer.cs",
-              "ViewState": "AQIAAL0AAAAAAAAAAAAEwNYAAAArAAAA",
+              "ViewState": "AQIAAGcBAAAAAAAAAAAewHEBAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:30:15.312Z"
+              "WhenOpened": "2024-10-25T05:30:15.312Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "frm_CongThuc.cs",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_CongThuc.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_CongThuc.cs",
               "RelativeToolTip": "Project\\frm_CongThuc.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "ViewState": "AQIAAPcAAAAAAAAAAAAhwAQBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:28:00.478Z"
+              "WhenOpened": "2024-10-25T05:28:00.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "frm_CongThuc.cs [Design]",
               "DocumentMoniker": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_CongThuc.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",
               "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_CongThuc.cs [Design]",
               "RelativeToolTip": "Project\\frm_CongThuc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:27:11.581Z"
+              "WhenOpened": "2024-10-25T05:27:11.581Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
