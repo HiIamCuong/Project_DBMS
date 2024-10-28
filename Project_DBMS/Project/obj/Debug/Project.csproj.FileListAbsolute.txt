@@ -1,0 +1,200 @@
+D:\Nam 3\DBMS\Đồ án\Project\Project\bin\Debug\Project.exe.config
+D:\Nam 3\DBMS\Đồ án\Project\Project\bin\Debug\Project.exe
+D:\Nam 3\DBMS\Đồ án\Project\Project\bin\Debug\Project.pdb
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.KetNoi.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_NCC.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_SanPham.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.exe
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.pdb
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\bin\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.pdb
+<<<<<<< HEAD
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\bin\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.pdb
+=======
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.exe
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.pdb
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\bin\Debug\Project.exe.config
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\bin\Debug\Project.exe
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\bin\Debug\Project.pdb
+>>>>>>> f9b4c2482448e32d02cd1dd1e3ad572fb215bbb7
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.exe.config
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.exe
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.exe
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.pdb
+>>>>>>> 8b2d81763d6e01bb7cb1b9ca27cf1b2058d46e85
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
