@@ -14,7 +14,7 @@ namespace Project
 {
     public partial class frm_SanPham : Form
     {
-        string strconn = "Data Source=DESKTOP-GIJL260;Initial Catalog=QLTraSua;Integrated Security=True";
+        string strconn = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTraSua;Persist Security Info=True;User ID=sa;Password=hello";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
@@ -73,40 +73,49 @@ namespace Project
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(strconn))
+            if (txtMaSP.Text != "")
             {
-                try
+                using (SqlConnection conn = new SqlConnection(strconn))
                 {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand("ThemSanPham", conn))
+                    try
                     {
-                        cmd.CommandType = CommandType.StoredProcedure;
+                        conn.Open();
 
-                        cmd.Parameters.AddWithValue("@Ma_San_Pham", txtMaSP.Text);
-                        cmd.Parameters.AddWithValue("@Ten_San_Pham", txtTenSP.Text);
-                        cmd.Parameters.AddWithValue("@Don_Gia", txtDonGia.Text);
-                        cmd.Parameters.AddWithValue("@Ma_Loai_San_Pham", cmbMaLoaiSP.SelectedValue.ToString());
-
-                        byte[] imageBytes = null;
-                        if (pictureBox1.Image != null)
+                        // Tạo SqlCommand để gọi Stored Procedure
+                        using (SqlCommand cmd = new SqlCommand("ThemSanPham", conn))
                         {
-                            using (MemoryStream ms = new MemoryStream())
-                            {
-                                pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
-                                imageBytes = ms.ToArray();
-                                cmd.Parameters.AddWithValue("@Anh", imageBytes);
-                            }
-                        }                       
-                        cmd.ExecuteNonQuery();
-                        LoadSanPham();
+                            cmd.CommandType = CommandType.StoredProcedure;
 
+                            cmd.Parameters.AddWithValue("@Ma_San_Pham", txtMaSP.Text);
+                            cmd.Parameters.AddWithValue("@Ten_San_Pham", txtTenSP.Text);
+                            cmd.Parameters.AddWithValue("@Don_Gia", txtDonGia.Text);
+                            cmd.Parameters.AddWithValue("@Ma_Loai_San_Pham", cmbMaLoaiSP.SelectedValue.ToString());
+
+                            byte[] imageBytes = null;
+                            if (pictureBox1.Image != null)
+                            {
+                                // Chuyển đổi ảnh từ PictureBox thành mảng byte
+                                using (MemoryStream ms = new MemoryStream())
+                                {
+                                    pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
+                                    imageBytes = ms.ToArray();
+                                    cmd.Parameters.AddWithValue("@Anh", imageBytes);
+                                }
+                            }
+
+                            // Thực thi thủ tục
+                            cmd.ExecuteNonQuery();
+                            LoadSanPham();
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
-                }
             }
+            
         }
 
         private void dgvSANPHAM_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -177,6 +186,10 @@ namespace Project
                         cmd.ExecuteNonQuery();
                         LoadSanPham();
                         txtMaSP.Enabled = true;
+                        txtMaSP.Text = "";
+                        txtMaSP.Focus();
+                        txtTenSP.Text = "";
+                        txtDonGia.Text = "";
 
                     }
                 }
@@ -207,6 +220,10 @@ namespace Project
                         cmd.ExecuteNonQuery();
                         LoadSanPham();
                         txtMaSP.Enabled = true;
+                        txtMaSP.Text = "";
+                        txtMaSP.Focus();
+                        txtTenSP.Text = "";
+                        txtDonGia.Text = "";
 
                     }
                 }
@@ -240,9 +257,15 @@ namespace Project
             }
         }
 
-
-
-
+        private void btn_Reload_Click(object sender, EventArgs e)
+        {
+            LoadSanPham();
+            txtMaSP.Enabled = true;
+            txtMaSP.Text = "";
+            txtMaSP.Focus();
+            txtTenSP.Text = "";
+            txtDonGia.Text = "";
+        }
     }
 
 }

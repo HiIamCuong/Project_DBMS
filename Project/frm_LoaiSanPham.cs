@@ -14,7 +14,7 @@ namespace Project
 {
     public partial class frm_LoaiSanPham : Form
     {
-        string strconn = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTS;Persist Security Info=True;User ID=sa;Password=hello";
+        string strconn = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTraSua;Persist Security Info=True;User ID=sa;Password=hello";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
@@ -25,33 +25,37 @@ namespace Project
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(strconn))
+            if (txtMaLoaiSP.Text != "")
             {
-                try
+                using (SqlConnection conn = new SqlConnection(strconn))
                 {
-                    conn.Open();
-
-                    using (SqlCommand cmd = new SqlCommand("ThemLoaiSanPham", conn))
+                    try
                     {
-                        cmd.CommandType = CommandType.StoredProcedure;
+                        conn.Open();
 
-                        cmd.Parameters.AddWithValue("@Ma_Loai_San_Pham", txtMaLoaiSP.Text);
-                        cmd.Parameters.AddWithValue("@Ten_Loai_San_Pham", txtTenLoaiSP.Text);
-                        
-                        cmd.ExecuteNonQuery();
-                        LoadLoaiSanPham();
+                        using (SqlCommand cmd = new SqlCommand("ThemLoaiSanPham", conn))
+                        {
+                            cmd.CommandType = CommandType.StoredProcedure;
 
-                        txtMaLoaiSP.Text = "";
-                        txtTenLoaiSP.Text = "";
-                        txtMaLoaiSP.Focus();
+                            cmd.Parameters.AddWithValue("@Ma_Loai_San_Pham", txtMaLoaiSP.Text);
+                            cmd.Parameters.AddWithValue("@Ten_Loai_San_Pham", txtTenLoaiSP.Text);
 
+                            cmd.ExecuteNonQuery();
+                            LoadLoaiSanPham();
+
+                            txtMaLoaiSP.Text = "";
+                            txtTenLoaiSP.Text = "";
+                            txtMaLoaiSP.Focus();
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
-                }
             }
+            
         }
 
         void LoadLoaiSanPham()
@@ -72,14 +76,7 @@ namespace Project
 
         private void dgv_MaLoaiSP_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= dgv_MaLoaiSP.Rows.Count - 1)
-            {
-                txtMaLoaiSP.Enabled = true;
-                txtMaLoaiSP.Text = "";
-                txtMaLoaiSP.Focus();
-                txtTenLoaiSP.Text = "";
-            }
-            else
+            if (e.RowIndex < dgv_MaLoaiSP.Rows.Count - 1)
             {
                 txtMaLoaiSP.Enabled = false;
                 txtMaLoaiSP.Text = dgv_MaLoaiSP.Rows[e.RowIndex].Cells[0].Value.ToString();
@@ -120,9 +117,11 @@ namespace Project
 
         private void btnReload_Click(object sender, EventArgs e)
         {
+            LoadLoaiSanPham();
+            txtMaLoaiSP.Enabled = true;
             txtMaLoaiSP.Text = "";
             txtTenLoaiSP.Text = "";
-            txtMaLoaiSP.Focus();
+            txtMaLoaiSP.Focus();            
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -146,6 +145,29 @@ namespace Project
                         txtTenLoaiSP.Text = "";
                         txtMaLoaiSP.Enabled = true;
 
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnTKKH_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(strconn))
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.TimKiemLoaiSanPham(@Ten_Loai_San_Pham)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Ten_Loai_San_Pham", txtTK.Text);
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataSet ds = new DataSet();
+                        da.Fill(ds, "TimKiem");
+                        dgv_MaLoaiSP.DataSource = ds.Tables["TimKiem"];
                     }
                 }
                 catch (Exception ex)

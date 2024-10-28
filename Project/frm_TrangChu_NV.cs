@@ -89,10 +89,6 @@ namespace Project
             }
         }
 
-        private void hoadonbanhangToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void hóaĐơnXuấtHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -107,17 +103,5 @@ namespace Project
             }
         }
 
-        private void chiTiếtHóaĐơnBánToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form frm = kiemtratontai(typeof(frm_CTHDB));
-            if (frm != null)
-                frm.Activate();
-            else
-            {
-                frm_CTHDB fr = new frm_CTHDB();
-                fr.MdiParent = this;
-                fr.Show();
-            }
-        }
     }
 }

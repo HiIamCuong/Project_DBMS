@@ -146,7 +146,6 @@
             this.hoadonbanhangToolStripMenuItem.Name = "hoadonbanhangToolStripMenuItem";
             this.hoadonbanhangToolStripMenuItem.Size = new System.Drawing.Size(126, 40);
             this.hoadonbanhangToolStripMenuItem.Text = "BÁN HÀNG";
-            this.hoadonbanhangToolStripMenuItem.Click += new System.EventHandler(this.hoadonbanhangToolStripMenuItem_Click);
             // 
             // hóaĐơnXuấtHàngToolStripMenuItem
             // 
@@ -166,7 +165,6 @@
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Name = "chiTiếtHóaĐơnBánToolStripMenuItem";
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Size = new System.Drawing.Size(308, 40);
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Text = "Chi Tiết Hóa Đơn Bán";
-            this.chiTiếtHóaĐơnBánToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtHóaĐơnBánToolStripMenuItem_Click);
             // 
             // doanhthutoolStripMenuItem
             // 

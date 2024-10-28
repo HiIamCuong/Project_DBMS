@@ -47,17 +47,16 @@
             this.Thanh_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btnXemCTHD = new System.Windows.Forms.ToolStripButton();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSua = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnReload = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -84,14 +83,15 @@
             // 
             // dtpNgayBan
             // 
-            this.dtpNgayBan.CustomFormat = "";
+            this.dtpNgayBan.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayBan.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayBan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayBan.Location = new System.Drawing.Point(187, 88);
+            this.dtpNgayBan.Location = new System.Drawing.Point(187, 96);
             this.dtpNgayBan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgayBan.Name = "dtpNgayBan";
             this.dtpNgayBan.Size = new System.Drawing.Size(262, 32);
             this.dtpNgayBan.TabIndex = 22;
+            this.dtpNgayBan.Value = new System.DateTime(2024, 10, 27, 16, 52, 48, 0);
             // 
             // txtThanhTien
             // 
@@ -101,6 +101,7 @@
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.Size = new System.Drawing.Size(262, 32);
             this.txtThanhTien.TabIndex = 29;
+            this.txtThanhTien.Text = "0";
             // 
             // txtMaHDB
             // 
@@ -219,6 +220,7 @@
             this.dgvHDB.RowHeadersWidth = 51;
             this.dgvHDB.Size = new System.Drawing.Size(738, 265);
             this.dgvHDB.TabIndex = 45;
+            this.dgvHDB.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDB_RowEnter);
             // 
             // Ma_Hoa_Don_Ban
             // 
@@ -243,6 +245,7 @@
             // 
             // Thanh_Tien
             // 
+            this.Thanh_Tien.DataPropertyName = "Thanh_Tien";
             this.Thanh_Tien.HeaderText = "Thành Tiền";
             this.Thanh_Tien.MinimumWidth = 6;
             this.Thanh_Tien.Name = "Thanh_Tien";
@@ -266,17 +269,16 @@
             this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnXemCTHD,
             this.btnThem,
             this.toolStripSeparator1,
-            this.btnLuu,
             this.toolStripSeparator4,
             this.btnSua,
             this.toolStripSeparator2,
             this.btnXoa,
             this.toolStripSeparator3,
-            this.btnHuyBo,
             this.toolStripSeparator5,
-            this.btnReload});
+            this.toolStripButton1});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
@@ -289,6 +291,15 @@
             this.bindingNavigator1.TabIndex = 47;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
+            // btnXemCTHD
+            // 
+            this.btnXemCTHD.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnXemCTHD.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnXemCTHD.Name = "btnXemCTHD";
+            this.btnXemCTHD.Size = new System.Drawing.Size(151, 24);
+            this.btnXemCTHD.Text = "Xem chi tiết hóa đơn";
+            this.btnXemCTHD.Click += new System.EventHandler(this.btnXemCTHD_Click);
+            // 
             // btnThem
             // 
             this.btnThem.ForeColor = System.Drawing.Color.SaddleBrown;
@@ -296,19 +307,12 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 24);
             this.btnThem.Text = "Thêm Mới";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(92, 24);
-            this.btnLuu.Text = "Lưu Dữ Liệu";
             // 
             // toolStripSeparator4
             // 
@@ -322,6 +326,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 24);
             this.btnSua.Text = "Sửa dữ liệu";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // toolStripSeparator2
             // 
@@ -335,32 +340,26 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(89, 24);
             this.btnXoa.Text = "Xóa dữ liệu";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
-            // btnHuyBo
-            // 
-            this.btnHuyBo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnHuyBo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHuyBo.Name = "btnHuyBo";
-            this.btnHuyBo.Size = new System.Drawing.Size(61, 24);
-            this.btnHuyBo.Text = "Hủy Bỏ";
-            // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
             // 
-            // btnReload
+            // toolStripButton1
             // 
-            this.btnReload.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnReload.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(60, 24);
-            this.btnReload.Text = "Reload";
+            this.toolStripButton1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(60, 24);
+            this.toolStripButton1.Text = "Reload";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // panel1
             // 
@@ -386,6 +385,7 @@
             this.btnTimKiem.TabIndex = 51;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -454,20 +454,19 @@
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton btnSua;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btnXoa;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton btnHuyBo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripButton btnReload;
+        private System.Windows.Forms.ToolStripButton btnXemCTHD;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSĐT;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ma_Hoa_Don_Ban;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;

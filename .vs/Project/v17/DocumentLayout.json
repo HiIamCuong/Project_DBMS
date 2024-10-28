@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_sanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_cthdb.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_cthdb.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_ncc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|d:\\cuong python\\mon hoc\\he co so du lieu\\pull\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -29,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_nguyenlieu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_nguyenlieu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|solutionrelative:project\\frm_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD533A8-488F-4198-A69E-1B8004BD48BD}|Project\\Project.csproj|D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\project\\frm_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -74,24 +98,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\Program.cs",
-              "RelativeDocumentMoniker": "Project\\Program.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\Program.cs",
-              "RelativeToolTip": "Project\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBIAAAAnAAAA",
+              "DocumentIndex": 4,
+              "Title": "frm_CTHDB.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDB.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDB.cs [Design]",
+              "RelativeToolTip": "Project\\frm_CTHDB.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:34:51.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T15:57:52.951Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "frm_NguyenLieu.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
@@ -104,7 +127,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "frm_CTHDB.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDB.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDB.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDB.cs",
+              "RelativeToolTip": "Project\\frm_CTHDB.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwBEAAACOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:58:01.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frm_CTHDB.resx",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDB.resx",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDB.resx",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDB.resx",
+              "RelativeToolTip": "Project\\frm_CTHDB.resx",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAIwHcAAACTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-10-28T16:02:53.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_SanPham.Designer.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\frm_SanPham.Designer.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.Designer.cs",
+              "RelativeToolTip": "Project\\frm_SanPham.Designer.cs",
+              "ViewState": "AQIAAKUBAAAAAAAAAAAAACUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:53:36.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_CTHDN.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDN.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDN.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDN.cs",
+              "RelativeToolTip": "Project\\frm_CTHDN.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:53:25.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_CTHDN.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDN.cs",
+              "RelativeDocumentMoniker": "Project\\frm_CTHDN.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CTHDN.cs [Design]",
+              "RelativeToolTip": "Project\\frm_CTHDN.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:53:23.318Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "frm_NCC.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_NCC.cs",
               "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
@@ -117,29 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frm_BangPhanCa.cs",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_BangPhanCa.cs",
-              "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_BangPhanCa.cs",
-              "RelativeToolTip": "Project\\frm_BangPhanCa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:58:28.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SQLQuery.sql ",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\SQLQuery.sql",
-              "RelativeDocumentMoniker": "SQLQuery.sql",
-              "ToolTip": "SQLQuery.sql ",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-26T09:13:36.186Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "frm_NCC.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_NCC.cs",
               "RelativeDocumentMoniker": "Project\\frm_NCC.cs",
@@ -151,7 +216,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "frm_SanPham.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.cs",
+              "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.cs",
+              "RelativeToolTip": "Project\\frm_SanPham.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAswGsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T05:14:06.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SQLQuery.sql ",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\SQLQuery.sql",
+              "RelativeDocumentMoniker": "SQLQuery.sql",
+              "ToolTip": "SQLQuery.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-26T09:13:36.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frm_SanPham.cs [Design]",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.cs",
+              "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.cs [Design]",
+              "RelativeToolTip": "Project\\frm_SanPham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T05:13:45.195Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frm_BangPhanCa.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_BangPhanCa.cs",
+              "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_BangPhanCa.cs",
+              "RelativeToolTip": "Project\\frm_BangPhanCa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T05:58:28.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Project\\Program.cs",
+              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\Program.cs",
+              "RelativeToolTip": "Project\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T05:34:51.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "frm_NguyenLieu.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_NguyenLieu.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.cs",
@@ -163,30 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frm_SanPham.cs [Design]",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.cs",
-              "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
-              "ToolTip": "D:\\Nam 3\\DBMS\\Project\\Project\\frm_SanPham.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Nam 3\\DBMS\\Project\\Project\\frm_SanPham.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:13:45.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frm_SanPham.cs",
-              "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.cs",
-              "RelativeDocumentMoniker": "Project\\frm_SanPham.cs",
-              "ToolTip": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_SanPham.cs",
-              "RelativeToolTip": "Project\\frm_SanPham.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAiwH8AAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:14:06.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "frm_NguyenLieu.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_NguyenLieu.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_NguyenLieu.Designer.cs",
@@ -199,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "frm_KhachHang.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_KhachHang.cs",
               "RelativeDocumentMoniker": "Project\\frm_KhachHang.cs",
@@ -210,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "frm_BangPhanCa.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_BangPhanCa.cs",
               "RelativeDocumentMoniker": "Project\\frm_BangPhanCa.cs",
@@ -221,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "frm_TaiKhoan.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_TaiKhoan.cs",
               "RelativeDocumentMoniker": "Project\\frm_TaiKhoan.cs",
@@ -232,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "frm_CongThuc.Designer.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CongThuc.Designer.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.Designer.cs",
@@ -244,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "frm_CongThuc.cs",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CongThuc.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",
@@ -256,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "frm_CongThuc.cs [Design]",
               "DocumentMoniker": "D:\\cuong python\\mon hoc\\HE CO SO DU LIEU\\pull\\Project\\frm_CongThuc.cs",
               "RelativeDocumentMoniker": "Project\\frm_CongThuc.cs",

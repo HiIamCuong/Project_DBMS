@@ -331,3 +331,110 @@ D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.G
 D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
 D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.exe
 D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.pdb
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\EnvDTE.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\stdole.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.csproj.Up2Date
+>>>>>>> f441c5be6a3f9249c689a38c6b6daf37ea3ed431
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\EnvDTE.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\stdole.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.Up2Date
