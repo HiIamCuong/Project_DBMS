@@ -154,8 +154,8 @@
             this.chiTiếtHóaĐơnBánToolStripMenuItem});
             this.hóaĐơnXuấtHàngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.hóaĐơnXuấtHàngToolStripMenuItem.Name = "hóaĐơnXuấtHàngToolStripMenuItem";
-            this.hóaĐơnXuấtHàngToolStripMenuItem.Size = new System.Drawing.Size(290, 40);
-            this.hóaĐơnXuấtHàngToolStripMenuItem.Text = "Hóa Đơn Xuất Hàng";
+            this.hóaĐơnXuấtHàngToolStripMenuItem.Size = new System.Drawing.Size(228, 40);
+            this.hóaĐơnXuấtHàngToolStripMenuItem.Text = "Hóa Đơn Bán";
             this.hóaĐơnXuấtHàngToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnXuấtHàngToolStripMenuItem_Click);
             // 
             // chiTiếtHóaĐơnBánToolStripMenuItem
@@ -165,6 +165,7 @@
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Name = "chiTiếtHóaĐơnBánToolStripMenuItem";
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Size = new System.Drawing.Size(308, 40);
             this.chiTiếtHóaĐơnBánToolStripMenuItem.Text = "Chi Tiết Hóa Đơn Bán";
+            this.chiTiếtHóaĐơnBánToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtHóaĐơnBánToolStripMenuItem_Click);
             // 
             // doanhthutoolStripMenuItem
             // 

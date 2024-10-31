@@ -191,7 +191,6 @@ namespace Project
 
         private void frm_TrangChu_QL_Load(object sender, EventArgs e)
         {
-
         }
 
         private void chiTiếtHóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -224,12 +223,51 @@ namespace Project
 
         private void hóaĐơnXuấtHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = kiemtratontai(typeof(frm_HoaDonBan));
+            Form frm = kiemtratontai(typeof(frm_HoaDonNhap));
             if (frm != null)
                 frm.Activate();
             else
             {
-                frm_HoaDonBan fr = new frm_HoaDonBan();
+                frm_HoaDonNhap fr = new frm_HoaDonNhap();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
+
+        private void chiTiếtHóaXuathangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = kiemtratontai(typeof(frm_CTHDN));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frm_CTHDN fr = new frm_CTHDN();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
+
+        private void cÔNGTHỨCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = kiemtratontai(typeof(frm_CongThuc));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frm_CongThuc fr = new frm_CongThuc();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
+
+        private void chiTiếtHóaBánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = kiemtratontai(typeof(frm_CTHDB));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frm_CTHDB fr = new frm_CTHDB();
                 fr.MdiParent = this;
                 fr.Show();
             }

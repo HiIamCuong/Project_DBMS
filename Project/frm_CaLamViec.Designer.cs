@@ -41,31 +41,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnReload = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.btnHuyBo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnSua = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
+            this.dgvcalam = new System.Windows.Forms.DataGridView();
             this.dgvCaLamViec = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvcalam = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaLamViec)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -213,14 +208,10 @@
             this.panel2.Size = new System.Drawing.Size(387, 350);
             this.panel2.TabIndex = 49;
             // 
-            // btnReload
+            // toolStripSeparator5
             // 
-            this.btnReload.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnReload.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(60, 25);
-            this.btnReload.Text = "Reload";
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 28);
             // 
             // btnHuyBo
             // 
@@ -243,14 +234,6 @@
             this.btnXoa.Size = new System.Drawing.Size(94, 25);
             this.btnXoa.Text = "Xóa Dữ Liệu";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(92, 25);
-            this.btnLuu.Text = "Lưu Dữ Liệu";
             // 
             // toolStripSeparator1
             // 
@@ -277,15 +260,10 @@
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThem,
             this.toolStripSeparator1,
-            this.btnLuu,
-            this.toolStripSeparator4,
-            this.btnSua,
-            this.toolStripSeparator2,
             this.btnXoa,
             this.toolStripSeparator3,
             this.btnHuyBo,
-            this.toolStripSeparator5,
-            this.btnReload});
+            this.toolStripSeparator5});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
@@ -308,6 +286,16 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1189, 350);
             this.panel5.TabIndex = 51;
+            // 
+            // dgvcalam
+            // 
+            this.dgvcalam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcalam.Location = new System.Drawing.Point(384, 0);
+            this.dgvcalam.Name = "dgvcalam";
+            this.dgvcalam.RowHeadersWidth = 51;
+            this.dgvcalam.RowTemplate.Height = 24;
+            this.dgvcalam.Size = new System.Drawing.Size(805, 350);
+            this.dgvcalam.TabIndex = 34;
             // 
             // dgvCaLamViec
             // 
@@ -345,16 +333,6 @@
             this.panel1.Size = new System.Drawing.Size(1189, 62);
             this.panel1.TabIndex = 48;
             // 
-            // dgvcalam
-            // 
-            this.dgvcalam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvcalam.Location = new System.Drawing.Point(384, 0);
-            this.dgvcalam.Name = "dgvcalam";
-            this.dgvcalam.RowHeadersWidth = 51;
-            this.dgvcalam.RowTemplate.Height = 24;
-            this.dgvcalam.Size = new System.Drawing.Size(805, 350);
-            this.dgvcalam.TabIndex = 34;
-            // 
             // frm_CaLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -372,12 +350,12 @@
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaLamViec)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvcalam)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,15 +374,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ToolStripButton btnReload;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton btnHuyBo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnXoa;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btnSua;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;

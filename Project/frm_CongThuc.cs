@@ -20,7 +20,7 @@ namespace Project
             LoadNguyenLieu();
             LayCongThuc();
         }
-        string strCon = @"Data Source=DESKTOP-GIJL260;Initial Catalog=QLTraSua;Integrated Security=True";
+        string strCon = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
         SqlConnection sqlCon = null;
         private bool ThemCongThuc(string MaSP, string MaNL, int SoLuong, string DonVi)
         {
@@ -55,7 +55,7 @@ namespace Project
             string MaSP = cbbMaSP.SelectedValue.ToString();
             string MaNL = cbMaNL.SelectedValue.ToString();
             int SoLuong = int.Parse(txtSoLuong.Text);
-            string DonVi = txtDonVi.Text;
+            string DonVi = cmbDonVi.Text.ToString();
 
             bool isSuccess = ThemCongThuc(MaSP, MaNL, SoLuong, DonVi);
             if (isSuccess)
@@ -64,7 +64,6 @@ namespace Project
                 LayCongThuc();
                 txtSoLuong.Clear();
                 txtSoLuong.Clear();
-                txtDonVi.Clear();
             }
             else
             {
@@ -104,7 +103,7 @@ namespace Project
             string MaSP = cbbMaSP.SelectedValue.ToString();
             string MaNL = cbMaNL.SelectedValue.ToString();
             int SoLuong = int.Parse(txtSoLuong.Text);
-            string DonVi = txtDonVi.Text;
+            string DonVi = cmbDonVi.Text.ToString();
 
             bool isSuccess = SuaCongThuc(MaSP, MaNL, SoLuong, DonVi);
             if (isSuccess)
@@ -163,7 +162,6 @@ namespace Project
             cbbMaSP.Focus();
             cbMaNL.Focus();
             txtSoLuong.Clear();
-            txtDonVi.Clear();
         }
 
         private void btnReload_Click(object sender, EventArgs e)
@@ -236,7 +234,7 @@ namespace Project
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
-                dgvCongthuc.DataSource = dt;
+                dgvCongthuc1.DataSource = dt;
             }
             catch (Exception ex)
             {
@@ -251,29 +249,29 @@ namespace Project
             }
         }
 
-        private void dgvCongthuc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvCongthuc.Rows[e.RowIndex];
-                cbbMaSP.SelectedValue = row.Cells["Ma_San_Pham"].Value.ToString();
-                cbMaNL.SelectedValue = row.Cells["Ma_Nguyen_Lieu"].Value.ToString();
-                txtSoLuong.Text = row.Cells["So_Luong"].Value.ToString();
-                txtDonVi.Text = row.Cells["DonVi"].Value.ToString();
-            }
-        }
 
         private void btnHuyBo_Click_1(object sender, EventArgs e)
         {
             cbbMaSP.Focus();
             cbMaNL.Focus();
             txtSoLuong.Clear();
-            txtDonVi.Clear();
         }
 
         private void btnReload_Click_1(object sender, EventArgs e)
         {
             LayCongThuc();
+        }
+
+        private void dgvCongthuc1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvCongthuc1.Rows[e.RowIndex];
+                cbbMaSP.SelectedValue = row.Cells["Ma_San_Pham"].Value.ToString();
+                cbMaNL.SelectedValue = row.Cells["Ma_Nguyen_Lieu"].Value.ToString();
+                txtSoLuong.Text = row.Cells["So_Luong"].Value.ToString();
+                cmbDonVi.Text = row.Cells["DonVi"].Value.ToString();
+            }
         }
     }
 }

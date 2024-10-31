@@ -22,6 +22,7 @@ namespace Project
         {
 
         }
+        
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -34,7 +35,7 @@ namespace Project
         }
         private void ThemViTri(string maVT, string tenVT, int luongCD)
         {
-            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -111,7 +112,7 @@ namespace Project
         }
         private void XoaViTri(string maVT)
         {
-            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {

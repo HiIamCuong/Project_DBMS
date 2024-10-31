@@ -16,8 +16,22 @@ namespace Project
         public frm_KhachHang()
         {
             InitializeComponent();
+            loaddata();
         }
-
+        string strCon = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
+        SqlConnection sqlCon = null;
+        private void loaddata()
+        {
+            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM KhachHang", sqlCon))
+                {
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dgvKHACHHANG.DataSource = dt;
+                }
+            }
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             //string maKH = txtMaKH.Text;
@@ -117,7 +131,7 @@ namespace Project
 
         private DataTable TimKiemKhachHang(string timKiem)
         {
-            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 try

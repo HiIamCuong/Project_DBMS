@@ -17,9 +17,10 @@ namespace Project
         public frm_NguyenLieu()
         {
             InitializeComponent();
+        
         }
 
-        string strconn = @"Data Source = DELL; Initial Catalog = QLTraSua; Integrated Security = True";
+        string strconn = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
@@ -41,6 +42,102 @@ namespace Project
             cmbNCC.ValueMember = "Ma_Nha_Cung_Cap";
         }
 
+        private DataTable TimKiemNL(string tennl)
+        {
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(strconn))
+                {
+                    sqlCon.Open();
+                    using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.TimKiemBangTenNguyenLieu(@NL)", sqlCon))
+                    {
+                        command.Parameters.Add("@NL", SqlDbType.NVarChar).Value = "%" + tennl + "%";
+                        DataTable table = new DataTable();
+                        SqlDataAdapter adapter = new SqlDataAdapter(command);
+                        adapter.Fill(table);
+                        return table;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            conn = new SqlConnection(strconn);
+            conn.Open();
+            LoadNguyenLieu();
+            LoadNhaCungCap();
+            conn.Close();
+        }
+
+        private void dgvNGUYENLIEU_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= dgvNGUYENLIEU.Rows.Count - 1)
+            {
+                txtMaNL.Enabled = true;
+                txtTenNL.Text = "";
+                cmbDonVi.Text = "";
+                txtDongia.Text = "";
+                txtSoLuong.Text = "";
+            }
+            else
+            {
+                txtMaNL.Enabled = false;
+                txtMaNL.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ma_Nguyen_Lieu"].Value.ToString();
+                txtTenNL.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ten_Nguyen_Lieu"].Value.ToString();
+                txtDongia.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Don_Gia"].Value.ToString();
+                txtSoLuong.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["So_Luong"].Value.ToString();
+                cmbDonVi.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Don_Vi"].Value.ToString();
+                string maNCC = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ma_Nha_Cung_Cap"].Value.ToString();
+                if (cmbNCC.Items.Cast<DataRowView>().Any(item => item["Ma_Nha_Cung_Cap"].ToString() == maNCC))
+                {
+                    cmbNCC.SelectedValue = maNCC;
+                }
+                else
+                {
+                    cmbNCC.SelectedIndex = -1;
+                }
+                if (dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Anh"].Value != DBNull.Value)
+                {
+                    byte[] imageBytes = (byte[])dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Anh"].Value;
+                    using (MemoryStream ms = new MemoryStream(imageBytes))
+                    {
+                        pictureBox1.Image = Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    pictureBox1.Image = null;
+                }
+            }
+        }
+
+        private void btn_Upanh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                {
+                    openFileDialog.InitialDirectory = "c:\\";
+
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+                        pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+            }
+        }
+
         private void btnThem_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(strconn))
@@ -56,7 +153,7 @@ namespace Project
                         cmd.Parameters.AddWithValue("@TenNL", txtTenNL.Text);
                         cmd.Parameters.AddWithValue("@DonGia", txtDongia.Text);
                         cmd.Parameters.AddWithValue("@SoLuong", txtSoLuong.Text);
-                        cmd.Parameters.AddWithValue("@DonVi", txtDonVi.Text);
+                        cmd.Parameters.AddWithValue("@DonVi", cmbDonVi.Text.ToString());
                         cmd.Parameters.AddWithValue("@MaNCC", cmbNCC.SelectedValue.ToString());
 
                         byte[] imageBytes = null;
@@ -71,12 +168,17 @@ namespace Project
                         }
                         cmd.ExecuteNonQuery();
                         LoadNguyenLieu();
-
+                        
                     }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Lỗi từ trigger hoặc cơ sở dữ liệu: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(cmbDonVi.Text.ToString());
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -97,7 +199,7 @@ namespace Project
                         cmd.Parameters.AddWithValue("@TenNL", txtTenNL.Text);
                         cmd.Parameters.AddWithValue("@DonGia", txtDongia.Text);
                         cmd.Parameters.AddWithValue("@SoLuong", txtSoLuong.Text);
-                        cmd.Parameters.AddWithValue("@DonVi", txtDonVi.Text);
+                        cmd.Parameters.AddWithValue("@DonVi", cmbDonVi.Text.ToString());
                         cmd.Parameters.AddWithValue("@MaNCC", cmbNCC.SelectedValue.ToString());
 
                         byte[] imageBytes = null;
@@ -110,17 +212,18 @@ namespace Project
                                 cmd.Parameters.AddWithValue("@Anh", imageBytes);
                             }
                         }
-
-
                         cmd.ExecuteNonQuery();
                         LoadNguyenLieu();
                         txtMaNL.Enabled = true;
-
                     }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Lỗi từ trigger hoặc cơ sở dữ liệu: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -155,75 +258,12 @@ namespace Project
             txtTenNL.Clear();
             txtDongia.Clear();
             txtSoLuong.Clear();
-            txtDonVi.Clear();
             pictureBox1.Image = null;
         }
-
 
         private void btnReload_Click(object sender, EventArgs e)
         {
             LoadNguyenLieu();
-        }
-
-        
-        private void btn_Upanh_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                using (OpenFileDialog openFileDialog = new OpenFileDialog())
-                {
-                    openFileDialog.InitialDirectory = "c:\\";
-
-                    if (openFileDialog.ShowDialog() == DialogResult.OK)
-                    {
-                        pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
-                        pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
-            }
-        }
-
-
-        private DataTable TimKiemNL(string tennl)
-        {
-            try
-            {
-                using (SqlConnection sqlCon = new SqlConnection(strconn))
-                {
-                    sqlCon.Open();
-                    using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.TimKiemBangTenNguyenLieu(@NL)", sqlCon))
-                    {
-                        command.Parameters.Add("@NL", SqlDbType.NVarChar).Value = "%" + tennl + "%";
-                        DataTable table = new DataTable();
-                        SqlDataAdapter adapter = new SqlDataAdapter(command);
-                        adapter.Fill(table);
-                        return table;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message, "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-        }
-
-        private void btnTimKiem_Click_1(object sender, EventArgs e)
-        {
-            string timKiem = txtTimKiem.Text;
-            DataTable result = TimKiemNL(timKiem);
-            if (result != null && result.Rows.Count > 0)
-            {
-                dgvNGUYENLIEU.DataSource = result;
-            }
-            else
-            {
-                MessageBox.Show("Không tìm thấy nhà cung cấp nào phù hợp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
 
         private void frm_NguyenLieu_Load(object sender, EventArgs e)
@@ -234,48 +274,5 @@ namespace Project
             LoadNhaCungCap();
             conn.Close();
         }
-
-        private void dgvNGUYENLIEU_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= dgvNGUYENLIEU.Rows.Count - 1)
-            {
-                txtMaNL.Enabled = true;
-                txtTenNL.Text = "";
-                txtDonVi.Text = "";
-                txtDongia.Text = "";
-                txtSoLuong.Text = "";
-            }
-            else
-            {
-                txtMaNL.Enabled = false;
-                txtMaNL.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ma_Nguyen_Lieu"].Value.ToString();
-                txtTenNL.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ten_Nguyen_Lieu"].Value.ToString();
-                txtDongia.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Don_Gia"].Value.ToString();
-                txtSoLuong.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["So_Luong"].Value.ToString();
-                txtDonVi.Text = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Don_Vi"].Value.ToString();
-                string maNCC = dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Ma_Nha_Cung_Cap"].Value.ToString();
-                if (cmbNCC.Items.Cast<DataRowView>().Any(item => item["Ma_Nha_Cung_Cap"].ToString() == maNCC))
-                {
-                    cmbNCC.SelectedValue = maNCC;
-                }
-                else
-                {
-                    cmbNCC.SelectedIndex = -1;
-                }
-                if (dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Anh"].Value != DBNull.Value)
-                {
-                    byte[] imageBytes = (byte[])dgvNGUYENLIEU.Rows[e.RowIndex].Cells["Anh"].Value;
-                    using (MemoryStream ms = new MemoryStream(imageBytes))
-                    {
-                        pictureBox1.Image = Image.FromStream(ms);
-                    }
-                }
-                else
-                {
-                    pictureBox1.Image = null;
-                }
-            }
-        }
-
     }
 }

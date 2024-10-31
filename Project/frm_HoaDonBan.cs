@@ -102,7 +102,9 @@ namespace Project
                         cmd.ExecuteNonQuery();
                         LoadHoaDonBan();
 
+
                     }
+                    conn.Close();
                 }
                 catch (Exception ex)
                 {
@@ -159,6 +161,7 @@ namespace Project
                         LoadHoaDonBan();
 
                     }
+                    conn.Close();
                 }
                 catch (Exception ex)
                 {
@@ -182,6 +185,7 @@ namespace Project
                         da.Fill(ds, "TimKiem");
                         dgvHDB.DataSource = ds.Tables["TimKiem"];                        
                     }
+                    conn.Close();
                 }
                 catch (Exception ex)
                 {

@@ -42,7 +42,7 @@ namespace Project
 
         private void ThemNhanVien(string maNV, string tenNV, DateTime ngaySinh, string gioiTinh, string diaChi, string sdt, string maViTri, string maTaiKhoan, DateTime ngayTuyenDung)
         {
-            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -86,7 +86,7 @@ namespace Project
         }
         private void XoaNhanVien(string maNV)
         {
-            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -125,7 +125,7 @@ namespace Project
         }
         private void CapNhatNhanVien(string maNV, string tenNV, DateTime ngaySinh, string gioiTinh, string diaChi, string sdt, string maViTri, string maTaiKhoan, DateTime ngayTuyenDung)
         {
-            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -175,7 +175,7 @@ namespace Project
         }
         private DataTable TimKiemNhanVien(string timKiem)
         {
-            string connectionString = @"Data Source=TISU;Initial Catalog=QLyTraSua;Integrated Security=True";
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 try

@@ -16,7 +16,7 @@ namespace Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_HoaDonBan());
+            Application.Run(new frm_TrangChu_QL());
         }
     }
 }

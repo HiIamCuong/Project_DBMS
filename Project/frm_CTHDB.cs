@@ -15,7 +15,7 @@ namespace Project
 {
     public partial class frm_CTHDB : Form
     {
-        string connectionString = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTraSua;Persist Security Info=True;User ID=sa;Password=hello";
+        string connectionString = "Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
@@ -37,7 +37,8 @@ namespace Project
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                conn.Open();
+                if (conn.State == ConnectionState.Closed)
+                    conn.Open();
                 using(SqlCommand cmd = new SqlCommand("SELECT * FROM LayThongTinHoaDonBan(@Ma_Hoa_Don_Ban)", conn))
                 {
                     cmd.Parameters.AddWithValue("@Ma_Hoa_Don_Ban", ma_HDB);
@@ -62,7 +63,8 @@ namespace Project
                 {
                     try
                     {
-                        conn.Open();
+                        if (conn.State == ConnectionState.Closed)
+                            conn.Open();
                         using (SqlCommand cmd = new SqlCommand("SELECT dbo.TinhTongTienTheoHoaDon(@Ma_Hoa_Don_Ban)", conn))
                         {
                             cmd.CommandType = CommandType.Text;
@@ -79,7 +81,8 @@ namespace Project
                     }
                     try
                     {
-                        conn.Open();
+                        if (conn.State == ConnectionState.Closed)
+                            conn.Open();
                         using (SqlCommand cmd = new SqlCommand("SELECT Thanh_Tien FROM HoaDonBan WHERE Ma_Hoa_Don_Ban =" + ma_HDB, conn))
                         {
                             sauChietKhau = (int)cmd.ExecuteScalar();
@@ -113,7 +116,8 @@ namespace Project
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    conn.Open();
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
 
                     using (SqlCommand cmd = new SqlCommand("TaoHoaDonBan", conn))
                     {
@@ -138,13 +142,15 @@ namespace Project
                         //MessageBox.Show("Thêm sản phẩm thành công.");
 
                     }
+                    conn.Close();
                 }
             }
             else
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    conn.Open();
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
 
                     using (SqlCommand cmd = new SqlCommand("ThemSanPhamVaoHoaDonBan", conn))
                     {
@@ -159,6 +165,7 @@ namespace Project
                         //MessageBox.Show("Thêm sản phẩm thành công.");
 
                     }
+                    conn.Close();
                 }
             }
         }
@@ -166,10 +173,10 @@ namespace Project
         private void frm_CTHDB_Load(object sender, EventArgs e)
         {
             conn = new SqlConnection(connectionString);
-            conn.Open();
+            //conn.Open();
             LoadHoaDonBan();
             LoadMaSanPham();
-            conn.Close();
+            //conn.Close();
         }
 
 
@@ -199,7 +206,8 @@ namespace Project
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                conn.Open();
+                if (conn.State == ConnectionState.Closed)
+                    conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand("SuaChiTietHoaDonBan", conn))
                 {
@@ -215,6 +223,7 @@ namespace Project
                     //MessageBox.Show("Thêm sản phẩm thành công.");
 
                 }
+                conn.Close();
             }
         }
 
@@ -222,7 +231,8 @@ namespace Project
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                conn.Open();
+                if (conn.State == ConnectionState.Closed)
+                    conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand("XoaSanPhamTrongCTHD", conn))
                 {
@@ -236,6 +246,7 @@ namespace Project
                     //MessageBox.Show("Thêm sản phẩm thành công.");
 
                 }
+                conn.Close();
             }
         }
 
@@ -261,6 +272,7 @@ namespace Project
                         da.Fill(ds, "TimKiem");
                         dgv_CTHDB.DataSource = ds.Tables["TimKiem"];
                     }
+                    conn.Close();
                 }
                 catch (Exception ex)
                 {

@@ -278,7 +278,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_SanPham.resx">
       <DependentUpon>frm_SanPham.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TaiKhoan.resx">
       <DependentUpon>frm_TaiKhoan.cs</DependentUpon>

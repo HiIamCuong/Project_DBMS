@@ -14,7 +14,7 @@ namespace Project
 {
     public partial class frm_SanPham : Form
     {
-        string strconn = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTraSua;Persist Security Info=True;User ID=sa;Password=hello";
+        string strconn = "Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
@@ -29,10 +29,11 @@ namespace Project
             {
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    openFileDialog.InitialDirectory = "c:\\"; 
+                    openFileDialog.InitialDirectory = "c:\\";
 
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
+                        // Tải hình ảnh vào PictureBox
                         pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
                         pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                     }
@@ -41,7 +42,7 @@ namespace Project
             catch (Exception ex)
             {
                 MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
-            }            
+            }
         }
 
         private void frm_SanPham_Load(object sender, EventArgs e)
@@ -115,7 +116,7 @@ namespace Project
                     }
                 }
             }
-            
+
         }
 
         private void dgvSANPHAM_RowEnter(object sender, DataGridViewCellEventArgs e)

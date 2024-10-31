@@ -14,7 +14,7 @@ namespace Project
 {
     public partial class frm_LoaiSanPham : Form
     {
-        string strconn = "Data Source=QUYNHTHU-PC\\QT;Initial Catalog=QLTraSua;Persist Security Info=True;User ID=sa;Password=hello";
+        string strconn = "Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
         SqlConnection conn = null;
         SqlDataAdapter da = null;
         DataSet ds = null;
