@@ -37,14 +37,21 @@ namespace Project
         }
         private void loaddata()
         {
-            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            try
             {
-                using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM View_DoanhThuCaLamViec", sqlCon))
+                if (sqlCon != null && sqlCon.State == ConnectionState.Open)
                 {
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dataGridView1.DataSource = dt;
+                    using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM View_DoanhThuCaLamViec", sqlCon))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        dataGridView1.DataSource = dt;
+                    }
                 }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

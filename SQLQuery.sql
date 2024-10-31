@@ -1,5 +1,4 @@
-
-
+USE QLTraSua
 CREATE TABLE TaiKhoan(
 	Ma_Tai_Khoan varchar(10) PRIMARY KEY,
 	Mat_Khau varchar(50) 
@@ -230,7 +229,7 @@ VALUES
 GO
 CREATE TRIGGER Xu_Ly_Lap_Nhan_Vien
 ON BangPhanCa
-FOR INSERT
+INSTEAD OF INSERT
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -1126,25 +1125,37 @@ JOIN
 	CaLamViec CL ON BPC.Ma_Ca = CL.Ma_Ca
 JOIN 
 	NhanVien NV ON BPC.Ma_Nhan_Vien = NV.Ma_Nhan_Vien
-WHERE 
-	DATEDIFF(week, GETDATE(), CL.Ngay) = 0;
+--WHERE 
+	--DATEDIFF(week, GETDATE(), CL.Ngay) = 0;
 GO
 CREATE VIEW View_DoanhThuCaLamViec AS
-	SELECT 
-		CL.Ma_Ca,
-		CL.Gio_Bat_Dau,
-		CL.Gio_Ket_Thuc,
-		SUM(HDB.Thanh_Tien) AS Tong_Doanh_Thu
-	FROM 
-		HoaDonBan HDB, BangPhanCa BPC
-	JOIN 
-		CaLamViec CL ON BPC.Ma_Ca = CL.Ma_Ca
-	WHERE 
+	--SELECT 
+		--CL.Ma_Ca,
+		--CL.Gio_Bat_Dau,
+		--CL.Gio_Ket_Thuc,
+		--SUM(HDB.Thanh_Tien) AS Tong_Doanh_Thu
+	--FROM 
+		--HoaDonBan HDB, BangPhanCa BPC
+	--JOIN 
+		--CaLamViec CL ON BPC.Ma_Ca = CL.Ma_Ca
+	--WHERE 
 		-- Kết hợp ngày và giờ của hóa đơn với giờ của ca làm việc
-		CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Bat_Dau AS DATETIME) <= CAST(HDB.Ngay AS DATETIME)
-		AND CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Ket_Thuc AS DATETIME) >= CAST(HDB.Ngay AS DATETIME)
+		--CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Bat_Dau AS DATETIME) <= CAST(HDB.Ngay AS DATETIME)
+		--AND CAST(HDB.Ngay AS DATETIME) + CAST(CL.Gio_Ket_Thuc AS DATETIME) >= CAST(HDB.Ngay AS DATETIME)
+		--HDB.Ngay=BPC.
+	--GROUP BY 
+		--CL.Ma_Ca, CL.Gio_Bat_Dau, CL.Gio_Ket_Thuc;
+	SELECT 
+		HDB.Ngay,
+		Gio_Bat_Dau,
+		Gio_Ket_Thuc,
+		SUM(Thanh_Tien) Tong_Doanh_Thu
+	FROM 
+		HoaDonBan HDB 
+	JOIN 
+		CaLamViec CL ON CL.Ngay = HDB.Ngay 
 	GROUP BY 
-		CL.Ma_Ca, CL.Gio_Bat_Dau, CL.Gio_Ket_Thuc;
+		HDB.Ngay,Gio_Bat_Dau,Gio_Ket_Thuc
 GO
 CREATE PROCEDURE Them_Ca_Lam(@Ma_Ca nchar(10),@Ngay Date,@Gio_Bat_Dau Time,@Gio_Ket_Thuc Time)
 AS
@@ -1177,6 +1188,16 @@ AS
 BEGIN
 	DELETE FROM BangPhanCa WHERE Ma_Ca=@Ma_Ca AND Ma_Nhan_Vien=@Ma_Nhan_Vien
 END
+GO
+CREATE FUNCTION DoanhThuQuanLy(@Thang INT, @Nam INT)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT * 
+    FROM HoaDonBan 
+    WHERE MONTH(Ngay) = @Thang AND YEAR(Ngay) = @Nam
+);
 --END SyCuong##################################################################
 
 

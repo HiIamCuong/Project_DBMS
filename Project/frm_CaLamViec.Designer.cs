@@ -220,6 +220,7 @@
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.Size = new System.Drawing.Size(61, 25);
             this.btnHuyBo.Text = "Hủy Bỏ";
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // toolStripSeparator3
             // 
@@ -296,6 +297,8 @@
             this.dgvcalam.RowTemplate.Height = 24;
             this.dgvcalam.Size = new System.Drawing.Size(805, 350);
             this.dgvcalam.TabIndex = 34;
+            this.dgvcalam.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcalam_CellContentClick);
+            this.dgvcalam.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcalam_RowEnter);
             // 
             // dgvCaLamViec
             // 
@@ -310,7 +313,6 @@
             this.dgvCaLamViec.RowHeadersWidth = 51;
             this.dgvCaLamViec.Size = new System.Drawing.Size(1189, 350);
             this.dgvCaLamViec.TabIndex = 33;
-            this.dgvCaLamViec.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCaLamViec_CellContentClick);
             // 
             // panel4
             // 

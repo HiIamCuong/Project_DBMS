@@ -102,5 +102,35 @@ namespace Project
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void dgvphanca_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvphanca_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= dgvphanca.Rows.Count - 1)
+            {
+                cmbMaCa.Text = "";
+                cmbMaNV.Text = "";
+            }
+            else
+            {
+                cmbMaCa.Text = dgvphanca.Rows[e.RowIndex].Cells["Ma_Ca"].Value.ToString();
+                cmbMaNV.Text = dgvphanca.Rows[e.RowIndex].Cells["Ma_Nhan_Vien"].Value.ToString();
+            }
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            loaddata();
+        }
+
+        private void btnHuyBo_Click(object sender, EventArgs e)
+        {
+            cmbMaCa.Text = "";
+            cmbMaNV.Text = "";
+        }
     }
 }

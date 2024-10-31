@@ -37,16 +37,41 @@ namespace Project
         }
         private void loaddata()
         {
-            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            if(cbthang1.Text == ""  && cbnam.Text=="")
+            {
+                try
+                {
+                    if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM HoaDonBan", sqlCon))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+                            dgvdoanhthuQL.DataSource = dt;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }    
+            else
             {
                 using (SqlConnection connection = new SqlConnection(strCon))
                 {
                     connection.Open();
-                    using (SqlCommand command = new SqlCommand("SELECT * FROM DoanhThuQuanLy(@Thang,@Nam)", connection))
+                    using (SqlCommand command = new SqlCommand("SELECT * FROM DoanhThuQuanLy(@Thang, @Nam)", connection))
                     {
                         command.Parameters.AddWithValue("@Thang", cbthang1.Text);
-                        command.Parameters.AddWithValue("@Nam",cbnam.Text);
-                        command.ExecuteNonQuery();
+                        command.Parameters.AddWithValue("@Nam", cbnam.Text);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            DataTable dataTable = new DataTable();
+                            dataTable.Load(reader);
+                            dgvdoanhthuQL.DataSource = dataTable;
+                        }
                     }
                 }
             }
@@ -59,6 +84,13 @@ namespace Project
 
         private void cbnam_SelectedIndexChanged(object sender, EventArgs e)
         {
+            loaddata();
+        }
+
+        private void xemtatca_Click(object sender, EventArgs e)
+        {
+            cbthang1.Text = "";
+            cbnam.Text = "";
             loaddata();
         }
     }

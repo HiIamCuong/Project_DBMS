@@ -30,13 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvdoanhthuQL = new System.Windows.Forms.DataGridView();
             this.cbthang1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbnam = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.xemtatca = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdoanhthuQL)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,15 +65,15 @@
             this.label2.Size = new System.Drawing.Size(0, 40);
             this.label2.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgvdoanhthuQL
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(754, 328);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvdoanhthuQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdoanhthuQL.Location = new System.Drawing.Point(25, 110);
+            this.dgvdoanhthuQL.Name = "dgvdoanhthuQL";
+            this.dgvdoanhthuQL.RowHeadersWidth = 51;
+            this.dgvdoanhthuQL.RowTemplate.Height = 24;
+            this.dgvdoanhthuQL.Size = new System.Drawing.Size(754, 328);
+            this.dgvdoanhthuQL.TabIndex = 3;
             // 
             // cbthang1
             // 
@@ -136,12 +137,23 @@
             // 
             this.cbnam.FormattingEnabled = true;
             this.cbnam.Items.AddRange(new object[] {
-            "2024"});
+            "2024",
+            "2023"});
             this.cbnam.Location = new System.Drawing.Point(482, 71);
             this.cbnam.Name = "cbnam";
             this.cbnam.Size = new System.Drawing.Size(107, 24);
             this.cbnam.TabIndex = 8;
             this.cbnam.SelectedIndexChanged += new System.EventHandler(this.cbnam_SelectedIndexChanged);
+            // 
+            // xemtatca
+            // 
+            this.xemtatca.Location = new System.Drawing.Point(642, 26);
+            this.xemtatca.Name = "xemtatca";
+            this.xemtatca.Size = new System.Drawing.Size(125, 40);
+            this.xemtatca.TabIndex = 9;
+            this.xemtatca.Text = "xem tất cả";
+            this.xemtatca.UseVisualStyleBackColor = true;
+            this.xemtatca.Click += new System.EventHandler(this.xemtatca_Click);
             // 
             // frm_DoanhThu_QL
             // 
@@ -149,17 +161,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.xemtatca);
             this.Controls.Add(this.cbnam);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbthang1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvdoanhthuQL);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frm_DoanhThu_QL";
             this.Text = "frm_DoanhThu_QL";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdoanhthuQL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,11 +182,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvdoanhthuQL;
         private System.Windows.Forms.ComboBox cbthang1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbnam;
+        private System.Windows.Forms.Button xemtatca;
     }
 }
