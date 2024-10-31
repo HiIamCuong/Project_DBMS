@@ -1,0 +1,543 @@
+<<<<<<< HEAD
+D:\Nam 3\DBMS\Đồ án\Project\Project\bin\Debug\Project.exe.config
+D:\Nam 3\DBMS\Đồ án\Project\Project\bin\Debug\Project.exe
+D:\Nam 3\DBMS\Đồ án\Project\Project\bin\Debug\Project.pdb
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.KetNoi.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_NCC.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_SanPham.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.exe
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.pdb
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\Nam 3\DBMS\Đồ án\Project\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\bin\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project (1)\Project\obj\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\bin\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\Project_DBMS\Project\obj\Debug\Project.pdb
+=======
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.exe
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.pdb
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\bin\Debug\Project.exe.config
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\bin\Debug\Project.exe
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\bin\Debug\Project.pdb
+>>>>>>> f9b4c2482448e32d02cd1dd1e3ad572fb215bbb7
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.exe.config
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.exe
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.exe
+C:\Users\Admin\Downloads\HQT CSDL\Project_DBMS\Project\obj\Debug\Project.pdb
+>>>>>>> 8b2d81763d6e01bb7cb1b9ca27cf1b2058d46e85
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+E:\Learn\DBMS\ĐỒ ÁN\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+>>>>>>> 56dd56cfdb863373e8c3467d72820e12aa63de6e
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\obj\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\merge tisu\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Project.exe.config
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Project.exe
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Project.pdb
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_BangPhanCa.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_CaLamViec.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_CongThuc.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_CTHDB.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_CTHDN.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_DangNhap.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_DoanhThu.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonBan.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.KetNoi.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_KhachHang.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_NCC.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_NguyenLieu.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_SanPham.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_TaiKhoan.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.exe
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.pdb
+>>>>>>> 293bf11a827aa99a84349fd0a7ae94c79355b38c
+D:\Nam 3\DBMS\Project\Project\bin\Debug\Project.exe.config
+D:\Nam 3\DBMS\Project\Project\bin\Debug\Project.exe
+D:\Nam 3\DBMS\Project\Project\bin\Debug\Project.pdb
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.KetNoi.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_NCC.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_SanPham.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.exe
+D:\Nam 3\DBMS\Project\Project\obj\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Project.exe.config
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Project.pdb
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_BangPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CaLamViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CongThuc.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CTHDB.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_CTHDN.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DangNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_HoaDonBan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.KetNoi.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_KhachHang.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_NCC.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_NguyenLieu.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_SanPham.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_TaiKhoan.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.Properties.Resources.resources
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.exe
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.pdb
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\EnvDTE.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\stdole.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Downloads\Project_DBMS\Project\obj\Debug\Project.csproj.Up2Date
+>>>>>>> f441c5be6a3f9249c689a38c6b6daf37ea3ed431
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\EnvDTE.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\stdole.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cuong python\mon hoc\HE CO SO DU LIEU\pull\Project\obj\Debug\Project.csproj.Up2Date
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Project.exe.config
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Project.exe
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Project.pdb
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.Shared.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\EnvDTE.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\stdole.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_BangPhanCa.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_CaLamViec.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_ChinhSuaTTCaNhan.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_CongThuc.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_CTHDB.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_CTHDN.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_DangNhap.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_DanhMucNhanVien.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_DoanhThu_NV.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_DoanhThu_QL.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_HoaDonBan.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_HoaDonNhap.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.KetNoi.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_KhachHang.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_LichDaPhanCa.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_LoaiNhanVien.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_LoaiSanPham.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_NCC.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_NguyenLieu.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_SanPham.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_TaiKhoan.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_TrangChu_NV.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_TrangChu_QL.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_ViTriCongViec.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.frm_XuatHoaDon.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.Properties.Resources.resources
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.csproj.GenerateResource.cache
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.csproj.Up2Date
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.exe
+E:\Learn\DBMS\ĐỒ ÁN\pull\Project\obj\Debug\Project.pdb
