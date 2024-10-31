@@ -20,9 +20,18 @@ namespace Project
 
         private void frm_ViTriCongViec_Load(object sender, EventArgs e)
         {
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM KhachHang", conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                dgvViTriCV.DataSource = dataTable;
 
+            }
         }
-        
+
 
         private void btnThem_Click(object sender, EventArgs e)
         {

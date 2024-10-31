@@ -39,14 +39,14 @@ namespace Project
         {
             try
             {
-                if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM View_DoanhThuCaLamViec", sqlCon))
                 {
-                    using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM View_DoanhThuCaLamViec", sqlCon))
-                    {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-                        dataGridView1.DataSource = dt;
-                    }
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                }
                 }
             }
             catch(Exception ex)

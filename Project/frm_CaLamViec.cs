@@ -115,14 +115,14 @@ namespace Project
                 txtGioKT.Text = "";
             }
             else
-            {
+        {
                 txtMaCa.Text = dgvcalam.Rows[e.RowIndex].Cells["Ma_Ca"].Value.ToString();
                 txtNgay.Text = dgvcalam.Rows[e.RowIndex].Cells["Ngay"].Value.ToString();
                 txtGioBD.Text = dgvcalam.Rows[e.RowIndex].Cells["Gio_Bat_Dau"].Value.ToString();
                 txtGioKT.Text=dgvcalam.Rows[e.RowIndex].Cells["Gio_Ket_Thuc"].Value.ToString();
             }
         }
-
+            
         private void btnHuyBo_Click(object sender, EventArgs e)
         {
             txtMaCa.Text = "";

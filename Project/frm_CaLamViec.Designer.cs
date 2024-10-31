@@ -313,6 +313,7 @@
             this.dgvCaLamViec.RowHeadersWidth = 51;
             this.dgvCaLamViec.Size = new System.Drawing.Size(1189, 350);
             this.dgvCaLamViec.TabIndex = 33;
+            this.dgvCaLamViec.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCaLamViec_CellContentClick);
             // 
             // panel4
             // 

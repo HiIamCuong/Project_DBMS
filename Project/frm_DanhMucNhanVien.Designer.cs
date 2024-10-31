@@ -51,8 +51,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtMaTK = new System.Windows.Forms.TextBox();
             this.txtTK = new System.Windows.Forms.TextBox();
-            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.dgvNhanVienaaa = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -71,15 +72,16 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnTKKH = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtMaTK = new System.Windows.Forms.TextBox();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVienaaa)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNgayTD
@@ -359,6 +361,17 @@
             this.panel2.Size = new System.Drawing.Size(521, 600);
             this.panel2.TabIndex = 49;
             // 
+            // txtMaTK
+            // 
+            this.txtMaTK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaTK.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaTK.Location = new System.Drawing.Point(216, 348);
+            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMaTK.Name = "txtMaTK";
+            this.txtMaTK.Size = new System.Drawing.Size(273, 39);
+            this.txtMaTK.TabIndex = 48;
+            // 
             // txtTK
             // 
             this.txtTK.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,22 +381,23 @@
             this.txtTK.Size = new System.Drawing.Size(538, 37);
             this.txtTK.TabIndex = 6;
             // 
-            // dgvNhanVien
+            // dgvNhanVienaaa
             // 
-            this.dgvNhanVien.BackgroundColor = System.Drawing.Color.AliceBlue;
-            this.dgvNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvNhanVien.Location = new System.Drawing.Point(0, 0);
-            this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.RowHeadersWidth = 51;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1472, 600);
-            this.dgvNhanVien.TabIndex = 33;
+            this.dgvNhanVienaaa.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.dgvNhanVienaaa.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvNhanVienaaa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVienaaa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvNhanVienaaa.Location = new System.Drawing.Point(0, 0);
+            this.dgvNhanVienaaa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvNhanVienaaa.Name = "dgvNhanVienaaa";
+            this.dgvNhanVienaaa.RowHeadersWidth = 51;
+            this.dgvNhanVienaaa.Size = new System.Drawing.Size(1472, 600);
+            this.dgvNhanVienaaa.TabIndex = 33;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.dgvNhanVien);
+            this.panel5.Controls.Add(this.dgvNhanVienaaa);
             this.panel5.Controls.Add(this.cmbMaLoaiNV);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 152);
@@ -557,16 +571,15 @@
             this.panel1.Size = new System.Drawing.Size(1472, 152);
             this.panel1.TabIndex = 48;
             // 
-            // txtMaTK
+            // dgvNhanVien
             // 
-            this.txtMaTK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaTK.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaTK.Location = new System.Drawing.Point(216, 348);
-            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMaTK.Name = "txtMaTK";
-            this.txtMaTK.Size = new System.Drawing.Size(273, 39);
-            this.txtMaTK.TabIndex = 48;
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVien.Location = new System.Drawing.Point(519, 0);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.RowHeadersWidth = 62;
+            this.dgvNhanVien.RowTemplate.Height = 28;
+            this.dgvNhanVien.Size = new System.Drawing.Size(953, 600);
+            this.dgvNhanVien.TabIndex = 46;
             // 
             // frm_DanhMucNhanVien
             // 
@@ -583,7 +596,7 @@
             this.Load += new System.EventHandler(this.frm_DanhMucNhanVien_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVienaaa)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -594,6 +607,7 @@
             this.panel6.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -623,7 +637,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtTK;
-        private System.Windows.Forms.DataGridView dgvNhanVien;
+        private System.Windows.Forms.DataGridView dgvNhanVienaaa;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
@@ -643,5 +657,6 @@
         private System.Windows.Forms.Button btnTKKH;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtMaTK;
+        private System.Windows.Forms.DataGridView dgvNhanVien;
     }
 }

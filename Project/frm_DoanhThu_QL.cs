@@ -41,8 +41,8 @@ namespace Project
             {
                 try
                 {
-                    if (sqlCon != null && sqlCon.State == ConnectionState.Open)
-                    {
+            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            {
                         using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM HoaDonBan", sqlCon))
                         {
                             DataTable dt = new DataTable();
