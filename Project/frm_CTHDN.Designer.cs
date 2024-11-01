@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbMaNL = new System.Windows.Forms.ComboBox();
@@ -53,13 +53,16 @@
             this.Don_Vi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_TongTien = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.soLuong = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDG = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSoHD = new System.Windows.Forms.TextBox();
+            this.txtSL = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTHDN)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -78,7 +81,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel4.Controls.Add(this.soLuong);
+            this.panel4.Controls.Add(this.txtSL);
+            this.panel4.Controls.Add(this.txtSoHD);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.txtDG);
+            this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.cbMaNL);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label7);
@@ -91,12 +98,12 @@
             // 
             // cbMaNL
             // 
-            this.cbMaNL.Font = new System.Drawing.Font("#9Slide04 Faustina", 12F);
+            this.cbMaNL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbMaNL.FormattingEnabled = true;
-            this.cbMaNL.Location = new System.Drawing.Point(230, 15);
+            this.cbMaNL.Location = new System.Drawing.Point(742, 9);
             this.cbMaNL.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaNL.Name = "cbMaNL";
-            this.cbMaNL.Size = new System.Drawing.Size(241, 34);
+            this.cbMaNL.Size = new System.Drawing.Size(241, 33);
             this.cbMaNL.TabIndex = 14;
             // 
             // label6
@@ -104,7 +111,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label6.Location = new System.Drawing.Point(27, 18);
+            this.label6.Location = new System.Drawing.Point(570, 11);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(164, 26);
@@ -152,6 +159,7 @@
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -215,14 +223,14 @@
             this.dgvCTHDN.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.dgvCTHDN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvCTHDN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCTHDN.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCTHDN.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCTHDN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCTHDN.Location = new System.Drawing.Point(0, 0);
             this.dgvCTHDN.Margin = new System.Windows.Forms.Padding(4);
@@ -263,6 +271,7 @@
             this.btnReload.TabIndex = 10;
             this.btnReload.Text = "Reload";
             this.btnReload.UseVisualStyleBackColor = false;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnXuatHD
             // 
@@ -278,6 +287,7 @@
             this.btnXuatHD.TabIndex = 9;
             this.btnXuatHD.Text = "Xuất Hóa Đơn";
             this.btnXuatHD.UseVisualStyleBackColor = false;
+            this.btnXuatHD.Click += new System.EventHandler(this.btnXuatHD_Click);
             // 
             // btnQuayLai
             // 
@@ -293,6 +303,7 @@
             this.btnQuayLai.TabIndex = 8;
             this.btnQuayLai.Text = "Quay Loại Giao Diện Hóa Đơn";
             this.btnQuayLai.UseVisualStyleBackColor = false;
+            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
             // dataGridView1
             // 
@@ -309,6 +320,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1063, 293);
             this.dataGridView1.TabIndex = 35;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // Ma_Hoa_Don_Nhap
             // 
@@ -374,22 +386,63 @@
             this.label3.TabIndex = 38;
             this.label3.Text = "Tổng tiền:";
             // 
-            // soLuong
+            // label2
             // 
-            this.soLuong.Location = new System.Drawing.Point(231, 61);
-            this.soLuong.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.soLuong.Name = "soLuong";
-            this.soLuong.Size = new System.Drawing.Size(65, 22);
-            this.soLuong.TabIndex = 36;
-            this.soLuong.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Location = new System.Drawing.Point(570, 61);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 26);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Đơn giá";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtDG
+            // 
+            this.txtDG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDG.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDG.Location = new System.Drawing.Point(742, 57);
+            this.txtDG.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDG.Name = "txtDG";
+            this.txtDG.Size = new System.Drawing.Size(241, 34);
+            this.txtDG.TabIndex = 47;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label4.Location = new System.Drawing.Point(27, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(184, 26);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "Mã Hóa Đơn Nhập";
+            // 
+            // txtSoHD
+            // 
+            this.txtSoHD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSoHD.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoHD.Location = new System.Drawing.Point(231, 12);
+            this.txtSoHD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoHD.Name = "txtSoHD";
+            this.txtSoHD.Size = new System.Drawing.Size(241, 34);
+            this.txtSoHD.TabIndex = 49;
+            // 
+            // txtSL
+            // 
+            this.txtSL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSL.Font = new System.Drawing.Font("Century", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSL.Location = new System.Drawing.Point(231, 57);
+            this.txtSL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSL.Name = "txtSL";
+            this.txtSL.Size = new System.Drawing.Size(241, 34);
+            this.txtSL.TabIndex = 50;
             // 
             // frm_CTHDN
             // 
@@ -405,6 +458,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "frm_CTHDN";
             this.Text = "frm_CTHDN";
+            this.Load += new System.EventHandler(this.frm_CTHDN_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -412,7 +466,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTHDN)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soLuong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,6 +497,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbl_TongTien;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown soLuong;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtSL;
+        private System.Windows.Forms.TextBox txtSoHD;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtDG;
     }
 }

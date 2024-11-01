@@ -193,5 +193,10 @@ namespace Project
                 }
             }
         }
+
+        private void dgvHDB_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

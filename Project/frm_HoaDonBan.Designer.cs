@@ -220,6 +220,7 @@
             this.dgvHDB.RowHeadersWidth = 51;
             this.dgvHDB.Size = new System.Drawing.Size(738, 265);
             this.dgvHDB.TabIndex = 45;
+            this.dgvHDB.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDB_CellDoubleClick);
             this.dgvHDB.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDB_RowEnter);
             // 
             // Ma_Hoa_Don_Ban

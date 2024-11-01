@@ -238,7 +238,7 @@
             this.txtMaKH.Enabled = false;
             this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKH.Location = new System.Drawing.Point(181, 122);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(953, 32);
             this.txtMaKH.TabIndex = 7;
@@ -260,7 +260,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenKH.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenKH.Location = new System.Drawing.Point(181, 38);
-            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.Size = new System.Drawing.Size(952, 32);
             this.txtTenKH.TabIndex = 4;
@@ -271,7 +271,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(181, 78);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(569, 32);
             this.txtSDT.TabIndex = 5;
@@ -302,7 +302,7 @@
             // 
             this.txtTK.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTK.Location = new System.Drawing.Point(4, 1);
-            this.txtTK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTK.Margin = new System.Windows.Forms.Padding(4);
             this.txtTK.Name = "txtTK";
             this.txtTK.Size = new System.Drawing.Size(533, 32);
             this.txtTK.TabIndex = 6;
@@ -349,7 +349,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1168, 140);
             this.panel1.TabIndex = 37;
@@ -391,6 +391,7 @@
             this.Controls.Add(this.dgvKHACHHANG);
             this.Name = "frm_KhachHang";
             this.Text = "frm_KhachHang";
+            this.Load += new System.EventHandler(this.frm_KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();

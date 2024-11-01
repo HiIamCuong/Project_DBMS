@@ -20,7 +20,15 @@ namespace Project
 
         private void frm_DanhMucNhanVien_Load(object sender, EventArgs e)
         {
-
+            string connectionString = @"Data Source=DELL;Initial Catalog=QLTraSua;Integrated Security=True";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM NhanVien", conn);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                dgvNhanVie.DataSource = dataTable;
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -164,7 +172,7 @@ namespace Project
             if (result != null && result.Rows.Count > 0)
 
             {
-                dgvNhanVien.DataSource = result;
+                dgvNhanVie.DataSource = result;
     }
 
             else
@@ -202,6 +210,11 @@ namespace Project
                     }
                 }
             }
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

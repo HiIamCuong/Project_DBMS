@@ -84,14 +84,14 @@
             // 
             // cmbNCC
             // 
-            this.cmbNCC.Font = new System.Drawing.Font("#9Slide04 Faustina", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNCC.FormattingEnabled = true;
             this.cmbNCC.Items.AddRange(new object[] {
             ""});
             this.cmbNCC.Location = new System.Drawing.Point(179, 227);
             this.cmbNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbNCC.Name = "cmbNCC";
-            this.cmbNCC.Size = new System.Drawing.Size(262, 34);
+            this.cmbNCC.Size = new System.Drawing.Size(262, 33);
             this.cmbNCC.TabIndex = 26;
             // 
             // dtpNgayNhap
@@ -107,6 +107,7 @@
             // 
             // txtThanhTien
             // 
+            this.txtThanhTien.Enabled = false;
             this.txtThanhTien.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThanhTien.Location = new System.Drawing.Point(179, 285);
             this.txtThanhTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -116,6 +117,7 @@
             // 
             // txtMaHDN
             // 
+            this.txtMaHDN.Enabled = false;
             this.txtMaHDN.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHDN.Location = new System.Drawing.Point(179, 53);
             this.txtMaHDN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -230,6 +232,7 @@
             this.btnTimKiem.TabIndex = 47;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -273,6 +276,9 @@
             this.dgvHDN.RowHeadersWidth = 51;
             this.dgvHDN.Size = new System.Drawing.Size(605, 331);
             this.dgvHDN.TabIndex = 49;
+            this.dgvHDN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDN_CellContentClick);
+            this.dgvHDN.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDN_CellDoubleClick);
+            this.dgvHDN.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDN_RowEnter);
             // 
             // Ma_Hoa_Don_Nhap
             // 
@@ -316,6 +322,7 @@
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(60, 31);
             this.btnReload.Text = "Reload";
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // toolStripSeparator5
             // 
@@ -334,6 +341,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(94, 31);
             this.btnXoa.Text = "Xóa Dữ Liệu";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // toolStripSeparator2
             // 
@@ -347,6 +355,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 31);
             this.btnSua.Text = "Sửa dữ liệu";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // toolStripSeparator4
             // 
@@ -365,6 +374,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(80, 31);
             this.btnThem.Text = "Thêm Mới";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // bindingNavigator1
             // 
@@ -430,6 +440,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frm_HoaDonNhap";
             this.Text = "frm_HoaDonNhap";
+            this.Load += new System.EventHandler(this.frm_HoaDonNhap_Load);
             this.gbHDN.ResumeLayout(false);
             this.gbHDN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDN)).EndInit();
